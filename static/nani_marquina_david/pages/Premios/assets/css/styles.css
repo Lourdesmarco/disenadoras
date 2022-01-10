@@ -1,0 +1,108 @@
+
+
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+a{
+  text-decoration: none;  
+}
+
+h1{
+    padding-left: 0.9em;
+    font-size: 70px;
+    
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(238, 163, 158);
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    height: 100%;
+    margin: 0;
+}
+
+p{
+    font-size: 20px;
+    padding-right: 9em;
+    padding-left: 9em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+
+.menu{
+    background-color: black;
+    
+}
+
+.list{
+    display: flex;
+    position: relative;
+    margin: 0;
+}
+
+.menuitem a{
+    padding: 2em;
+    display: block;
+    color: rgb(255, 255, 255);
+     }
+
+
+
+.menuitem a:hover{
+color: rgb(255, 255, 255);
+font-weight: bold;
+
+}
+
+.contenedor{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "i1 n2 i3 " 
+    "n1 n2 n3 "
+    "n1 i2 n3 ";
+   
+}
+.img1{
+    height: 100%;
+   width: 100%;
+   object-fit: cover;
+    }
+    
+.img2{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.img3{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+.info1{grid-area: i1;}
+.info2{grid-area: i2;}
+.info3{grid-area: i3;}
+.nina1{grid-area: n1;}
+.nina2{grid-area: n2;}
+.nina3{grid-area: n3;}

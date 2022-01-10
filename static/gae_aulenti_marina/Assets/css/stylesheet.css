@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+/*.rectangulo{
+    width: 1342px;
+height: 311px;
+
+background-color:black;
+
+}*/
+
+.titulo{
+position: absolute;
+width: 789px;
+height: 166px;
+font-size: 60px;
+line-height: 169px;
+margin-left: 300px;
+margin-top: 60px;
+display: flex;
+justify-content: center;
+
+color:black;
+}
+
+.foto
+{width: 1342px;
+    height: 311px;}
+
+.menu{
+    
+    list-style: none;
+    
+    background-color: #E1DEF8;
+    width: 1342px;
+    height: 40px;
+   display: flex;
+   justify-content: center;
+   
+  
+  
+}
+
+
+.menu li a{
+    font-family: 'Nunito', sans-serif;
+    margin-left: 50px;
+ text-decoration: none;
+ color: rgb(2, 2, 2);
+ padding: 10px;
+ display: block;
+ font-size: 15px;
+}
+
+.menu li{
+    display: inline-block;
+    align-items: center;
+}
+
+.menu li a:hover{
+    color: white;
+    background-color: black;
+
+}
+
+.contenedor{
+    width: 1342px;
+height: 742px;
+
+}
+
+.contenedor img{
+position: relative;
+
+width: 459px;
+height: 545px;
+
+border-radius: 57px;
+border: solid #36C5E7;
+border-width:7px ;
+
+
+
+left: 40px;
+margin-top: 95px;
+border-radius: 57px;
+float: left;
+margin-right: 100px;
+}
+
+.bio{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size:40px;
+    vertical-align:middle ;
+    display: inline-block;
+    padding: 25px;
+    position: relative;
+    left: 250px;
+    margin-top: 60px;                }
+
+.contenedor p{
+    font-family: 'Nunito', sans-serif;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.p1{
+ margin-top: 10px;
+}
+
+.p2{
+    margin-top: 10px;
+}
+
+.p3{
+    margin-top: 10px;
+}
+
+
+.contenedor2{
+width: 1342px; 
+height: 742px;
+background: white;
+}
+
+.img2{
+    width: 540px;
+    height: 560px;
+    border-radius: 57px;  
+    position: relative;
+    left: 0px;
+   margin-right: 70px;
+    top: 90px;
+   float: right;
+   border: solid #6DB32D;
+   border-width:7px ;
+}
+
+.neo{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 40px;
+   display: inline-block;
+   position: relative;
+   left: 150px;
+   top: 50px;
+   
+    padding: 70px;
+    
+}
+
+.contenedor2 p{
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 60px;
+    width: 600px;
+    }
+
+.contenedor3{
+    width: 1342px;
+    height: 742px;
+    background-color:white;
+
+      }
+    
+.img3{
+    border-radius: 57px;
+    position: relative;
+    border-radius: 57px;
+    left: 70px;
+    margin-top: 75px;
+    border-radius: 57px;
+    float: left;
+    margin-right: 100px;
+border: solid #fdd960;
+border-width:7px ;}
+
+.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    width: 140px;
+    height: 40px;
+    top: 100px;
+    border-radius: 57px;
+    background: #E1DEF8;
+    margin-left: 870px;
+   top: 20px;
+}
+
+
+
+
+
+.txt:hover{
+    color: white;
+    background-color: black;
+    
+}
+
+
+    
+
+.pro{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size:40px;
+    vertical-align:middle ;
+    display: inline-block;
+    padding: 25px;
+    position: relative;
+    left: 220px;
+    margin-top: 130px;   
+
+}
+
+.contenedor3 p{
+    position: relative;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    margin-right: 20px;
+    width: 1190px;
+    left: 70px;
+    
+}
+
+.p7{
+    margin-top: 10px;
+
+}
+
+.p8{
+    margin-top: 10px;
+    
+}
+
+.p9{
+    margin-top: 10px;
+    
+}
+
+.p10{
+    margin-top: 10px;
+    
+}
+
+.contenedor4{
+    width: 1342px; 
+height: 742px;
+background: white;
+}
+
+.img4{
+    border-radius: 57px;  
+    position: relative;
+    left: 0px;
+   margin-right: 70px;
+    top: 120px;
+   float: right;
+   border: solid #EB821A;
+   border-width:7px ;
+}
+
+.contenedor4 p{
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 60px;
+    width: 665px;
+    position: relative;
+    top: 70px;
+}
+
+.pre{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 40px;
+   display: inline-block;
+   position: relative;
+   left: 180px;
+   top: 120px;
+   padding: 75px;
+      
+}
+
+.p11{
+    margin-top: 10px;
+}
+
+
+
+.volver{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+    position: relative;
+width: 140px;
+height: 40px;
+top: 220px;
+    margin-left: 60px;
+    border-radius: 57px;
+
+background: #E1DEF8;
+
+}
+
+.volver:hover{
+    color: white;
+    background-color: black;
+}
+
+
+
+.contenedor7{
+     width: 1342px;
+    height: 550px;
+    background-color:#b3ddd9; 
+    
+}
+
+
+
+.formulario{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    padding: 2em;
+    border-radius: 30px;
+    }
+    
+    .input_pass, .input_text{
+        padding: .5em;
+        margin-bottom: .5em;
+    }
+    
+    .etiquetas{
+        margin: .5em 0;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    .btn_primary{
+       margin: .5em;
+       background-color:black;
+       border: none;
+       border-radius: 3px;
+       color: white;
+       padding: .7em;
+       border-radius: 57px;
+       font-family: 'Nunito', sans-serif;
+    }
+    
+    .highlight{
+        color:black;
+        font-weight: bold;
+    }
+    
+    .caja{
+        position: relative;
+    
+    }
+    
+    .subtitulo{
+    
+        
+       
+        color: white;
+        font-size: 15px;
+        padding: .3em;
+        font-weight: normal;
+        
+      
+        padding: .3em;
+        font-family: 'Nunito', sans-serif;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 5px;
+        
+    
+    }
+
+    .politicas{
+        font-family: 'Nunito', sans-serif;
+    }
+     
+
+    .box{
+        position: relative;
+        margin-left: 400px;
+       top: 60px;
+        
+    }
+
+    .box2{
+        border-radius: 30px;
+        background-color: black;
+        width: 140px;
+        height: 40px;
+        position: relative;
+        top: 15px;
+    }
+
+   
+
+
+
+
+
+
+    
+  
+    
+    
+    
+
+
+
+
+
+
+
+
+
+  
+

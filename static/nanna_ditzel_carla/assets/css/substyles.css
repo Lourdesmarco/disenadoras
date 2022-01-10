@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;700&display=swap');
+@font-face{
+    font-family: 'Sporting';
+    src:url(../fonts/SportingGrotesque-Regular.woff);
+    src:url(../fonts/SportingGrotesque-Regular.woff2);
+}
+.webcontainer{
+    font-family: Readex Pro;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 65vw;
+    display: grid;
+}
+header{
+    margin-bottom: 150px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    margin-bottom: 150px;
+}
+.row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.textsubcontainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 380px;
+    line-height: 1.3em;
+}
+h2{
+    font-family: 'Sporting';
+    font-size: 5.5em;
+    line-height: 1.3em;
+}
+.h2ikon{
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 190px;
+}
+.h2egg{
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 120px;
+}
+.h2hallingdal{
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 25px;
+}
+.h2trinidad{
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 110px;
+}
+.textright{
+    justify-content: left;
+    text-align:left;
+    padding-left: 70px;
+}
+.textsubcontainer{
+    font-size: .8em;
+}
+.imagesubcontainer {
+    flex: .5 0 25vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 35px;
+}
+.image{
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 35px;
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.item{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+ul{
+    overflow: auto;
+    list-style: none;
+}
+li{
+    font-family: 'Sporting';
+    font-size: 2em;
+    opacity: 75%;
+    font-weight:300;
+    float: left;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+li:last-child {
+    border: none;
+}
+li, a{
+    text-decoration: none;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease; 
+}
+li, a:hover{
+    color: #333;
+}
+li.active a{
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    box-shadow: none;
+    color: black;
+    position: relative;
+    flex-direction: row;
+}
+.contenedorfooter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+    font-family: 'Sporting';
+    font-size: 2em;
+    opacity: 75%;
+    font-weight:300;
+    float: left;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
