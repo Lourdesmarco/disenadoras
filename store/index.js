@@ -20,64 +20,77 @@ export const state = () => ({
     },
     {
       id: 4,
+      nombre: "Ilse Crawford",
+      path: "ilse_crawford_diego/index.html",
+      autor: "Diego de Paz"
+    },
+    {
+      id: 5,
       nombre: "India Maldhavi",
       path: "india_maldhavi_luna/index.html",
       autor: "Luna Enciso"
     },
     {
-      id: 5,
+      id: 6,
       nombre: "Iris Apfel",
       path: "iris_apfel_marta/index.html",
       autor: "Marta Casado"
     },
     {
-      id: 6,
+      id: 7,
       nombre: "Kelly Wearstler",
       path: "kelly_wearstler_virginia/index.html",
       autor: "Virginia García"
     },
     {
-      id: 7,
+      id: 8,
       nombre: "Lina Bo Bardi",
       path: "lina_bobardi_irene/index.html",
       autor: "Irene Ruiz"
     },
     {
-      id: 8,
+      id: 9,
       nombre: "Lotta Agaton",
       path: "lotta_agaton_clara/index.html",
       autor: "Clara Fen"
     },
     {
-      id: 9,
+      id: 10,
       nombre: "Matali Crasset",
       path: "matali_crasset_carolina/index.html",
       autor: "Carolina Schueg"
     },
     {
-      id: 10,
+      id: 11,
       nombre: "Nani Marquina",
       path: "nani_marquina_david/index.html",
       autor: "David Agüero"
     },
     {
-      id: 11,
+      id: 12,
       nombre: "Nanna Ditzel",
       path: "nanna_ditzel_carla/index.html",
       autor: "Carla Coulbois"
     },
     {
-      id: 12,
+      id: 13,
       nombre: "Patricia Urquiola",
       path: "patricia_urquiola_angel/index.html",
       autor: "Ángel Martínez"
     },
     {
-      id: 13,
+      id: 14,
       nombre: "Reiko Tanabe",
       path: "reiko_tanabe_saul/index.html",
       autor: "Saúl Valdivielso"
+    },
+    {
+      id: 15,
+      nombre: "Vivienne Westwood",
+      path: "vivienne_westwood_sandra/index.html",
+      autor: "Sandra Cebrián"
     }
+
 
   ]
 })
