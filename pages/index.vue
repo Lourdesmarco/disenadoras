@@ -36,4 +36,5 @@ export default {
     max-width: 800px;
     width: 80vw;
   }
+
 </style>

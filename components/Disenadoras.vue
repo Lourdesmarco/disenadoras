@@ -5,8 +5,15 @@
         :key="disenadora.id"
       >
         <a class="disenadora" :href="disenadora.path">
-          <p class="autor">{{ disenadora.autor }}</p>
-          <h2>{{ disenadora.nombre }}</h2>
+          <div>
+            <p class="autor">{{ disenadora.autor }}</p>
+            <h2>{{ disenadora.nombre }}</h2>
+          </div>
+
+          <div class="especialidad">
+            <p class="autor">{{ disenadora.especialidad }}</p>
+            <Icon :especialidad="disenadora.especialidad" />
+          </div>
         </a>
       </li>
   </ul>
@@ -32,25 +39,41 @@ export default {
   }
   .disenadora{
       padding: 1em;
-      display: block;
+      display: flex;
+      justify-content: space-between;
       text-decoration: none;
       cursor: pointer;
       border-top: 1px solid #ccc;
       color: #aaa;
       transition: all .5s ease;
-  }
-  .disenadora h2{
-    margin: 0;
-  }
-  .disenadora .autor{
-    margin: 0;
-    font-size: 0.8em;
+      .especialidad{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: end;
+        p{
+          padding: 0 1em;
+        }
+      }
+      h2{
+        margin: 0;
+      }
+      .autor{
+        margin: 0;
+        font-size: 0.8em;
+      }
+
+      &:hover{
+        color: #333;
+
+        background-color: #eee;
+        #iconField{
+          fill: #333;
+        }
+      }
 
   }
-  .disenadora:hover{
-    color: #333;
-    background-color: #eee;
-  }
+
 
 </style>
 
