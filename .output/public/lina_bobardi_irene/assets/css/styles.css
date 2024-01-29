@@ -1,0 +1,332 @@
+/** Hoja de estilos */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    background-color: #E2DCEC;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5em;
+    line-height: 1em;
+    color: #FF3939;
+    margin: 0;
+    padding-bottom: 0.45em;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 2.4em;
+    padding-bottom: .6em;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h3{
+    text-transform: uppercase;
+    color: #FF3939;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+h4{
+    text-transform: uppercase;
+    color: white;
+    font-size: 1em;
+}
+
+p{
+    font-weight: 500;
+    line-height: 1.2em;
+    font-size: .8em;
+    white-space: pre-line;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    background-color: #FF3939;
+    height: 6em;
+}
+
+hr{
+    height: 2px;
+    background-color: black; 
+    width: 100%;
+    border: none;
+    position: relative;
+}
+
+
+/*------------ NAAAV -----------*/
+.list{
+    list-style: none;
+    padding: 1.4em 0em;
+}
+
+.menuitem a{
+    padding: .6em 0;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menuitem a:hover{
+    color: #FF3939;
+    font-weight: bold;
+}
+
+.formulario{
+    padding-top: 2em;
+}
+
+.input_text{
+    width: 100%;
+    padding: .4em;
+    background-color: rgb(189, 189, 189);
+    border: none;
+}
+
+/* ------------GRID------------- */
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        ". img1 img1 img1 aside1"
+        ". img1 img1 img1 aside2"
+        ". cuote text1 text1 ." ;
+	grid-template-columns:  repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+	grid-gap: 15px;
+    padding: 1vw;
+}
+
+.img1{
+    grid-area: img1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cuote{
+    grid-area: cuote;
+    display: flex;
+}
+.cuote> p{
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    color: #FF3939;
+}
+.aside1{
+    grid-area: aside1;
+}
+.aside2{
+    grid-area: aside2;
+    font-size: .9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.line{
+    grid-column: 2 / 6;
+    grid-row: 3/ 4;
+}
+.cuote{
+    grid-area: cuote;
+    display: flex;
+    align-items: flex-start;
+}
+.text1{
+    grid-area: text1;
+}
+.contenedor2{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        ". img2 img3 img3 aside1"
+        ". img2 img4 img4 ."
+        ". img5 img5 img6 ." ;
+	grid-template-columns:  repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+	grid-gap: 15px;
+    padding: 1vw;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+
+.contenedor3{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        ". img7 img7 img8 aside1"
+        ". img7 img7 img8 ."
+        ". img9 img10 img10 ." 
+        ". img9 img10 img10 ." ;
+	grid-template-columns:  repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+	grid-gap: 15px;
+    padding: 1vw;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+.img9{
+    grid-area: img9;
+}
+.img10{
+    grid-area: img10;
+}
+.img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10 {
+    display: flex;
+}
+
+
+/* ------CLASES VARIAS----------- */
+
+
+.sticky_fondo{
+    position: fixed;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    padding: 1em;
+    background: rgb(255,255,255);
+}
+
+.design{
+    display: flex;
+    font-size: 0.9em;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 9em;
+}
+
+.detail{
+    width: 5em;
+}
+
+.relativa_a_animacion{
+    position: relative;
+}
+
+.bold{
+    font-weight: 600;
+    padding-bottom: .4em;
+}
+
+.aside_marg{
+    margin-bottom: 2em;
+}
+
+
+
+.textflex{
+    position: relative;
+}
+.child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.transicion{
+    transition: all .3s ease-in-out;
+    
+}
+.transicion:hover{ 
+    transform: perspective(100px) translateZ(3px);
+}
+
+.flex_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----------ANIMACIONES---------- */
+
+@keyframes animacion1{
+    0%{ 
+        transform: rotate(0);
+        top: 0;
+        left: 20%;
+    }
+    20%{
+        top: 3%;
+        left: 40%;
+    }
+    50%{ 
+        transform: rotate(180deg);
+        top: 7%;
+        left: 50%;
+    }
+    80%{
+        top: 10%;
+        left: 35%;
+    }
+    100%{ 
+        transform: rotate(360deg);
+        top: 0%;
+        left: 20%;
+    }
+}
+.animacion{
+    animation: animacion1 20s ease-in-out 0s infinite;
+    width: 35%;
+}
+
+
+/* ------------SCROLL------- */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: none;
+}
+::-webkit-scrollbar-thumb {
+    background: #FF3939;
+    border: solid #FF3939;
+    border-width: 0 6px;
+    border-radius: 8px;
+}

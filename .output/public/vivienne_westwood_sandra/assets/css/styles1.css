@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;        
+    text-decoration: none;
+}
+
+.logo{
+    width: 100px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.lista{
+    list-style: none;
+    display: flex;
+    position: relative;
+    font-size: 1.1rem;
+    padding: 20px;
+    align-items: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+body{
+    font-size: 1.3em;
+}
+
+.biografia{
+    width: auto;
+    height: 90%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+}
+
+.parrafo{
+    font-size: .85em;
+    padding: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+    text-align: justify;
+}
+
+.recuadro{
+    background:rgb(255, 217, 0);
+    width: 95%;
+    height: 30%;
+    color: black;
+    position: relative;
+    margin-top: 500px;
+    color: black;
+    border-radius: 80px 20px;
+    justify-content: center;
+    margin-left: 45px;
+    -webkit-box-shadow: 16px 18px 16px -5px rgba(0,0,0,0.31);
+    -moz-box-shadow: 16px 18px 16px -5px rgba(0,0,0,0.31);
+    box-shadow: 16px 18px 16px -5px rgba(0,0,0,0.31); 
+}
+.categorias a{
+    padding: 1.5em;
+    color: black;
+    position: relative;
+}
+
+.categorias a:hover{
+    color: rgb(255, 217, 0);
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.subcategorias{
+    list-style: none;
+    justify-content: space-between;
+    color: black;
+    height: 30px;
+    font-weight: lighter;
+}
+
+.menu .lista .categorias:hover .submenu{
+    display: block;
+}
+
+.contenedor{
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    position: relative;
+    margin-top: 150px;
+    height: 100%;
+    width: 100%;
+    grid-template-areas:
+        "f1 t1 f3"
+        "i1 f2 i2"
+        "f4 t2 f6"
+        "i3 f5 i4"
+        "f7 t3 f9"
+        "i5 f8 i6"
+        "f10 t4 f12"
+        "i7 f11 i8"
+        "f13 t5 f15"
+        "i9 f14 i10";
+}
+
+.a{
+    grid-area: t1;
+}
+
+.b{
+    grid-area: f2;
+    width: auto;
+}
+
+.c{
+    grid-area: f1;
+    width: auto;
+}
+
+.d{
+    grid-area: f3;
+    width: auto;
+}
+
+.e{
+    grid-area: i1;
+    padding: 20px;
+    align-self: center;
+    
+}
+
+.f{
+    grid-area: i2;
+    padding: 20px;
+    align-self: center;
+}
+
+.g{
+    grid-area: t2;
+}
+
+.h{
+    grid-area: f5;
+    width: auto;
+}
+
+.i{
+    grid-area: f4;
+    width: auto;
+}
+
+.j{
+    grid-area: f6;
+    width: auto;
+}
+
+.k{
+    grid-area: i3;
+    padding: 20px;
+    align-self: center;
+}
+
+.l{
+    grid-area: i4;
+    padding: 20px;
+    align-self: center;
+}
+
+.m{
+    grid-area: t3;
+}
+
+.n{
+    grid-area: f8;
+    width: auto;
+}
+
+.o{
+    grid-area: f7;
+    width: auto;
+}
+
+.p{
+    grid-area: f9;
+    width: auto;
+}
+
+.q{
+    grid-area: i5;
+    padding: 20px;
+    align-self: center;
+}
+
+.r{
+    grid-area: i6;
+    padding: 20px;
+    align-self: center;
+}
+.s{
+    grid-area: t4;
+}
+
+.t{
+    grid-area: f11;
+    width: auto;
+}
+
+.u{
+    grid-area: f10;
+    width: auto;
+
+}
+
+.v{
+    grid-area: f12;
+    width: auto;
+}
+
+.w{
+    grid-area: i7;
+    padding: 20px;
+    align-self: center;
+}
+
+.x{
+    grid-area: i8;
+    padding: 20px;
+    align-self: center;
+}
+
+.y{
+    grid-area: t5;
+}
+
+.z{
+    grid-area: f14;
+    width: auto;
+}
+
+.A{
+    grid-area: f13;
+    width: auto;
+}
+
+.B{
+    grid-area: f15;
+    width: auto;
+}
+
+.C{
+    grid-area: i9;
+    padding: 20px;
+    align-self: center;
+}
+
+.D{
+    grid-area: i10;
+    padding: 20px;
+    align-self: center;
+}
+
+h1, h2, p{
+    margin: 30px;
+}
+
+p{
+    font-size: 0.65em;
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.final{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 100px;
+}
+
+.cuadrado{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(163, 163, 163, 0.6);
+    padding-bottom: 20px;
+    top: 280px;
+}
+
+.titulopremios{
+    font-family: 'Fuzzy Bubbles', cursive;
+    margin-top: 210px;
+}

@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS HEADER */
+body{
+    height: 100%;
+}
+main{
+    background-color: black;
+    
+}
+
+.header_about{
+    width: 100%;
+    height: 100vh;
+}
+
+.header_about::before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("https://pbs.twimg.com/media/CkXC51qWkAEI26-?format=jpg&name=4096x4096");
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.35;
+}
+
+.menu{
+    padding: 15px;
+    line-height: 1.875;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list{
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+.menuitem{
+    padding: 0 20px;
+    display: block;
+    color: white;
+    list-style: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-right: 1px solid #ddd;
+}
+
+
+.menuitem2{
+    padding: 0 20px;
+    display: block;
+    color: white;
+    list-style: none;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.submenu{
+    position: absolute;
+    top: 30px;
+    left: 70vw;
+    display: none;
+    padding: 15px 70px 15px 2.5px;
+    border: 0px 1px 1px 1px solid #ddd;
+    z-index: 10;
+    
+}
+
+.menuitem a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.menuitem a{
+    text-decoration: none;
+    color: white;
+}
+.menu .list .menuitem:hover .submenu{
+    display: block;
+}
+
+/*CSS FORMULARIO*/
+
+.caja_form{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.formulario{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: white;
+    width: 40vw;
+    padding: 2em;
+    border-radius: 1em;
+
+}
+
+.input_text{
+    padding: 1em;
+    margin-bottom: .5em;
+}
+
+.input_consulta{
+    padding: 1em;
+    margin-bottom: .5em;
+}
+
+.etiqueta{
+    margin: .5em 0;
+}
+
+.button1{
+    padding: 1em;
+    margin: .5em 0 0 0;
+    border: none;
+    border-radius: .5em;
+    background-color: rgb(99, 99, 99);
+    color: white;
+}
+
+.highlight{
+    color: rgb(14, 168, 0);
+    font-weight: bold;
+}
+
+.button1:hover{
+    background-color: rgb(14, 168, 0);
+}
+
+.input_check{
+    padding: .5em 0;
+}
+
+
+
+

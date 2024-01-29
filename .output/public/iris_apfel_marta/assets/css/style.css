@@ -1,0 +1,383 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+        /*GENERAL*/
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-image: url("../images/Fondo3.png") 100%;*/
+}
+
+header, main, footer{
+    width: 60vw;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+.cuerpo{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 15px;
+}
+
+.it{
+    font-style: italic;
+}
+
+.b{
+    font-weight: bold;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+img{
+    object-fit: cover;
+}
+
+        /*CABECERA*/
+.portada{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+        
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list1, .list2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.list1 .menuitem, .list2 .menuitem {
+    padding: 2em;
+}
+
+.dibujo{
+    width: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+li a:hover{
+    color: #B50000;
+}
+
+.selec a{
+    color: #B50000;
+    text-decoration: line-through;
+}
+
+.selec a:hover{
+    color: #B50000;
+    text-decoration: line-through;
+}
+
+h1{
+    font-size: 3em;
+}
+
+        /*FOOTER*/
+
+footer{
+    padding: 2em;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items:center;
+}
+
+.item{
+    padding: 2em;
+    margin: 10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #B50000;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #B50000;
+    color: white;
+}
+  
+.fa-instagram {
+    background: #B50000;
+    color: white;
+  }
+
+        
+h3{
+    position: absolute;
+    color: #B50000;
+    font-size: 1.3em;
+    padding: .3em;
+    font-weight: normal;
+}
+
+label{
+    padding: 1em;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    padding: 2em;
+    border-radius: 3px;
+}
+
+
+.input_pass, .input_text{
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+.etiqueta{
+    margin: 0.5em 0;
+}
+.boton_primario{
+    padding: 00.5em;
+    background-color: #B50000;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 00.5em;
+}
+.highlight{
+    color: #B50000;
+    font-weight: bold;
+}
+.caja{
+    position: relative;
+}
+
+
+
+
+        /*MAIN INDEX*/
+
+.contenedorindex{
+    height: 100%;
+    width: 15vw;
+    display: grid;
+    grid-template-areas: 
+        "f1 f1 f1"
+        "f1 f1 f1"
+        "f2 f3 f4"
+        "f5 f5 f6";
+}
+
+.img1{
+    grid-area: f1;
+}
+.img2{
+    grid-area: f2;
+}
+.img3{
+    grid-area: f3;
+}
+.img4{
+    grid-area: f4;
+}
+.img5{
+    grid-area: f5;
+}
+.img6{
+    grid-area: f6;
+}
+
+.item1 img{
+    width: 60vw;
+
+}
+
+.item2 img, .item3 img, .item4 img, .item6 img{
+    width: 20vw;
+}
+
+.item5 img{
+    width: 40vw;
+}
+
+.Pimg:hover{
+    filter: grayscale(100%);
+}
+
+.frase{
+    font-weight: 100;
+    font-size: x-large;
+    position: absolute;
+    top: 260px;
+    left: 360px;
+    color: white;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    text-align: center;
+}
+
+
+        /*MAIN BIO*/
+
+.contenedorbio{
+    height: 100%;
+    width: 60vw;
+    display: grid;
+    grid-template-areas: 
+    "fb1 fb1 ib1 ib1"
+    "ib2 ib2 fb2 fb2"
+    "fb3 fb3 ib3 ib3"
+    "ib4 ib4 fb4 fb4";
+    }
+.infob1{
+    grid-area: ib1;
+}
+.infob2{
+    grid-area: ib2;
+}
+.infob3{
+    grid-area: ib3;
+}
+.infob4{
+    grid-area: ib4;
+}
+.imgb1{
+    grid-area: fb1;
+}
+.imgb2{
+    grid-area: fb2;
+}
+.imgb3{
+    grid-area: fb3;
+}
+.imgb4{
+    grid-area: fb4;
+}
+
+.itemb2 img, .itemb4 img, .itemb6 img, .itemb8 img{
+    width: 30vw;
+}
+
+.itemb1, .itemb3, .itemb5, .itemb7{
+   padding: 2em;
+   
+}
+
+        /*MAIN TRAYECTORIA*/
+
+.contenedorT{
+    height: 100%;
+    width: 60vw;
+    display: grid;
+    grid-template-areas: 
+    "ft1 ft1 it1 it1"
+    "it2 it2 ft2 ft2"
+    "ft3 ft3 it3 it3"
+    "it4 it4 ft4 ft4"
+    "ft5 ft5 it5 it5";
+    }
+.infot1{
+    grid-area: it1;
+}
+.infot2{
+    grid-area: it2;
+}
+.infot3{
+    grid-area: it3;
+}
+.infot4{
+    grid-area: it4;
+}
+.infot5{
+    grid-area: it5;
+}
+.imgt1{
+    grid-area: ft1;
+}
+.imgt2{
+    grid-area: ft2;
+}
+.imgt3{
+    grid-area: ft3;
+}
+.imgt4{
+    grid-area: ft4;
+}
+.imgt5{
+    grid-area: ft5;
+}
+
+.itemt2 img, .itemt4 img, .itemt6 img, .itemt8 img, .itemt10 img{
+    width: 30vw;
+}
+
+.itemt1, .itemt3, .itemt5, .itemt7, .itemt9{
+   padding: 2em;
+   
+}
+
+ul .prem{
+    list-style: disc;
+}
+
+        /*MAIN REFLEXIÓN*/
+
+.contenedorR{
+    height: 100%;
+    width: 60vw;
+    display: grid;
+    grid-template-areas: 
+    "fr1 fr1 ir1 ir1";
+    }
+.infor1{
+    grid-area: ir1;
+}
+
+.imgr1{
+    grid-area: fr1;
+}
+
+.itemr2 img{
+    width: 30vw;
+}
+
+.itemr1{
+   padding: 2em;
+}

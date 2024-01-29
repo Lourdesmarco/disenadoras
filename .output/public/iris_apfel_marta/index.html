@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <header> <!--PORTADA-->
+    <div class="portada">
+      <a href="#" class="cabecera">
+        <img src="assets/images/Iris-logo.png" alt="Ilustración Iris" class="dibujo">
+        <h1>IRIS APFEL</h1>
+        <img src="assets/images/Iris-logo.png" alt="Ilustración Iris" class="dibujo">
+      </a>
+    </div>
+
+    <nav class="menu">
+      <ul class="list2">
+         <li class="menuitem">
+            <a href="https://disenadoras.netlify.app/"> DISEÑADORAS </a>
+          </li>
+      </ul>
+
+      <ul class="list1">
+          <li class="menuitem">
+            <a href="pages/bio.html"> BIOGRAFÍA </a>
+          </li>
+          <li class="menuitem">
+            <a href="pages/trayectoria.html"> TRAYECTORIA <br> PROFESIONAL </a>
+          </li>
+          <li class="menuitem">
+            <a href="pages/reflexión.html"> REFLEXIÓN </a>
+          </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main> <!--CUERPO-->
+    <section class="contenedorindex">
+      <article class="item1 img1">
+        <p class="frase">“Nunca me detengo a pensar en mi edad, no es más que un número”</p>
+        <img src="assets/images/4.jpg" alt="Foto Iris 1" class="Pimg">
+      </article>
+      <article class="item2 img2"><img src="assets/images/1.1.jpg" alt="Foto Iris 2" class="Pimg"></article>
+      <article class="item3 img3"><img src="assets/images/4.1.jpg" alt="Foto Iris 3" class="Pimg"></article>
+      <article class="item4 img4"><img src="assets/images/7.1.jpg" alt="Foto Iris 4" class="Pimg"></article>
+      <article class="item5 img5"><img src="assets/images/6.1.jpg" alt="Foto Iris 5" class="Pimg"></article>
+      <article class="item6 img6"><img src="assets/images/8.1.jpg" alt="Foto Iris 6" class="Pimg"></article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="rrss item">
+      <a href="https://www.facebook.com/IrisApfelofficial/" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://twitter.com/IrisBApfel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter" target="_blank"></a>
+      <a href="https://www.instagram.com/iris.apfel/" class="fa fa-instagram" target="_blank"></a>
+    </div>
+
+    <div class="pie item">
+      <h3 class="subtitulos">SUSCRÍBETE A NUESTRA NEWSLETTER!</h3>
+        <form class="formulario">
+             <label class="etiqueta" for="nombre">NOMBRE COMPLETO<span class="highlight">*</span></label>
+             <input class="input_text" type="text" id="nombre">
+
+             <label for="news">MAIL<span class="highlight">*</span></label>
+             <input type="email" id="news" name="news">
+
+              <input class="boton_primario" type="submit" value="ENVIAR" aria-label="ENVIAR">
+              <label for="">
+                 <input type="checkbox" name="politicas" id="politicas">
+                    He leido las politicas de privacidad de este sitio
+             </label>
+
+             <fieldset class="gen">
+                 <legend>GÉNERO</legend>
+                 <label for="mujer">
+                     <input type="radio" name="gender" id="women">Mujer
+                 </label>
+                 <label for="hombre">
+                     <input type="radio" name="gender" id="men">Hombre
+                 </label>
+                 <label for="otro">
+                     <input type="radio" name="gender" id="other" checked>Otro
+             </fieldset>
+
+             <label for="message">ESCRIBE TU MENSAJE</label>
+                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                 <input class="boton_primario" type="submit" value="ENVIAR" aria-label="ENVIAR">
+         </form>
+    </div>
+  </footer>
+
+</body>
+</html>

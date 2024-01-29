@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+}
+.menu{
+    opacity: .5;
+    background-color: black;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.menuitem a {
+    padding: 1em;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.menuitem a:hover{
+    color: rgb(255, 0, 179);
+    font-weight: bold;
+}
+.menu .list .menuitem:hover .submenu{
+    display: block;
+}
+.menuitem a .material-icons{
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.item {
+    display: inline-block;
+    margin: 0;
+    width: 100%; 
+}
+.boton a{
+    display: block;
+    display:inline-block;
+    background-color: rgb(255, 205, 236);
+    border-radius: 5px;
+    padding: 5px;
+    color:rgb(0, 0, 0);
+}
+
+.boton a:hover{
+    color:rgb(255, 0, 195);
+}
+.capa{
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+}
+.parrafo{
+    padding: 20px 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.parrafo .img1 {
+    width: 420px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 15px;
+}
+.parrafo .img2 {
+    width: 420px;
+    border-radius: 5px;
+    float: right;
+    margin-left: 15px;
+}

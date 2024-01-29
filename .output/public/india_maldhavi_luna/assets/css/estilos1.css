@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+}
+.menu{
+    opacity: .5;
+    background-color: black;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.menuitem a {
+    padding: 1em;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.menuitem a:hover{
+    color: rgb(255, 0, 179);
+    font-weight: bold;
+}
+.menu .list .menuitem:hover .submenu{
+    display: block;
+}
+.menuitem a .material-icons{
+    
+    font-size: 1.2em;
+}
+
+.item {
+    display: inline-block;
+    margin: 0;
+    width: 100%; 
+}
+img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: right bottom;
+    display: block;
+}
+.boton a{
+    display: block;
+    display:inline-block;
+    background-color: rgb(255, 205, 236);
+    border-radius: 5px;
+    padding: 5px;
+    color:rgb(0, 0, 0);
+}
+
+.boton a:hover{
+    color:rgb(255, 0, 195);
+}
+h1{
+    color:rgb(0, 0, 0);
+    background-color:pink ;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 100%;
+    z-index: 3;
+    
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}    
+.a { 
+    grid-area: 1 / 1 / 4 / 2; 
+    background-color: rgb(255, 221, 248);
+}
+.a img{
+    width: 80px;
+    height: 80px;
+    float: right;
+}
+.b { 
+    grid-area: 1 / 2 / 4 / 4; 
+    border-radius: 5px;
+}
+.b img{
+    border-radius: 5px;
+}
+.c { 
+    grid-area: 1 / 4 / 4 / 7; 
+}
+.d { 
+    grid-area: 1 / 7 / 4 / 8; 
+    background-color: rgb(255, 221, 248);
+}
+.e { 
+    grid-area: 4 / 1 / 7 / 2; 
+    background-color: rgb(255, 221, 248);
+}
+.f { 
+    grid-area: 4 / 2 / 7 / 5; 
+}
+.g { 
+    grid-area: 4 / 5 / 7 / 7; 
+}
+.g img{
+    border-radius: 5px;
+}
+.h { 
+    grid-area: 4 / 7 / 7 / 8; 
+    background-color: rgb(255, 221, 248);
+}
+.h img{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+.i { 
+    grid-area: 7 / 1 / 10 / 2; 
+    background-color: rgb(255, 221, 248);
+}
+.i img{
+    width: 80px;
+    height: 80px;
+    float: right;
+}
+.j { 
+    grid-area: 7 / 2 / 10 / 4; 
+}
+.j img{
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+}
+.k { 
+    grid-area: 7 / 4 / 10 / 7; 
+}
+.l{ 
+    grid-area: 7 / 7 / 10 / 8; 
+    background-color: rgb(255, 221, 248);
+}
+.container-sub{
+    width: 100%;
+    height: 400px;
+    background: url(../images/india\ formulario.jpg);
+    background-position: left 10% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conten-sub{
+    width: 100%;
+    height: 100%;
+    background: rgba(177, 150, 166, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conten-sub h2{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.conten-sub p{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    margin-bottom: 25px;
+    max-width: 500px;
+    text-align: center;
+}
+.conten-sub form{
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+}
+.conten-sub form .campo{
+    width: 100%;
+    padding: 15px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px 0px 0px 3px;
+    outline: 0px;
+}
+.conten-sub form .btn-sub{
+    padding: 15px 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 0px 3px 3px 0px;
+    background: #ff0095;
+    color: white;
+    cursor: pointer;
+    offset-inline-end: 0px;
+}
+.conten-sub form .btn-sub:hover{
+    background: rgb(255, 67, 139);
+}
+.social-bar{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+}
+.icon-instagram{
+    background: #ff0095;
+    border-radius: 1rem 0 0 0;
+}
+.icon-instagram img{
+    width: 20px;
+    height: 20px;
+}
+.icon-pinterest{
+    background: red;
+    border-radius: 0 0 0 1rem;
+}
+.icon-pinterest img{
+    width: 20px;
+    height: 20px;
+}

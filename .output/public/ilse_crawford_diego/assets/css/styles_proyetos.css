@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 89vh;
+}
+.menu{
+    background-color: white;
+    padding: 15px;
+    line-height: 1.875;
+}
+
+.list{
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+.menuitem{
+    padding: 0 20px;
+    display: block;
+    color: white;
+    list-style: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-right: 1px solid #ddd;
+}
+
+
+.menuitem2{
+    padding: 0 20px;
+    display: block;
+    color: black;
+    list-style: none;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.submenu{
+    position: absolute;
+    top: 30px;
+    left: 70vw;
+    background-color: white;
+    display: none;
+    padding: 15px 70px 15px 2.5px;
+    border: 0px 1px 1px 1px solid #ddd;
+    z-index: 10;
+    
+}
+
+.menuitem a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.menuitem a{
+    text-decoration: none;
+    color: black;
+}
+.menu .list .menuitem:hover .submenu{
+    display: block;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+.container_main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid: 40% 20% 40% / repeat(3, 1fr);
+    grid-template-areas: 
+        "img1 img1 img2"
+        "img3 text img4"
+        "img5 img5 img4";
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto{
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text{
+    grid-area: text;
+    color: rgb(0, 0, 0);
+    font-size: 90px;
+    text-align: center;
+}
+.a{
+    grid-area: img1;
+    background-image: url(https://media.revistagq.com/photos/5ca5fbd333e7516bd4153a17/16:9/w_2560%2Cc_limit/soho_barcelona_1192.jpg);
+    background-position: 100% 70%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.texto_img{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: white;
+    padding: .5em;
+    color: black
+}
+
+.texto_img:hover{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: black;
+    padding: .5em;
+    color: white;
+}
+
+
+.b{
+    grid-area: img2;
+    background-image: url(https://i.pinimg.com/originals/54/9c/c7/549cc7af459ecf4c7b0bb3b9304342dd.jpg);
+    background-position: 100% 70%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c{
+    grid-area: img3;
+    background-image: url(https://image.architonic.com/pfm3-3/20191831/w203-ilumina-insitu4-fam-g-arcit18.jpg);
+    background-position: 50% 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d{
+    grid-area: img4;
+    background-image: url(https://www.studioilse.com/wp-content/uploads/2020/03/duddells_hk_34-900x1350.jpg);
+    background-position: 100% 70%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.e{
+    grid-area: img5;
+    background-image: url(https://assets.yellowtrace.com.au/wp-content/uploads/2017/06/Cathay-Pacific-Pier-Business-Hong-Kong-Yellowtrace.jpg);
+    background-position: 100% 70%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}

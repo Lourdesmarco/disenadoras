@@ -1,0 +1,81 @@
+/* Navbar */
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Mohave&display=swap');
+
+*{
+  font-family: 'Jost', sans-serif;
+}
+
+a:hover{
+  color: rgb(139, 79, 163);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+
+li {
+  border-right:1px solid #bbb;
+  display: inline-block;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Columnas disenadoras */
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ttabla */
+ td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Grids */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.item{
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+}
+.item-disenadores{
+
+  grid-column: 1 / span 2;
+}
+
+/* formulario */
+.form{
+  width:30%;
+  margin:auto; 
+  padding:10px 10px 10px 10px; 
+  background-position:center 10px; 
+  background-color: #AF9FC4 ; 
+}
