@@ -1,5 +1,8 @@
-export default {
+import { defineNuxtConfig } from '@nuxt/bridge'
+
+export default defineNuxtConfig ({
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  bridge: {},
   ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
@@ -38,6 +41,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/tailwindcss'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -48,4 +52,4 @@ export default {
   build: {
 
   }
-}
+})
