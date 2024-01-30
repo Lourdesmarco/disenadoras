@@ -3,8 +3,8 @@ export const state = () => ({
     {
       id: 1,
       nombre: "Anne Sophie Oberkrome",
-      path: "annesophie_oberkrome_mario/index.html",
-      autor: "Mario Herreros",
+      path: "annesophie_oberkrome_??/index.html",
+      autor: "??",
       especialidad: "producto",
       grupo: "pioneras",
       activa: false
@@ -12,8 +12,8 @@ export const state = () => ({
     {
       id: 2,
       nombre: "Emilia Wickstead",
-      path: "emilia_wickstead_laura/index.html",
-      autor: "Laura Molina",
+      path: "emilia_wickstead_??/index.html",
+      autor: "??",
       especialidad: "moda",
       grupo: "pioneras",
       activa: false
@@ -21,8 +21,8 @@ export const state = () => ({
     {
       id: 3,
       nombre: "Gae Aulenti",
-      path: "gae_aulenti_marina/index.html",
-      autor: "Marina Herreros",
+      path: "gae_aulenti_??/index.html",
+      autor: "??",
       especialidad: "producto",
       especialidad2: "interiores",
       grupo: "pioneras",
@@ -40,8 +40,8 @@ export const state = () => ({
     {
       id: 5,
       nombre: "India Maldhavi",
-      path: "india_maldhavi_luna/index.html",
-      autor: "Luna Enciso",
+      path: "india_maldhavi_??/index.html",
+      autor: "??",
       especialidad: "interiores",
       grupo: "pioneras",
       activa: false
@@ -49,8 +49,8 @@ export const state = () => ({
     {
       id: 6,
       nombre: "Iris Apfel",
-      path: "iris_apfel_marta/index.html",
-      autor: "Marta Casado",
+      path: "iris_apfel_??/index.html",
+      autor: "??",
       especialidad: "moda",
       grupo: "pioneras",
       activa: false
@@ -58,8 +58,8 @@ export const state = () => ({
     {
       id: 7,
       nombre: "Kelly Wearstler",
-      path: "kelly_wearstler_virginia/index.html",
-      autor: "Virginia García",
+      path: "kelly_wearstler_??/index.html",
+      autor: "??",
       especialidad: "interiores",
       grupo: "pioneras",
       activa: false
@@ -77,8 +77,8 @@ export const state = () => ({
     {
       id: 9,
       nombre: "Lotta Agaton",
-      path: "lotta_agaton_clara/index.html",
-      autor: "Clara Fen",
+      path: "lotta_agaton_??/index.html",
+      autor: "??",
       especialidad: "interiores",
       grupo: "contemporaneas",
       activa: false
@@ -86,8 +86,8 @@ export const state = () => ({
     {
       id: 10,
       nombre: "Matali Crasset",
-      path: "matali_crasset_carolina/index.html",
-      autor: "Carolina Schueg",
+      path: "matali_crasset_??/index.html",
+      autor: "??",
       especialidad: "producto",
       especialidad2: "interiores",
       grupo: "pioneras",
@@ -96,8 +96,8 @@ export const state = () => ({
     {
       id: 11,
       nombre: "Nani Marquina",
-      path: "nani_marquina_david/index.html",
-      autor: "David Agüero",
+      path: "nani_marquina_??/index.html",
+      autor: "??",
       especialidad: "producto",
       grupo: "pioneras",
       activa: false
@@ -105,8 +105,8 @@ export const state = () => ({
     {
       id: 12,
       nombre: "Nanna Ditzel",
-      path: "nanna_ditzel_carla/index.html",
-      autor: "Carla Coulbois",
+      path: "nanna_ditzel_??/index.html",
+      autor: "??",
       especialidad: "producto",
       grupo: "pioneras",
       activa: false
@@ -123,8 +123,8 @@ export const state = () => ({
     {
       id: 14,
       nombre: "Reiko Tanabe",
-      path: "reiko_tanabe_saul/index.html",
-      autor: "Saúl Valdivielso",
+      path: "reiko_tanabe_??/index.html",
+      autor: "??",
       especialidad: "producto",
       grupo: "pioneras",
       activa: false
@@ -132,8 +132,8 @@ export const state = () => ({
     {
       id: 15,
       nombre: "Vivienne Westwood",
-      path: "vivienne_westwood_sandra/index.html",
-      autor: "Sandra Cebrián",
+      path: "vivienne_westwood_??/index.html",
+      autor: "??",
       especialidad: "moda",
       grupo: "pioneras",
       activa: false
