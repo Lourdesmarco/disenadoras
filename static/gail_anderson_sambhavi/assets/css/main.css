@@ -1,0 +1,319 @@
+*{
+}
+
+html,
+body{
+    /*font-family: "BioRhyme", "Gabriela", serif; "Franklin", sans_serif;*/
+    font-family: 'BioRhyme', serif;
+    font-family: 'Gabriela', serif;
+    font-family: 'Libre Franklin', sans-serif;
+    
+}
+
+.app{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: 55px 30px auto 30px;
+    background-color: #1343bc;
+    padding: 0;
+    position: relative;
+
+}
+
+.app h1{
+    font-family: BioRhyme;
+    font-size: 4rem;
+    color: white;
+    padding: 0rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+.app h2{
+    font-family: BioRhyme;
+    font-size: 2rem;
+    color: white;
+    padding: 0rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.app h4{
+    font-family: Libre Franklin;
+    font-weight: 300;
+    color: white;
+    padding: 0rem;
+    margin-left: 2rem;
+    margin-bottom: 0rem;
+    
+}
+
+
+.app .mainHeader{
+    grid-row-start: 1; 
+	grid-column-start: 1; 
+	grid-row-end: 2;
+	grid-column-end: 5;
+    background-color: #93aef1;
+    justify-content: space-between;
+
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    padding: .2rem;
+    text-align: center;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 2;
+}
+
+/* HEADER LEFT */
+
+.app .mainHeader .headerLeft{
+    
+
+}
+
+.app .mainHeader .headerLeft img{
+}
+
+.app .mainHeader .headerLeft .nombre{
+    font-family: Gabriela;
+    font-size: 1.5rem;
+    padding: 0 0 0 .5rem;
+    align-items: baseline;
+    color: rgb(50, 50, 50);
+
+}
+
+/* HEADER CENTER */
+
+.app .mainHeader .headerCenter .mainNav{
+    grid-row-start: 1; 
+	grid-column-start: 2; 
+	grid-row-end: 2;
+	grid-column-end:4;
+}
+
+/* NAV */
+
+.app .mainHeader .headerCenter .mainNav{
+
+}
+
+.app .mainHeader .headerCenter .mainNav .navList{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.app .mainHeader .headerCenter .mainNav .navList .navListElem a{
+    font-family: BioRhyme;
+    color: rgb(50, 50, 50);
+}
+
+/* mouse over link */
+.app .mainNav .navListElem a:hover{
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    padding: .1rem;
+}
+
+.app .mainNav .navListElem .extraNavLinks a:hover{
+    background-color: #FDBD17;
+    border-radius: 10px;
+    padding: .1rem;
+}
+
+
+/* Extra NAV */
+
+.app .headerCenter .extraNavMenu{
+    height: 30px;
+    width: 100%;
+    position: sticky;
+    left: 0;
+    z-index: 3;
+    top: 55px;
+    background-color: #FFEED5;
+    position: absolute;
+
+}
+
+.app .extraNavMenu .extraNavLinks{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-left: 31.5rem;
+    font-family: BioRhyme;
+    margin-top: .2rem;
+    color: rgb(50, 50, 50);
+    visibility: hidden;
+}
+
+
+/* .mainNav>ul>li:hover .extraNavLinks a{
+    visibility: visible;}
+    
+
+.mainNav .navList .navListElem:hover section div{
+    visibility: visible;
+}*/
+
+.mainNav .navList>li:hover .extraNavLinks{
+    visibility: visible;
+}
+
+/* HEADER RIGHT */
+
+.app .mainHeader .headerRight{
+}
+
+.app .mainHeader .headerRight .home .homeElem{
+    list-style: none;
+    font-family: BioRhyme;
+    margin-right: 1rem;
+}
+
+.app .mainHeader .headerRight a{
+    color: rgb(50, 50, 50);
+}
+
+#teatro, #and, #editorial, #cartel, #otros, #libros, #proy{
+    scroll-margin-top: 100px;
+}
+
+/* MAIN CONTENT */
+
+.app .mainContent {
+    background-color: #1a3f9d;
+    grid-area: 3 / 1 / 5 / 5;
+}
+
+.mainContent .proyectosCat{
+
+}
+
+.proyectosCat .proyectosIntro{
+    margin-bottom: 2rem;
+}
+
+.app .mainContent .intro .introGroup{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.app .mainContent .intro img{
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    margin-top: 4rem;
+}
+
+.app .mainContent .intro .introImg{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    margin-top: 3rem;
+
+
+}
+
+.app .mainContent .intro .introText{
+    font-family: Libre Franklin;
+    font-weight: 900;
+    color: #FDBD17;
+}
+
+.app .mainContent .intro .introVid video{
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.proyectosCat .proyectosIntro{
+    background-color: #7c98e1;
+    padding: 1rem;
+
+}
+
+
+.proyectosCat .teatro{
+
+}
+
+
+.app .mainContent .sectionGroup{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0rem;
+    align-items: flex-start;
+    padding: 0rem;
+    margin-bottom: 3rem;
+    
+
+}
+
+.app .mainContent .sectionThumb .artwork {
+    display: flex;
+    flex-direction: column;
+    padding: none;
+}
+
+
+.app .mainContent .imgProyectos{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    padding: 0;
+    margin-left: 3rem;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+.imgProyectos:hover{
+    filter: brightness(.2);
+    transition: all 1.5s;
+    transition-timing-function: ease;
+    transform: scale(0.85, 0.85);
+}
+
+
+
+
+.app .mainContent .descriptProyectos{
+    width: 300px;
+    padding: 0rem;
+    margin-left: 3rem;
+    margin-top: .5rem;
+    color: white;
+
+}
+
+.proyectosCat .and{
+    background-color: #FDBD17;
+}
+
+.proyectosCat .editorial{
+    background-color: #93aef1;
+}
+
+
+
+
+/* FOOTER */
+
+.mainFooter{
+    background-color: #FFEED5;
+    font-family: BioRhyme;
+    grid-area: 5 / 1 / 6 / 5;
+
+}
+
+.mainFooter .mainFooterText{
+    font-family: BioRhyme;
+    font-weight: 300;
+}

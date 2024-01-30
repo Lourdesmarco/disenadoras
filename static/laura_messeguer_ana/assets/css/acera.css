@@ -1,0 +1,270 @@
+html, 
+body .app{
+    /*background: linear-gradient(225deg, rgba(254,236,233,1) 0%, rgba(255,222,184,1) 33%, rgba(255,202,202,1) 67%, rgba(224,224,224,1) 100%);*/
+    font-size: 1rem;
+    font-family: sans-serif;
+    line-height: 28px;
+    color: rgba(211, 41, 46, 1); 
+}
+
+.app{
+    display: flex;
+    flex-flow: row wrap;
+    overflow-x: hidden;
+}
+
+/* HEADER*/ 
+
+.app .mainHeader{
+    width: 100%;
+    padding: 60px 100px 0px 100px;
+    display: grid;
+    grid-template-rows: repeat( 3, 106px);
+    grid-row-gap: 34px;
+    
+}
+
+.app .mainHeader .firstHeader{
+    grid-row: 1 / span 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app .mainHeader .firstHeader .logoMeseguer{ 
+    max-height: 106px;
+    width: auto;
+}
+
+.app .mainHeader .firstHeader .backButton button{
+    border-radius: 10px;
+    border: transparent;
+    background-color: transparent;
+    padding: 0.2rem 0.8rem;
+    transform: rotate(180deg);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: rgba(211, 41, 46, 1);
+}
+
+.app .mainHeader .firstHeader .backButton:hover button{
+    background-color: rgb(228, 226, 226);
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.app .mainHeader .mainNav{
+    display: grid;
+    grid-row: 2;   
+}
+
+.app .mainHeader .mainNav .navList{
+    list-style: none;
+    grid-row: 2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0;
+    margin: 0;
+}
+
+.app .mainHeader .mainNav .navList .navListElem{
+    border-radius: 10px;
+    padding: 0.2rem 0.6rem ;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.app .mainHeader .mainNav .navList .navListElem:hover{
+    background-color: rgb(228, 226, 226);
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.app .mainHeader .mainNav .navList .navListElem .ubicacion{
+    background-color: rgb(228, 226, 226);
+    border-radius: 10px;
+    padding: 0.4rem 0.8rem ;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.app .mainHeader .mainNav .navList .navListElem span{
+    color: rgba(211, 41, 46, 1);
+}
+
+.app .mainHeader .linea{
+    color: rgba(211, 41, 46, 1);
+    grid-row: 3;
+    align-self: self-start;
+}
+
+/* mainAbout*/
+
+.app .mainAbout {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    grid-column-gap: 34px;
+}
+
+.app .mainAbout .leftAbout{
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.app .mainAbout .leftAbout img{
+    width: 100%;
+}
+
+.app .mainAbout .leftAbout .contact{
+    padding-top: 34px;
+    
+}
+
+.app .mainAbout .leftAbout .contact h3{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0%;
+    padding: 0%;
+}
+
+.app .mainAbout .leftAbout .contact .linkContact{
+    list-style: none;
+    padding: 0%;
+}
+
+.app .mainAbout .leftAbout .contact .linkContact .linkContactElem{
+    list-style: none;
+    font-size: 0.75rem;
+    margin: 0%;
+    padding: 0%;
+    line-height: 20px;
+}
+
+.app .mainAbout .leftAbout .contact .linkContact .linkContactElem .linkSocial{
+    color: rgba(211, 41, 46, 1);
+}
+
+.app .mainAbout .leftAbout .contact .linkContact .linkContactElem .linkSocial:hover{
+    text-decoration: underline;
+    color: rgba(211, 41, 46, 1);
+}
+
+.app .mainAbout .leftAbout .otherSites{
+    list-style: none;
+    padding-top: 34px;
+    
+}
+
+.app .mainAbout .leftAbout .otherSites h3{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0%;
+    padding: 0%;
+}
+
+.app .mainAbout .leftAbout .otherSites .otherSitesTitle{
+    color: rgba(211, 41, 46, 1);
+    font-size: 0.75rem;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.app .mainAbout .leftAbout .otherSites .otherSitesLink{
+    color: rgba(211, 41, 46, 1);
+    font-size: 0.75rem;
+    line-height: 20px;
+}
+
+.app .mainAbout .leftAbout .otherSites .otherSitesLink .sitesLinks{
+    color: rgba(211, 41, 46, 1);
+
+}
+
+.app .mainAbout .leftAbout .otherSites .otherSitesLink .sitesLinks:hover{
+    text-decoration: underline;
+    color: rgba(211, 41, 46, 1);
+}
+
+.app .mainAbout .centerAbout{
+    grid-column: 2;
+}
+
+.app .mainAbout .centerAbout p{
+    object-fit: contain;
+    display: flex;
+    flex-basis: 100%;
+    align-content: flex-start;
+}
+
+/*mainFooter*/
+
+.app .mainFooter{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    grid-template-rows: 1fr ;
+    grid-column-gap: 12px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 34px;
+}
+
+.app .mainFooter .lineaFooter{
+    color: rgba(211, 41, 46, 1);
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    align-self: self-start;
+    
+}
+
+.app .mainFooter .firma{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+    font-weight: thin; 
+    padding-top: 24px;
+}
+
+.app .mainFooter .socialMedia{
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column; 
+    padding-top: 24px;
+    justify-content: center;
+    align-content: center;
+}
+
+.app .mainFooter .socialMedia span{
+    width: 100%;
+}
+
+.app .mainFooter .socialMedia .container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 100%;
+}
+
+.app .mainFooter .socialMedia .container .mediaContainer{ 
+    flex: 0 0 calc(33.333% - 64px);
+    
+}
+
+.app .mainFooter .socialMedia .container .mediaContainer .media{
+    width: 50%;
+    height: 50%;
+    padding: 12px;
+}
+
+.app .mainFooter .socialMedia .container .mediaContainer .media img{
+    object-fit: contain;
+}

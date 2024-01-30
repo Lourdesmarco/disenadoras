@@ -1,0 +1,170 @@
+head{
+    
+}
+body{
+    color: #C8D8D8;
+    overflow: hidden;
+}
+div{
+
+}
+
+/** HEADER **/
+
+.header{
+    background-color: #0F2B36;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 4px 8px 31px -4px rgba(15, 43, 54, 0.37);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header .headerleft{
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.header .headerleft svg{
+    padding: 5px 0 0 0;
+}
+
+.header .headerleft a.regresonombre{
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 0 0 20px;
+    color: #02A576;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+div.header .headernav{
+    
+}
+
+nav.sections{
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+nav.sections a{
+    font-size: 20px;
+}
+
+a.SelectedSection{
+    color: #F3FFFF;
+}
+
+a.NonSelectedSection{
+    color: #C8D8D8;
+}
+
+/** CONTACT **/
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.contacttext{
+    color: #0F2B36;
+    font-size: 80px;
+    font-weight: bolder;
+    margin: 160px 0 0 0;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    margin: 40px 0 85px 0;
+}
+
+.contactform {
+    padding: 0;
+    width: 35%;
+}
+
+.caja {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0F2B36;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #0F2B36;
+    opacity: 0.5;
+    border-radius: 20px;
+    color: #F3FFFF;
+}
+
+button {
+    background-color: #005A5B;
+    color: #F3FFFF;
+    padding: 10px 20px;
+    border: none !important;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sendbutton{
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: #02A576;
+}
+
+/** FOOTER **/
+
+.footer {
+    background-color:#0F2B36;
+    color: ·#F3FFFF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px 20px 0 0 ;
+    box-shadow: 4px 8px 31px -4px rgba(15, 43, 54, 0.37);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footermessage {
+    margin-bottom: 10px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    color:#F3FFFF
+}
+
+.sociallink {
+    margin: 0 10px;
+}
+
+.sociallink img {
+    width: 30px; 
+    height: auto;
+}

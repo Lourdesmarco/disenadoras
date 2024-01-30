@@ -1,0 +1,1188 @@
+/* FONTS */
+@font-face {
+    font-family: 'Determination';
+    src: url('../fonts/Determination-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-Regular.ttf') format('truetype');
+}
+/* FONTS */
+
+/* PIXEL CORNERS - https://pixelcorners.lukeb.co.uk */
+.pixel_corners,
+.pixel_corners_wrapper {
+  clip-path: polygon(0px calc(100% - 8px),
+    4px calc(100% - 8px),
+    4px calc(100% - 4px),
+    8px calc(100% - 4px),
+    8px 100%,
+    calc(100% - 8px) 100%,
+    calc(100% - 8px) calc(100% - 4px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 4px) calc(100% - 8px),
+    100% calc(100% - 8px),
+    100% 8px,
+    calc(100% - 4px) 8px,
+    calc(100% - 4px) 4px,
+    calc(100% - 8px) 4px,
+    calc(100% - 8px) 0px,
+    8px 0px,
+    8px 4px,
+    4px 4px,
+    4px 8px,
+    0px 8px);
+  position: relative;
+}
+
+.pixel_corners {
+  border: 4px solid transparent;
+}
+
+.pixel_corners_wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+
+.pixel_corners_wrapper .pixel_corners {
+  display: block;
+  clip-path: polygon(4px 8px,
+    8px 8px,
+    8px 4px,
+    calc(100% - 8px) 4px,
+    calc(100% - 8px) 8px,
+    calc(100% - 4px) 8px,
+    calc(100% - 4px) calc(100% - 8px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 8px) calc(100% - 4px),
+    8px calc(100% - 4px),
+    8px calc(100% - 8px),
+    4px calc(100% - 8px));
+}
+
+.pixel_corners::after,
+.pixel_corners_wrapper::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(0px calc(100% - 8px),
+    4px calc(100% - 8px),
+    4px calc(100% - 4px),
+    8px calc(100% - 4px),
+    8px 100%,
+    calc(100% - 8px) 100%,
+    calc(100% - 8px) calc(100% - 4px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 4px) calc(100% - 8px),
+    100% calc(100% - 8px),
+    100% 8px,
+    calc(100% - 4px) 8px,
+    calc(100% - 4px) 4px,
+    calc(100% - 8px) 4px,
+    calc(100% - 8px) 0px,
+    8px 0px,
+    8px 4px,
+    4px 4px,
+    4px 8px,
+    0px 8px,
+    0px 50%,
+    4px 50%,
+    4px 8px,
+    8px 8px,
+    8px 4px,
+    calc(100% - 8px) 4px,
+    calc(100% - 8px) 8px,
+    calc(100% - 4px) 8px,
+    calc(100% - 4px) calc(100% - 8px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 8px) calc(100% - 4px),
+    8px calc(100% - 4px),
+    8px calc(100% - 8px),
+    4px calc(100% - 8px),
+    4px 50%,
+    0px 50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #17202A;
+  display: block;
+  pointer-events: none;
+}
+
+.pixel_corners::after {
+  margin: -4px;
+}
+/* PIXEL CORNERS - https://pixelcorners.lukeb.co.uk */
+
+body{
+    font-family: 'Noto Sans';
+    color:  #17202A;
+    position: fixed;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg{
+    background-image: url('../img/sk_pixel.png');
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(10, 10fr);
+    grid-template-rows: repeat(10, 10fr);
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.container.home{
+    background-image: url('../img/sk_0.png');
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: bottom 0 right 0;
+}
+
+.container .header{
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-template-columns: repeat(10, 10fr);
+    gap: 1rem;
+}
+
+.container .header .title{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .header .title a{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .header .title a .title_icon{
+    height: 3rem;
+    width: 3rem;
+    background-image: url('../img/icon.png');
+    background-size: contain;
+}
+
+.container .header .title a:hover .title_icon{
+    height: 3rem;
+    width: 3rem;
+    background-image: url('../img/icon_hover.png');
+    background-size: contain;
+}
+
+.container .header .title a .title{
+    font-family: 'Determination';
+    font-size: 2rem;
+    color: #17202A;
+}
+
+.container .header .nav{
+    grid-column: 3 / -1;
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-template-columns: repeat(8, 8fr);
+    gap: 1rem;
+}
+
+.container .header .nav .nav_list{
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 8fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.container .header .nav .nav_list .nav_list_elem{
+    width: 85%;
+    height: 85%;
+    transition: all .2s ease-in-out;
+}
+
+.container .header .nav .nav_list .nav_list_elem:hover{
+    width: 85%;
+    height: 85%;
+    transform: translate(.25rem, .25rem);
+}
+
+.container .header .nav .nav_list .nav_list_elem a{
+    font-family: 'Determination';
+    background-color: white;
+    color:  #17202A;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .header .nav .nav_list .nav_list_elem a:hover{
+    background-color: #EAECEE;
+    color: #17202A;
+}
+
+.container .header .nav .nav_list .nav_list_elem a:active{
+    background-color: white;
+    color: #17202A;
+}
+
+.container .header .nav .nav_list .nav_list_elem.current{
+    background-color:  #17202A;
+    transform: translate(.25rem, .25rem);
+}
+
+.container .header .nav .nav_list .nav_list_elem.current a{
+    background-color:  #17202A;
+    color: white;
+}
+
+.container .header .nav .nav_list .nav_list_elem.current a:hover{
+    background-color:  #17202A;
+    color: white;
+}
+
+.container .header .nav .nav_list .nav_list_elem.current a:active{
+    background-color:  #17202A;
+    color: white;
+}
+
+.container .header .nav .nav_list .nav_list_elem.biografia{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    justify-self: center;
+}
+
+.container .header .nav .nav_list .nav_list_elem.trabajos{
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+    justify-self: center;
+}
+
+.container .header .nav .nav_list .nav_list_elem.influencias{
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 1;
+    justify-self: center;
+}
+
+.container .header .nav .nav_list .nav_list_elem.diseñadoras{
+    grid-column: 7 / span 2;
+    grid-row: 1 / span 1;
+    justify-self: center;
+}
+
+.container .main{
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    display: grid;
+    grid-template-columns: repeat(10, 10fr);
+    grid-template-rows: repeat(9, 9fr);
+    gap: 1rem;
+}
+
+.container .main .quote_text{
+    grid-column: 2 / span 5;
+    grid-row: 2 / span 4;
+    font-family: 'Determination';
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
+
+.container .main .quote_author{
+    grid-column: 3 / span 3;
+    grid-row: 6 / span 2;
+    font-family: 'Determination';
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    justify-self: center;
+}
+
+.container .main .window_bg{
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(10, 10fr);
+    grid-template-rows: repeat(9, 9fr);
+    gap: 1rem;
+}
+
+.container .main .window_bg .window_close{
+    grid-column: span 1 / -1;
+    grid-row: 1 / span 1;
+    width: 2.5rem;
+    height: 2.5rem;
+    align-self: start;
+    justify-self: right;
+    margin: .5rem .5rem 0 0;
+    color:  #17202A;
+    font-family: 'Determination';
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .main .window_bg .window_close:hover{
+    background-color:  #E74C3C ;
+    color: white;
+}
+
+.container .main .window_bg .window_close:active{
+    background-color:  #EC7063 ;
+    color: white;
+}
+
+/* BIOGRAFÍA */
+.container .main .window_bg.biografia{
+    font-size: 1rem;
+}
+
+.container .main .window_bg .biografia_img_1{
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 4;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.container .main .window_bg .biografia_img_1 img{
+    width: 100%;
+    height: auto;
+}
+
+.container .main .window_bg .biografia_text_1{
+    grid-column: 4 / span 3;
+    grid-row: 2 / span 3;
+    margin: 0;
+    padding: 1rem;
+}
+
+.container .main .window_bg .biografia_text_2{
+    grid-column: 7 / span 3;
+    grid-row: 2 / span 3;
+    margin: 0;
+    padding: 1rem;
+}
+
+.container .main .window_bg .biografia_img_2{
+    grid-column: span 5 / -2;
+    grid-row: span 4 / -2;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .main .window_bg .biografia_img_2 img{
+    width: 100%;
+    height: auto;
+}
+
+.container .main .window_bg .biografia_text_3{
+    grid-column: 2 / span 3;
+    grid-row: 6 / span 3;
+    margin: 0;
+    padding: 1rem;
+}
+/* BIOGRAFÍA */
+
+/* TRABAJOS */
+.container .main .window_bg.trabajos{
+    font-size: 1rem;
+}
+
+.container .main .window_bg .iconos{
+    grid-column: 2 / span 2;
+    grid-row: 2 / -2;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(7, 7fr);
+    gap: 1rem;
+    clip-path: fill-box;
+}
+
+.container .main .window_bg .iconos .iconos_title{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    font-family: 'Determination';
+    background-color: white;
+    color:  #17202A;
+    font-size: 2rem;
+    width: 85%;
+    height: 85%;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg .iconos:hover .iconos_title{
+    width: 100%;
+    height: 100%;
+    font-size: 2.5rem;
+}
+
+.container .main .window_bg .iconos .iconos_img{
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 6;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg .iconos:hover .iconos_img{
+    height: 100%;
+}
+
+.container .main .window_bg .iconos .iconos_img img{
+    width: auto;
+    height: 100%;
+}
+
+.container .main .window_bg .iconos .iconos_text{
+    grid-column: 1 / span 2;
+    grid-row: span 3 / -1;
+    margin: 0;
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg .iconos:hover .iconos_text{
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.container .main .window_bg .tipografias{
+    grid-column: 5 / span 2;
+    grid-row: 2 / -2;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(7, 7fr);
+    gap: 1rem;
+    clip-path: fill-box;
+}
+
+.container .main .window_bg .tipografias .tipografias_title{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    font-family: 'Determination';
+    background-color: white;
+    color:  #17202A;
+    font-size: 2rem;
+    width: 85%;
+    height: 85%;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg .tipografias:hover .tipografias_title{
+    width: 100%;
+    height: 100%;
+    font-size: 2.5rem;
+}
+
+.container .main .window_bg .tipografias .tipografias_img{
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 6;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg .tipografias:hover .tipografias_img{
+    height: 100%;
+}
+
+.container .main .window_bg .tipografias .tipografias_img img{
+    width: auto;
+    height: 180%;
+}
+
+.container .main .window_bg .tipografias .tipografias_text{
+    grid-column: 1 / span 2;
+    grid-row: span 3 / -1;
+    margin: 0;
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg .tipografias:hover .tipografias_text{
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.container .main .window_bg .interfaces{
+    grid-column: 8 / span 2;
+    grid-row: 2 / -2;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(7, 7fr);
+    gap: 1rem;
+    clip-path: fill-box;
+}
+
+.container .main .window_bg .interfaces .interfaces_title{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    font-family: 'Determination';
+    background-color: white;
+    color:  #17202A;
+    font-size: 2rem;
+    width: 85%;
+    height: 85%;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg .interfaces:hover .interfaces_title{
+    width: 100%;
+    height: 100%;
+    font-size: 2.5rem;
+}
+
+.container .main .window_bg .interfaces .interfaces_img{
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 6;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg .interfaces:hover .interfaces_img{
+    height: 100%;
+}
+
+.container .main .window_bg .interfaces .interfaces_img img{
+    width: auto;
+    height: 125%;
+}
+
+.container .main .window_bg .interfaces .interfaces_text{
+    grid-column: 1 / span 2;
+    grid-row: span 3 / -1;
+    margin: 0;
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg .interfaces:hover .interfaces_text{
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+/* TRABAJOS_ICONOS */
+.container .main .window_bg.trabajos_iconos{
+    grid-column: 2 / -2;
+    grid-row: 2 / -2;
+    grid-template-columns: repeat(8, 8fr);
+    grid-template-rows: repeat(7, 7fr);
+    gap: 1rem;
+    width: auto;
+    height: auto;
+}
+
+.container .main .window_bg.window_bg.trabajos_iconos .window_title{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    width: auto;
+    height: 2rem;
+    align-self: start;
+    justify-self: left;
+    margin: .5rem 0 0 .5rem;
+    padding: 0 .5rem 0 .5rem;
+    color:  #17202A;
+    font-family: 'Determination';
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .main .window_bg.window_bg.trabajos_iconos .window_close{
+    grid-column: span 1 / -1;
+    grid-row: 1 / span 1;
+    width: 2rem;
+    height: 2rem;
+    align-self: start;
+    justify-self: right;
+    margin: .5rem .5rem 0 0;
+    color:  #17202A;
+    font-family: 'Determination';
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .main .window_bg.trabajos_iconos .window_close:hover{
+    background-color:  #E74C3C ;
+    color: white;
+}
+
+.container .main .window_bg.trabajos_iconos .window_close:active{
+    background-color:  #EC7063 ;
+    color: white;
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_apple{
+    grid-column: 2 / span 2;
+    grid-row: 2 / -1;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(6, 6fr);
+    margin: 0 2rem 0 2rem;
+    gap: 1rem;
+    clip-path: fill-box;
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_apple_img{
+    grid-column: 1 / span 2;
+    grid-row: 1 / -2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-self: left;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_apple:hover .iconos_apple_img{
+    transform: translateY(60%);
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_apple_img img{
+    width: 100%;
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_apple_text{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_facebook{
+    grid-column: 4 / span 2;
+    grid-row: 2 / -1;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(6, 6fr);
+    margin: 0 2rem 0 2rem;
+    gap: 1rem;
+    clip-path: fill-box;
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_facebook_img{
+    grid-column: 1 / span 2;
+    grid-row: 1 / -2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_facebook:hover .iconos_facebook_img{
+    transform: translateY(60%);
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_facebook_img img{
+    width: 100%;
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_facebook_text{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_pinterest{
+    grid-column: 6 / span 2;
+    grid-row: 2 / -1;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(6, 6fr);
+    gap: 1rem;
+    margin: 0 2rem 0 2rem;
+    clip-path: fill-box;
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_pinterest_img{
+    grid-column: 1 / span 2;
+    grid-row: 1 / -2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_pinterest:hover .iconos_pinterest_img{
+    transform: translateY(60%);
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_pinterest_img img{
+    width: 100%;
+}
+
+.container .main .window_bg.trabajos_iconos .iconos_pinterest_text{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    transition: all .35s ease-in-out;
+}
+/* TRABAJOS_ICONOS */
+
+/* TRABAJOS_TIPOGRAFÍAS */
+.container .main .window_bg.trabajos_tipografias{
+    grid-column: 2 / -2;
+    grid-row: 2 / -2;
+    grid-template-columns: repeat(8, 8fr);
+    grid-template-rows: repeat(7, 7fr);
+    gap: 1rem;
+    width: auto;
+    height: auto;
+}
+
+.container .main .window_bg.window_bg.trabajos_tipografias .window_title{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    width: auto;
+    height: 2rem;
+    align-self: start;
+    justify-self: left;
+    margin: .5rem 0 0 .5rem;
+    padding: 0 .5rem 0 .5rem;
+    color:  #17202A;
+    font-family: 'Determination';
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .main .window_bg.window_bg.trabajos_tipografias .window_close{
+    grid-column: span 1 / -1;
+    grid-row: 1 / span 1;
+    width: 2rem;
+    height: 2rem;
+    align-self: start;
+    justify-self: right;
+    margin: .5rem .5rem 0 0;
+    color:  #17202A;
+    font-family: 'Determination';
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .main .window_bg.trabajos_tipografias .window_close:hover{
+    background-color:  #E74C3C ;
+    color: white;
+}
+
+.container .main .window_bg.trabajos_tipografias .window_close:active{
+    background-color:  #EC7063 ;
+    color: white;
+}
+
+.container .main .window_bg.trabajos_tipografias .tipografias_letra{
+    grid-column: 2 / span 3;
+    grid-row: 2 / -1;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(6, 6fr);
+    margin: 0 2rem 0 2rem;
+    gap: 1rem;
+    clip-path: fill-box;
+}
+
+.container .main .window_bg.trabajos_tipografias .tipografias_letra_img{
+    grid-column: 1 / span 2;
+    grid-row: 1 / -2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-self: left;
+    align-items: center;
+    justify-content: left;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg.trabajos_tipografias .tipografias_letra:hover .tipografias_letra_img{
+    transform: translateY(60%);
+}
+
+.container .main .window_bg.trabajos_tipografias .tipografias_letra_img img{
+    height: 100%;
+}
+
+.container .main .window_bg.trabajos_tipografias .tipografias_letra_text{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg.trabajos_tipografias .tipografias_picto{
+    grid-column: 5 / span 3;
+    grid-row: 2 / -1;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(6, 6fr);
+    margin: 0 2rem 0 2rem;
+    gap: 1rem;
+    clip-path: fill-box;
+}
+
+.container .main .window_bg.trabajos_tipografias .tipografias_picto_img{
+    grid-column: 1 / span 2;
+    grid-row: 1 / -2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-self: left;
+    align-items: center;
+    justify-content: left;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg.trabajos_tipografias .tipografias_picto:hover .tipografias_picto_img{
+    transform: translateY(60%);
+}
+
+.container .main .window_bg.trabajos_tipografias .tipografias_picto_img img{
+    height: 100%;
+}
+
+.container .main .window_bg.trabajos_tipografias .tipografias_picto_text{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    transition: all .35s ease-in-out;
+}
+/* TRABAJOS_TIPOGRAFÍAS */
+
+/* TRABAJOS_INTERFACES */
+.container .main .window_bg.trabajos_interfaces{
+    grid-column: 2 / -2;
+    grid-row: 2 / -2;
+    grid-template-columns: repeat(8, 8fr);
+    grid-template-rows: repeat(7, 7fr);
+    gap: 1rem;
+    width: auto;
+    height: auto;
+}
+
+.container .main .window_bg.window_bg.trabajos_interfaces .window_title{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    width: auto;
+    height: 2rem;
+    align-self: start;
+    justify-self: left;
+    margin: .5rem 0 0 .5rem;
+    padding: 0 .5rem 0 .5rem;
+    color:  #17202A;
+    font-family: 'Determination';
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .main .window_bg.window_bg.trabajos_interfaces .window_close{
+    grid-column: span 1 / -1;
+    grid-row: 1 / span 1;
+    width: 2rem;
+    height: 2rem;
+    align-self: start;
+    justify-self: right;
+    margin: .5rem .5rem 0 0;
+    color:  #17202A;
+    font-family: 'Determination';
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .main .window_bg.trabajos_interfaces .window_close:hover{
+    background-color:  #E74C3C ;
+    color: white;
+}
+
+.container .main .window_bg.trabajos_interfaces .window_close:active{
+    background-color:  #EC7063 ;
+    color: white;
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_paint{
+    grid-column: 2 / span 2;
+    grid-row: 2 / -1;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(6, 6fr);
+    margin: 0 2rem 0 2rem;
+    gap: 1rem;
+    clip-path: fill-box;
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_paint_img{
+    grid-column: 1 / span 2;
+    grid-row: 1 / -2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-self: left;
+    align-items: center;
+    justify-content: left;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_paint:hover .interfaz_paint_img{
+    transform: translateY(60%);
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_paint_img img{
+    height: 100%;
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_paint_text{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_solitario{
+    grid-column: 4 / span 2;
+    grid-row: 2 / -1;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(6, 6fr);
+    margin: 0 2rem 0 2rem;
+    gap: 1rem;
+    clip-path: fill-box;
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_solitario_img{
+    grid-column: 1 / span 2;
+    grid-row: 1 / -2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-self: left;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_solitario:hover .interfaz_solitario_img{
+    transform: translateY(60%);
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_solitario_img img{
+    height: 100%;
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_solitario_text{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_panel{
+    grid-column: 6 / span 2;
+    grid-row: 2 / -1;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(6, 6fr);
+    margin: 0 2rem 0 2rem;
+    gap: 1rem;
+    clip-path: fill-box;
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_panel_img{
+    grid-column: 1 / span 2;
+    grid-row: 1 / -2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-self: left;
+    align-items: center;
+    justify-content: right;
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_panel:hover .interfaz_panel_img{
+    transform: translateY(60%);
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_panel_img img{
+    height: 100%;
+}
+
+.container .main .window_bg.trabajos_interfaces .interfaz_panel_text{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    transition: all .35s ease-in-out;
+}
+/* TRABAJOS_INTERFACES */
+
+/* TRABAJOS */
+
+/* INFLUENCIAS */
+.container .main .window_bg.influencias{
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    grid-template-columns: repeat(10, 10fr);
+    grid-template-rows: repeat(9, 9fr);
+}
+
+.container .main .window_bg .influencias_text_1{
+    grid-column: 2 / span 4;
+    grid-row: 2 / span 4;
+    align-self: center;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.container .main .window_bg .influencias_text_2{
+    grid-column: 6 / span 4;
+    grid-row: 2 / span 4;
+    align-self: center;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.container .main .window_bg .influencias_img{
+    grid-column: 2 / -2;
+    grid-row: 2 /-2;
+    transform: translateY(60%);
+    transition: all .35s ease-in-out;
+}
+
+.container .main .window_bg .influencias_img img{
+    width: 100%;
+}
+
+.container .main .window_bg .influencias_img:hover{
+    transform: translateY(0%);
+}
+
+
+/* INFLUENCIAS */

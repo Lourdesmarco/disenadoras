@@ -1,0 +1,73 @@
+body {
+    font-size: 1rem;
+    font-family: "Source Sans Pro", "Helvetica", Arial, sans_serif;
+    line-height: 1.5rem;
+    color: #333;
+}
+
+.app{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 12% 88%;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.mainNav{
+    grid-row-start: 1;
+    grid-row-end: 2;  
+    font-family: 'Corinthia', cursive;
+    font-size: 22px;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding: 2% 3% 2% 3%;
+    gap: 20px; 
+    height: 100%;
+    
+}
+
+.headerRight .navList{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 0;
+    list-style: none;
+    gap: 4rem;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
+
+.headerRight .navList .navListElem a{
+    color: black;
+    font-size: 1.75rem;
+    transition-property: opacity;
+}
+
+.headerRight .navList .navListElem a:hover{
+    opacity: 50%;
+}
+
+/* //HEADER */
+
+
+
+/* MAIN */
+.mainContent{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    
+    
+}
+
+.fondoInicio {
+    height: 100%;
+    width: 100%;
+    
+}
+
+/* //MAIN */
+
+

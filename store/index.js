@@ -228,6 +228,132 @@ export const state = () => ({
       especialidad: "grafico",
       grupo: "pioneras",
       activa: true
+    },
+    {
+      id: 26,
+      nombre: "April Greiman",
+      path: "april_greiman_paula/index.html",
+      autor: "Paula Pavia",
+      especialidad: "grafico",
+      grupo: "contemporaneas",
+      activa: true
+    },
+    {
+      id: 27,
+      nombre: "Elaine Lustig Cohen",
+      path: "elaine_lustig_cristobal/index.html",
+      autor: "Cristobal Paniagua",
+      especialidad: "grafico",
+      grupo: "pioneras",
+      activa: true
+    },
+    {
+      id: 28,
+      nombre: "Elsa Schiaparelli",
+      path: "elsa_schiaparelli_raquel/index.html",
+      autor: "Raquel Martín",
+      especialidad: "moda",
+      grupo: "pioneras",
+      activa: true
+    },
+    {
+      id: 29,
+      nombre: "Ena Cardenal de la Nuez",
+      path: "ena_cardenal_sonia/index.html",
+      autor: "Sonia Prada",
+      especialidad: "grafico",
+      grupo: "contemporaneas",
+      activa: true
+    },
+    {
+      id: 30,
+      nombre: "Fanette Mellier",
+      path: "fanette_melier_hugo/index.html",
+      autor: "Hugo Manzano",
+      especialidad: "grafico",
+      grupo: "contemporaneas",
+      activa: true
+    },
+    {
+      id: 31,
+      nombre: "Gail Anderson",
+      path: "gail_anderson_sambhavi/index.html",
+      autor: "Sambhavi Bhagi",
+      especialidad: "grafico",
+      grupo: "contemporaneas",
+      activa: true
+    },
+    {
+      id: 32,
+      nombre: "Jessica Walsh",
+      path: "jessica_walsh_leo/index.html",
+      autor: "Leo Velasco",
+      especialidad: "grafico",
+      grupo: "contemporaneas",
+      activa: true
+    },
+    {
+      id: 33,
+      nombre: "Laura Meseguer",
+      path: "laura_messeguer_ana/index.html",
+      autor: "Ana Maldonado",
+      especialidad: "grafico",
+      grupo: "contemporaneas",
+      activa: false
+    },
+    {
+      id: 34,
+      nombre: "Marisa Gallen",
+      path: "marisa_gallen_jorge/index.html",
+      autor: "Jorge Blas",
+      especialidad: "grafico",
+      grupo: "contemporaneas",
+      activa: true
+    },
+    {
+      id: 35,
+      nombre: "Marta Granados",
+      path: "marta_granados_carlos/index.html",
+      autor: "Carlos Peña",
+      especialidad: "grafico",
+      grupo: "contemporaneas",
+      activa: true
+    },
+    {
+      id: 36,
+      nombre: "Miryam Anllo",
+      path: "miryam_anllo_alejandra/index.html",
+      autor: "Alejandra Veloso",
+      especialidad: "grafico",
+      grupo: "contemporaneas",
+      activa: true
+    },
+    {
+      id: 37,
+      nombre: "Pati Núñez",
+      path: "pati_nunez_sandra/index.html",
+      autor: "Sandra Barrios",
+      especialidad: "grafico",
+      grupo: "contemporaneas",
+      activa: true
+    },
+    {
+      id: 38,
+      nombre: "Silvia Ferpal",
+      path: "silvia_ferpal_hugo/index.html",
+      autor: "Hugo García",
+      especialidad: "grafico",
+      grupo: "contemporaneas",
+      activa: true
+    },
+    {
+      id: 39,
+      nombre: "Susan Kare",
+      path: "susan_kare_samuel/index.html",
+      autor: "Samuel Quiros",
+      especialidad: "grafico",
+      grupo: "contemporaneas",
+      activa: true
     }
 
 

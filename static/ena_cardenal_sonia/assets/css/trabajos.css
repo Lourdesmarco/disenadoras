@@ -1,0 +1,105 @@
+html,
+body {
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5rem;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.mainNav {
+    padding: 0;
+    margin: 0;
+    flex-basis: 50%;
+    
+    
+
+}
+
+.mainNav .navList {
+    padding: 0;
+    margin-top: 153.6px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style: none;
+    position: fixed; 
+    right: 0;
+    z-index: 999;
+    
+} 
+
+.mainNav .navList .navListElem {
+    display: flex;
+    align-items: center;
+}
+
+.mainNav .navList .navListElem a{
+    color:#333;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 1rem;
+    align-items: center;
+
+}
+
+.mainNav .navList .navListElem img{
+    height: 120px;
+    width: 40px;
+
+}
+
+.mainContent {
+ 
+}
+
+.mainContent .trabajoContenedor {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 30%;
+    grid-template-rows: 1fr;
+}
+
+.mainContent .trabajoContenedor img{
+    grid-column: 1;
+    width: 80%;
+    align-self: center;
+}
+
+.mainContent .trabajoContenedor .texto{
+    align-self: center;
+    text-align: justify;
+}
+    
+
+.mainContent .trabajoContenedor .texto h3{
+    font-size: 1.8rem;
+    color: #E22D89;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.mainContent .trabajoContenedor .texto h4{
+    color: #E22D89;
+    font-size: 1.3rem;
+}
+
+.mainContent .trabajoContenedor .texto p{
+  
+}
+
+.mainContent .trabajoContenedor .texto a{
+    color: #9f9f9f;
+    border:#9f9f9f solid 1.8px;
+    border-radius: 100px; 
+    padding: .8rem 1rem 1rem .8rem;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+    margin: 5rem 0 0 0;
+}

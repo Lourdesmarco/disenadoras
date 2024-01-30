@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+head{
+
+}
+body{
+    color: #C8D8D8;
+}
+div{
+
+}
+
+/** HEADER **/
+
+.header{
+    background-color: #0F2B36;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 4px 8px 31px -4px rgba(15, 43, 54, 0.37);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header .headerleft{
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.header .headerleft svg{
+    padding: 5px 0 0 0;
+}
+
+.header .headerleft a.regresonombre{
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 0 0 20px;
+    color: #02A576;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+div.header .headernav{
+    
+}
+
+nav.sections{
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+nav.sections a{
+    font-size: 20px;
+}
+
+a.SelectedSection{
+    color: #F3FFFF;
+}
+
+a.NonSelectedSection{
+    color: #C8D8D8;
+}
+
+/** WORK **/
+
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 20px 100px 20px;
+}
+
+.description {
+    padding: 150px 75px 40px 80px;
+    font-weight: bold;
+}
+
+.description .date{
+    color:#0F2B36;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.description .info{
+    color:#0F2B36;
+    font-size: 20px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+}
+
+.imageswork{
+    flex-basis: calc((100% - 20px) / 2);
+    max-width: 45%; 
+    border-radius: 20px;
+}
+
+/** FOOTER **/
+
+.footer {
+    background-color:#0F2B36;
+    color: #F3FFFF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px 20px 0 0 ;
+    box-shadow: 4px 8px 31px -4px rgba(15, 43, 54, 0.37);
+}
+
+.footermessage {
+    margin-bottom: 10px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    color:#F3FFFF
+}
+
+.sociallink {
+    margin: 0 10px;
+}
+
+.sociallink img {
+    width: 30px; 
+    height: auto;
+}

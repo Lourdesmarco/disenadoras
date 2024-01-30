@@ -1,0 +1,502 @@
+*{
+    border: 1px solid red;
+}
+html,
+body {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #333;
+    background-color: #ffffff;
+    
+}
+
+
+/*HEADER*/
+
+.cont-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5623f;   
+     height: 90px;
+     width: 100vw;
+     margin: 0;
+     padding: 0;
+     position: fixed;
+     z-index: 999;
+   
+}
+.cont-ul .develop a{
+    color: rgb(0, 0, 0);
+    font-family: 'IM Fell English', serif;
+    font-weight: 400;
+    
+}
+.cont-ul .develop h1{
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+.cont-ul li{
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 50px 35px 0px 35px;
+    transition: all 0.3s ease 0s;
+}
+.cont-ul li:hover{
+background-color: #c76142;
+
+}
+.cont-ul a:hover{
+    color: white;
+}
+.list1{
+    position: absolute;
+    display: none;
+    transform: translateY(-1.1rem);
+}
+
+.list1 li{
+    border-bottom: rgb(0, 0, 0);
+    text-align: center;
+    background-color: #c04e2a;
+    padding: 20px;
+    width: 190px;
+    transform: translateX(-160px);
+    font-size: 20px;
+}
+.list1 li:hover{
+    background-color: #c76142;
+}
+.develop:hover .list1{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+/*FINAL HEADERR*/
+/*MAIN*/
+/*BIOGRAFIA*/
+/*
+.biografia .biografiaelements img{
+   position: relative;
+    z-index: 1;
+    display: block;
+   margin: auto;
+   margin-top: 50px;
+    max-width: 75%; 
+    filter: brightness(100%);
+    transition: all 1s ease;
+}
+.biografia .biografiaelements img:hover{
+    
+    filter: brightness(20%);
+    
+   
+}
+.biografia.biografiaelements.biografiaarticle{
+  
+}
+*/
+
+main {
+    position: fixed;
+    top: 90px;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #ffeddd;
+    scroll-snap-type: y mandatory;
+}
+main .patroclo {
+    position: fixed;
+    top: 90;
+    z-index: 0;
+    width: 100vw;
+    height: 87vh;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.principal {
+    display: grid; 
+    grid-template-columns: 1fr 2fr 2fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 2rem; 
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+    scroll-snap-align: center;
+    
+    }
+    .principal h2{
+        grid-area: 1 / 2 / 2 / 4 ;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: 'IM Fell English', serif;
+       font-weight: normal;
+       padding-top: 2.3rem;
+       position: relative;
+       margin: auto;
+       margin-bottom: 0;
+    }
+    .principal .container{
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 100%; 
+        gap: 0px 0px;
+        grid-area: 2 / 2 / 6 / 3; 
+        overflow: hidden;
+    }
+    .principal .container img {
+        object-fit: cover;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: all 1s;
+    }
+    .principal .container:hover img {
+        transform: scale(1.09);
+
+    }
+    .principal .container .contenttext{
+        background-color: black;
+        opacity: 0%;
+        position: absolute;
+        top: 0px;
+        left: 0; 
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        color: #ffffff;
+        box-sizing: border-box;
+       
+
+    }
+    .principal .container .contenttext h2{
+        text-align: center;
+        justify-self: center;
+        font-size: 2.2rem;
+        padding-top: 150px;
+        font-family: 'IM Fell English', serif;
+        line-height: 2rem;
+        
+    }
+    .principal .container:hover .contenttext{
+        top: 0;
+        transition: all 1s;
+        opacity: 80%;
+    }
+     .principal .container2{
+        grid-area: 2 / 3 / 6 / 4;
+        
+    }
+    .principal .container2 .contenttext2{
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+        grid-area: 2 / 3 / 6 / 4;
+        border: solid 6px #333;
+        padding: 1.5rem;
+    }
+    /*BIOGRAFIA TERMINA*/
+    /*INFLUENCIAS*/
+    .Influencia {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        gap: 0px 10px;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        scroll-snap-align: center;
+    }
+    .Influencia h2{
+        grid-area: 1 / 3 / 2 / 7;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: 'IM Fell English', serif;
+       font-weight: normal;
+       padding-top: 2.3rem;
+       position: relative;
+       margin: auto;
+       margin-bottom: 0;
+    }
+    .Influencia .containerinfluencia1 {
+        grid-area: 2 / 3 / 4 / 7;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-left: 10px;
+        padding-right: 20px;
+        text-align: justify;
+    } 
+    .Influencia .containerinfluencia1 h3{
+        font-family: 'IM Fell English', serif;
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+    .Influencia .foto1 {
+        grid-area: 2 / 2 / 4 / 3;
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .Influencia .containerinfluencia2{
+        grid-area: 4 / 3 / 6 / 7;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .Influencia .containerinfluencia2 p{
+        margin-right: 10px;
+        text-align: justify;
+        margin-left: 10px;
+    }
+    .Influencia .containerinfluencia2 h3{
+        font-family: 'IM Fell English', serif;
+        text-align: right;
+        font-size: 1.3rem;
+        margin-right: 10px;
+        margin-top: 2rem;
+    }
+    .Influencia .foto2 {
+        grid-area: 4 / 7 / 6 / 8;
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .Trabajo{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        gap: 10px 10px; 
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        scroll-snap-align: center;
+    }
+    .Trabajo h2{
+        grid-area: 1 / 2 / 2 / 6;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: 'IM Fell English', serif;
+       font-weight: normal;
+       padding-top: 2.3rem;
+       position: relative;
+       margin: auto;
+    }
+    .Trabajo .gridtrabajos{
+        grid-area: 1 / 2 / 4 / 6;
+       /* background-color: rgb(239, 197, 162);*/
+        margin-top: 90px;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr ; 
+        grid-template-rows: 1fr 1fr 1fr 1fr ; 
+        gap: 0px 10px;
+    }
+    .Trabajo .gridtrabajos .trabajo1{
+        grid-area: 1 / 1 / 3 / 2;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .Trabajo.gridtrabajos .trabajo1 img{
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: all .8s;
+    }
+    .Trabajo .gridtrabajos .trabajo1 .contenttrabajo1{
+        background-color: rgb(0, 57, 172);
+        opacity: 0%;
+        position: absolute;
+        top: 0px;
+        left: 0; 
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+    .Trabajo .gridtrabajos .trabajo1 .contenttrabajo1 a{
+        font-size: 1.5rem;
+        height: 100%;
+        width: 100%;
+        font-family: 'IM Fell English', serif;
+        line-height: 1.5rem;
+        color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Trabajo .gridtrabajos .trabajo1:hover .contenttrabajo1{
+        top: 0;
+        transition: all .8s;
+        opacity: 80%;
+    }
+
+    .Trabajo .gridtrabajos .trabajo2 {
+        grid-area: 1 / 2 / 3 / 3;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .Trabajo .gridtrabajos .trabajo2 img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: all .8s;
+    }
+    .Trabajo .gridtrabajos .trabajo2 .contenttrabajo2{
+        background-color: rgb(0, 57, 172);
+        opacity: 0%;
+        position: absolute;
+        top: 0px;
+        left: 0; 
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+    .Trabajo .gridtrabajos .trabajo2 .contenttrabajo2 a{
+        font-size: 1.5rem;
+        height: 100%;
+        width: 100%;
+        font-family: 'IM Fell English', serif;
+        line-height: 1.5rem;
+        color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Trabajo .gridtrabajos .trabajo2:hover .contenttrabajo2{
+        top: 0;
+        transition: all .8s;
+        opacity: 80%;
+    }
+    .Trabajo .gridtrabajos .trabajo3 {
+        grid-area: 1 / 3 / 2 / 4;
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .Trabajo .gridtrabajos .trabajo3 img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: all .8s;
+    }
+    .Trabajo .gridtrabajos .trabajo3 .contenttrabajo3{
+        background-color: rgb(0, 57, 172);
+        opacity: 0%;
+        position: absolute;
+        top: 0px;
+        left: 0; 
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+    .Trabajo .gridtrabajos .trabajo3 .contenttrabajo3 a{
+        font-size: 1.5rem;
+        height: 100%;
+        width: 100%;
+        font-family: 'IM Fell English', serif;
+        color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Trabajo .gridtrabajos .trabajo3:hover .contenttrabajo3{
+        top: 0;
+        transition: all .8s;
+        opacity: 80%;
+    }
+    .Trabajo .gridtrabajos .trabajo4 {
+        grid-area: 1 / 4 / 2 / 5;
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .Trabajo .gridtrabajos .trabajo4 img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: all .8s;
+    }
+    .Trabajo .gridtrabajos .trabajo4 .contenttrabajo4{
+        background-color: rgb(0, 57, 172);
+        opacity: 0%;
+        position: absolute;
+        top: 0px;
+        left: 0; 
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        color: #ffffff;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+    .Trabajo .gridtrabajos .trabajo4 .contenttrabajo4 a{
+        font-size: 1.5rem;
+        height: 100%;
+        width: 100%;
+        font-family: 'IM Fell English', serif;
+        line-height: 1.5rem;
+        color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+    }
+    .Trabajo .gridtrabajos .trabajo4:hover .contenttrabajo4{
+        top: 0;
+        transition: all .8s;
+        opacity: 80%;
+    }
+
+
+  
+
+   
+
+    
+    
+
+
+
+    
+
+
+
+
+
+
+
+

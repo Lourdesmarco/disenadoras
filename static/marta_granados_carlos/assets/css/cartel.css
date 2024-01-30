@@ -1,0 +1,229 @@
+/* {
+    border: 1px solid pink;
+}*/
+body{
+    background-color: black;
+
+}
+
+                      /* ----HEADER------ */
+
+.header header{
+    display: grid;
+    grid-template-columns: 750px; 
+    grid-template-rows: 100px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: sticky;
+    height: 4px;
+}
+
+.header header h2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 350%;
+    color: white;
+    margin: 35px 0px 0px 25px;
+    align-self: center;
+}
+.header header h3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content:left;
+    font-size: XX-large;
+    display: flex;
+    align-items:center;
+    color: rgb(255, 255, 255);
+    margin: 40px 0px 0px 0px;
+}
+                      /* -----------------MAIN------ */
+
+.main{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: end;
+    min-height: calc(100vh - 5px);
+}     
+
+                      /* ----NAV------ */
+
+.main .mainNav{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-template-columns: 30% 70%;
+    position: sticky;
+    align-content:end;
+}
+.main .mainNav .martaImage{
+    justify-content:end;
+    justify-self: end;
+    width: 100%;
+    height: 100%;
+    position: sticky;
+}
+
+.main .mainNav .navBar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;   
+}
+
+.main .mainNav .navBar .navHome{
+    background-color: #FDC005;
+}
+.main .mainNav .navBar .navHome :hover{
+    background-color: rgb(50, 50, 50);
+
+}
+.main .mainNav .navBar .navHome a{
+    font-size: large;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main .mainNav .navBar .navAbout{
+    background-color: #2C53A2;
+}
+.main .mainNav .navBar .navAbout :hover{
+    background-color: rgb(50, 50, 50);
+}
+.main .mainNav .navBar .navAbout a{
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main .mainNav .navBar .navInfluences{
+    background-color: #F31314
+}
+.main .mainNav .navBar .navInfluences :hover{
+    background-color: rgb(50, 50, 50);
+}
+.main .mainNav .navBar .navInfluences a{
+    font-size: small;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main .mainNav .navBar .navWork{
+    background-color: #4F9902
+}
+.main .mainNav .navBar .navWork :hover{
+    background-color: rgb(50, 50, 50);
+}
+.main .mainNav .navBar .navWork a{
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main .mainNav .navBar .navDesigners{
+    background-color: #E8428E
+}
+.main .mainNav .navBar .navDesigners :hover{
+    background-color: rgb(50, 50, 50);
+}
+.main .mainNav .navBar .navDesigners a{
+    font-size: small;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+                      /* ----PÁGINA PRINCIPAL------ */
+.main .mainPage{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-left: 50px;
+}
+
+
+                      /* ----FRASE------ */
+
+.main .mainPage .phrase{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    align-self: left;
+    margin-left: 0px;
+    height: 50px;
+
+}
+.main .mainPage .phrase .picoMain{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 8%;
+    height: 30%;
+    justify-self: left;
+
+}
+
+.main .mainPage .phrase h4{
+    grid-row-start: 1;
+    grid-row-end:4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 50px 40px 20px;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+
+}
+.main .mainPage img{
+    width: 400px;
+    height: 600px;
+justify-self: center;
+margin-bottom: 40px;
+
+}

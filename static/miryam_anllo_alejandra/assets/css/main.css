@@ -1,0 +1,548 @@
+* {
+    /* border: 1px solid red; */
+}
+
+html,
+body {
+    overflow: scroll;
+}
+
+
+.app {
+    display: flex;
+    flex-wrap: wrap;
+ 
+
+}
+
+.app .mainHeader {
+    display: flex;
+    place-items: center;
+    text-align: center;
+    align-items: center;
+    flex-basis: 100%;
+
+
+}
+
+
+/* HEADER CENTER */
+
+.app .mainHeader .headerCenter {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    place-items: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    flex-basis: 100%;
+    gap: 3rem;
+    padding: .75rem;
+    margin: .75rem;
+}
+
+.app .mainHeader .headerCenter button {
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+    text-decoration: none;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    border-radius: 40px 40px 40px 40px;
+    color: #0F0F0F;
+    padding: 5px 40px;
+    font-size: 20px;
+
+}
+
+.app .mainHeader .headerCenter button:hover {
+    background-color: rgb(255, 151, 48);
+}
+
+
+/* MAIN CONTENT */
+
+.mainContent {}
+
+.mainContent .pagInicio {}
+
+.mainContent .pagInicio .pagInicioTitle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    place-items: center;
+    text-align: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.mainContent .pagInicio .pagInicioTitle img {
+    width: 80%;
+    border-radius: 40px;
+    left: 30%;
+}
+
+.mainContent .pagInicio .pagInicioTitle .nombreDiseñadora {
+    text-align: left;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+  
+}
+
+.mainContent .pagInicio .pagInicioTitle .nombreDiseñadora .parrafoInicio {
+    font-size: 20px;
+    padding: 0rem;
+}
+
+.mainContent .pagInicio .pagInicioTitle .nombreDiseñadora .fileteInicio {
+    height: 4px;
+    /* Cambia el grosor del filete a 4px */
+    background-color: #000000;
+    /* Cambia el color del filete a azul */
+    border: none;
+    /* Quita el borde predeterminado del filete */
+}
+
+.mainContent .biografia {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    flex-basis: 100%;
+    
+}
+
+.mainContent .biografia .tituloBio {
+    font-size: 50px;
+    color: #ffffff;
+    align-items: left;
+    margin: 1rem;
+}
+.mainContent .biografia .bioText1{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 3rem;
+    color: #ffffff;
+}
+.mainContent .biografia .bioText1 p{
+    margin: 3rem;
+}
+.mainContent .biografia .bioText1 .bioFoto1 {
+    width: 200px;
+    height: auto;
+    left: 10%;
+}
+
+.mainContent .biografia .bioText2{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: o auto;
+    overflow: hidden;
+    text-align: right;
+    color: #ffffff;
+    padding-bottom: 60px;
+}
+.mainContent .biografia .bioText2 p{
+    margin: 3rem;
+}
+.mainContent .biografia .bioText2 .bioFoto2 {
+    width: 200px;
+    height: auto;
+    float: right;
+   
+}
+
+.mainContent .influencias{
+    padding-top: 60px;
+    
+}
+
+.mainContent .influencias .tituloInf{
+    font-size: 50px;
+    color: #000000;
+    align-items: left;
+    margin: 1rem;
+    position: absolute;
+
+}
+.mainContent .influencias .infText{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 1rem;
+    gap: 40px;
+
+}
+.mainContent .influencias .infText p{
+    text-align: left;
+
+}
+.mainContent .influencias .infText .infFoto1{
+    border-radius: 40px 40px 40px 40px; 
+    margin-right: 120px;
+
+}
+.mainContent .influencias .infFoto2{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.mainContent .trabajos{
+    padding-top: 60px;
+
+}
+.mainContent .trabajos .tituloTrab{
+    font-size: 50px;
+    color: #000000;
+    align-items: left;
+    margin: 1rem;
+
+}
+.mainContent .trabajos .trabContent1{
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.mainContent .trabajos .trabContent1 .trabImg1{
+    display: block;
+    margin: auto;
+    width: 40%;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.mainContent .trabajos .trabContent1 .botonImg1{
+    position: absolute;
+    top: 90%; /* Posiciona el botón en la mitad superior */
+    left: 27%; /* Posiciona el botón en la mitad izquierda */
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; /* Color de fondo del botón */
+    padding: 10px 20px; /* Ajusta el padding del botón */
+    border: 2px solid #000000; /* Borde del botón */
+    border-radius: 40px 40px 40px 40px;
+    color: #000000; /* Color del texto del botón */
+    text-decoration: none;
+    font-size: 20px; 
+
+}
+.mainContent .trabajos .trabContent1 .botonImg1:hover{
+    background-color: rgb(255, 151, 48);
+
+}
+
+
+.mainContent .trabajos .trabContent1 .trabImg2{
+    display: block;
+    margin: auto;
+    width: 40%;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.mainContent .trabajos .trabContent1 .botonImg2{
+    position: absolute;
+    top: 90%; /* Posiciona el botón en la mitad superior */
+    left: 73%; /* Posiciona el botón en la mitad izquierda */
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; /* Color de fondo del botón */
+    padding: 10px 20px; /* Ajusta el padding del botón */
+    border: 2px solid #000000; /* Borde del botón */
+    border-radius: 40px 40px 40px 40px;
+    color: #000000; /* Color del texto del botón */
+    text-decoration: none;
+    font-size: 20px; 
+
+}
+.mainContent .trabajos .trabContent1 .botonImg2:hover{
+    background-color: rgb(255, 151, 48);
+
+}
+
+.mainContent .trabajos .trabContent2{
+    position: relative;
+    display: inline-block;
+    display: grid;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.mainContent .trabajos .trabContent2 .trabImg3{
+    display: block;
+    margin: auto;
+    width: 80%;
+    border-radius: 40px 40px 40px 40px;
+
+}
+.mainContent .trabajos .trabContent2 .botonImg3{
+    position: absolute;
+    top: 90%; /* Posiciona el botón en la mitad superior */
+    left: 50%; /* Posiciona el botón en la mitad izquierda */
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; /* Color de fondo del botón */
+    padding: 10px 20px; /* Ajusta el padding del botón */
+    border: 2px solid #000000; /* Borde del botón */
+    border-radius: 40px 40px 40px 40px;
+    color: #000000; /* Color del texto del botón */
+    text-decoration: none;
+    font-size: 20px; 
+
+}
+.mainContent .trabajos .trabContent2 .botonImg3:hover{
+    background-color: rgb(255, 151, 48);
+
+}
+
+.mainContent .contacto{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    flex-basis: 100%;
+    
+}
+
+.mainContent .contacto .tituloCont{
+    font-size: 50px;
+    color: #ffffff;
+    margin: 1rem;
+   
+}
+
+
+.mainContent .contacto .contContent{
+    
+    display: flex;
+    gap: 80px;  
+    padding-bottom: 100px;
+
+}
+
+.mainContent .contacto .contContent .contForm{
+    margin-left: 80px;
+
+}
+.mainContent .contacto .contContent .contForm .contParrafo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    gap: 3rem;
+    color: #ffffff;
+}
+
+.mainContent .contacto .contContent .contForm .formName{
+    border-radius: 40px 40px 40px 40px;
+
+}
+
+.mainContent .contacto .contContent .contForm .formEmail{
+    border-radius: 40px 40px 40px 40px;
+
+}
+
+.mainContent .contacto .contContent .contForm .formMensaje{
+    border-radius: 40px 40px 40px 40px;
+   
+    
+}
+
+.mainContent .contacto .contContent .contForm input{
+    border-radius: 40px 40px 40px 40px;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 400px;
+    background-color: #ffffff;
+    
+}
+.mainContent .contacto .contContent .contForm input:hover{
+    background-color: rgb(255, 151, 48);
+}
+
+.mainContent .contacto .contContent .contImg{
+    float: right;
+    height: 30%;
+    border-radius: 40px 40px 40px 40px;
+
+}
+
+/*FOOTER*/
+
+.footerContent {
+display: flex;
+margin-left: 50px;
+margin-top: 50px;
+gap: 200px;
+
+}
+
+.footerContent .footerTitle {
+    font-size: 50px;
+    text-align: center;
+    
+    
+}
+
+.footerContent .footerIndice{
+    display: grid;
+    text-decoration: none;
+    
+}
+
+
+.footerContent .footerText{
+    line-height: 2.5;
+    
+}
+
+/*Trabajo1*/
+
+.mainContenido{
+
+}
+.mainContenido .pagVivir2veces{
+
+}
+.mainContenido .pagVivir2veces .pagTitle{
+    font-size: 50px;
+    color: #000000;
+    align-items: center;
+    margin-left: 25%;
+
+}
+.mainContenido .pagVivir2veces .pagVivir2vecesTitle{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+
+}
+
+.mainContenido .pagVivir2veces .pagVivir2vecesTitle .parrafoVivir{
+    margin-left: 20%;
+    text-align: right;
+
+}
+.mainContenido .pagVivir2veces .pagVivir2vecesTitle img{
+    margin-right: 20%;
+    width: 30%;
+    border-radius: 40px 40px 40px 40px;
+}
+.mainContenido .pagVivir2veces .pagVivir2vecesTitle2{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+
+}
+
+.mainContenido .pagVivir2veces .pagVivir2vecesTitle2 .parrafoVivir2{
+    margin-right: 20%;
+    text-align: left;
+
+}
+.mainContenido .pagVivir2veces .pagVivir2vecesTitle2 img{
+    margin-left: 20%;
+    width: 30%;
+    border-radius: 40px 40px 40px 40px;
+}
+
+/*Trabajo2*/
+
+.mainContenido2{
+
+}
+
+.mainContenido2 .pagExposicion{
+    background-color: rgb(255, 255, 255);
+
+}
+
+.mainContenido2 .pagExposicion .pagTitle2{
+    font-size: 50px;
+    color: #000000;
+    align-items: center;
+    margin-left: 28%;
+
+}
+
+.mainContenido2 .pagExposicion .pagExposicionTitle{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.mainContenido2 .pagExposicion .pagExposicionTitle .parrafoExpo{
+    text-align: center;
+
+    
+}
+
+.mainContenido2 .pagExposicion .pagExposicionTitle .imgExpo1{
+    width: 25%;
+    border-radius: 40px 40px 40px 40px;
+    
+}
+
+.mainContenido2 .pagExposicion .pagExposicionTitle .imgExpo2{
+    width: 30%;
+    border-radius: 40px 40px 40px 40px;
+
+}
+
+/*Trabajo3*/
+
+.mainContenido3{
+
+}
+
+.mainContenido3 .pagDilab{
+
+}
+
+.mainContenido3 .pagDilab .pagTitle3{
+    font-size: 50px;
+    color: #000000;
+    align-items: center;
+    margin-left: 34%;
+
+}
+.mainContenido3 .pagDilab .pagDilabTitle{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.mainContenido3 .pagDilab .pagDilabTitle .imgDilab1{
+    width: 50%;
+    border-radius: 40px 40px 40px 40px;
+
+}
+.mainContenido3 .pagDilab .pagDilabTitle .parrafoExpo{
+    text-align: left;
+
+}
+
+
+
+
+
+
+
+

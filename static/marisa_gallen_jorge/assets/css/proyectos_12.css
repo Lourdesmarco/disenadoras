@@ -1,0 +1,177 @@
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    transition: all ease .50s;
+}
+
+.home {
+    color: #222;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 28px 4%;
+    list-style: none;
+    transition: all ease 0.40s;
+}
+
+.home:hover {
+    color: #f96c0f;
+    transform: scale(1.5);
+}
+
+.navlist {
+    padding: 28px 2%;
+    display: flex;
+    list-style: none;
+}
+
+.navlist a {
+    color: #222;
+    font-family: "Kanit", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 5px;
+    transition: all ease 0.40s;
+    border-right: 1.5px solid #222;
+    padding: 0 30px;
+}
+
+.navlist a:hover {
+    color: #f96c0f;
+}
+
+/* Header */
+
+.section {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+
+    scroll-snap-align: start;
+}
+
+/* SECCIONES */
+
+/* BIOGRAFIA */
+
+#proyectos {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . . . . . ."
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-principal fotografia-2 fotografia-2 fotografia-2 fotografia-3 fotografia-3 fotografia-3"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-principal fotografia-2 fotografia-2 fotografia-2 fotografia-3 fotografia-3 fotografia-3"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-principal fotografia-2 fotografia-2 fotografia-2 fotografia-3 fotografia-3 fotografia-3"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-principal fotografia-2 fotografia-2 fotografia-2 fotografia-3 fotografia-3 fotografia-3"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-principal fotografia-2 fotografia-2 fotografia-2 fotografia-3 fotografia-3 fotografia-3"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-principal fotografia-4 fotografia-4 fotografia-4 fotografia-4 fotografia-4 fotografia-4"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-principal fotografia-4 fotografia-4 fotografia-4 fotografia-4 fotografia-4 fotografia-4"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-principal fotografia-4 fotografia-4 fotografia-4 fotografia-4 fotografia-4 fotografia-4"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-principal fotografia-4 fotografia-4 fotografia-4 fotografia-4 fotografia-4 fotografia-4";
+}
+
+#proyectos .titulo {
+    background-color: white;
+    border-radius: 0px;
+    color: #222;
+
+    background-size: cover;
+    background-position: center center;
+}
+
+#proyectos .titulo a {
+    display: grid;
+    height: 100%;
+}
+
+#proyectos .titulo:not(.fotografia-principal) {
+    opacity: 0.50;
+    transition: all ease-in 0.3s;
+}
+
+#proyectos .titulo:hover:not(.fotografia-principal) {
+    transform: scale(0.97);
+    transition: all ease 0.5s;
+    opacity: 1;
+}
+
+.fotografia-principal {
+    grid-area: fotografia-principal;
+    padding: 45px;
+    color: white;
+    background-image: url(../img/Ciudad_1.jpg);
+}
+
+.fotografia-principal h2,
+.fotografia-principal div {
+    border-radius: 0px;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.fotografia-principal h2 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: #f96c0f;
+    background-color: #222
+}
+
+.fotografia-principal div {
+    font-family: "Kanit", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    background-color: #222;
+}
+
+.fotografia-2 {
+    grid-area: fotografia-2;
+
+    background-image: url(../img/Ciudad_2.jpg);
+}
+
+.fotografia-3 {
+    grid-area: fotografia-3;
+
+    background-image: url(../img/Ciudad_3.jpg);
+}
+
+.fotografia-4 {
+    grid-area: fotografia-4;
+
+    background-image: url(../img/Ciudad_4.jpg);
+}
+
+/* PROYECTOS */
+
+/* CONTACTO */
+
+/* RESPONSIVE */
+
+/* JAVASCRIPT ANIMACIONES */

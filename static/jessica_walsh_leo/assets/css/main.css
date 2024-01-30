@@ -1,0 +1,656 @@
+* {
+    
+    font-family: 'Work Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #333;
+    background-color: whitesmoke;
+}
+
+.app{
+    padding: 0 2rem 0 2rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 4rem);
+    height: 5rem;
+    align-items: center;
+    margin: 0;
+    padding: 0.5rem 0 0.5rem 0;
+    position: fixed; 
+    top: 0;
+    z-index: 999;
+    background-color: whitesmoke;
+}
+
+.header h1{
+    margin: 0;
+    padding: 0;
+}
+
+.header h1 a{
+    text-decoration: none;
+    height: 3rem;
+    width: 3rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 90px;
+    transition-property: all;
+    transition-duration: 300ms;
+    background-color: whitesmoke;
+}
+
+.header h1 a:hover{
+    -webkit-box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: -0px 10px 11px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.25);
+}
+.header h1 img{
+    height: 2.8rem;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+.header h1 a:hover img{
+    height: 3rem;
+}
+
+.header .headerDcha{
+    display: flex;
+    width: 33%;
+    height: 4.5rem;
+    justify-content: space-between;
+}
+
+.header .headerDcha .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.header .headerDcha .menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header .headerDcha .menu ul li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    height: 88%;
+    padding: 0;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 300ms;
+    background-color: whitesmoke;
+}
+.header .headerDcha .menu ul li:hover{
+    -webkit-box-shadow: -10px 10px 11px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: -10px 10px 11px 0px rgba(0,0,0,0.25);
+    box-shadow: -10px 10px 11px 0px rgba(0,0,0,0.25);
+}
+.header .headerDcha .menu ul li a{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+    transition-property: all;
+    transition-duration: 300ms;
+    height: 100%;
+    width: 100%;
+    padding: 0 1.3rem 0 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+main {
+    position: fixed;
+    top: 5rem;
+    height: calc(100vh - 5rem);
+    width: calc(100vw - 4rem);
+    overflow-y: scroll;
+    overflow-x: visible;
+    z-index: 5;
+    scroll-snap-type: y mandatory;
+}
+
+::-webkit-scrollbar{
+    display: none;
+   }
+
+main section {
+    height: calc(100vh - 5rem);
+    width: calc(100vw - 4rem);
+    display: grid;
+    padding-bottom: 2rem;
+    scroll-snap-align: start;
+    overflow-x: visible;
+}
+
+main .biografia {
+    grid-template-columns: 1fr 6fr 2fr 10fr; 
+    grid-template-rows: 4fr 3fr 11fr 3fr; 
+    gap: 0% 1rem;
+}
+
+main .biografia .photo {
+    grid-area: 1 / 2 / -1 / 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+main .biografia .photoFondo{
+    z-index: 1;
+    -webkit-box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.25);
+}
+
+main .biografia .photoFrente{
+    z-index: 9;
+}
+
+main .biografia span {
+    position: relative;
+    grid-area: 2 / 1 / 3 / -1;
+    font-weight: 600;
+    font-size: 7.4rem;
+    align-self: flex-start;
+    z-index: 5;
+    color: #f7775eff;
+    /*text-shadow: 0.2rem 0.3rem 0.3rem rgba(51,51,51,0.3);*/
+    /*transition-property: all;
+    transition-duration: 250ms;*/
+}
+
+main .biografia .cajaParaPoderAlinearH2{
+    grid-area: 3 / 3 / -1 / 4;
+    display: flex;
+    align-items: flex-end; /*alinea verticalmente*/
+    position: relative;
+}
+main .biografia h2 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 4rem;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    right: 0.1rem;
+    color: #4c65c1;
+    font-weight: 300;
+}
+main .biografia .zonaBiografia {
+    grid-area: 3 / 4 / -1 / -1;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding-left: 1rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    position: relative;
+    z-index: 1;
+}
+main .biografia .zonaBiografia .parrafoBiografia{
+    font-size: 1rem;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    columns: 2;
+    column-gap: 2rem;
+}
+main .influencias {
+    display: grid; 
+    grid-template-columns: 8fr 8fr 1fr; 
+    grid-template-rows: 3fr 3fr 3fr; 
+    gap: 2rem 2rem;
+    position: relative;
+}
+main .influencias .tituloSeccion {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 7.8rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    left: 0.8rem;
+    align-self: flex-end;
+    color: #f7775eff;
+    /*text-shadow: 0 0.5rem 0px rgba(76,101,193,1);*/
+    grid-area: 1 / -2 / -1 / -1;
+}
+main .influencias .influencia{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    /*border: 1px solid seagreen;*/
+}
+main .influencias .fotoInfluencia {
+    height: 7.5rem;
+    width: 7.5rem;
+    object-fit: cover;
+    border-radius: 100px;
+    transition-property: all;
+    transition-duration: 250ms;
+}
+main .influencias .fotoInfluencia:hover{
+    transform: scale(98%);
+}
+main .influencias .inflIzq .fotoInfluencia:hover{
+    -webkit-box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.25);
+}
+main .influencias .inflDch .fotoInfluencia:hover{
+    -webkit-box-shadow: -10px 10px 11px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: -10px 10px 11px 0px rgba(0,0,0,0.25);
+    box-shadow: -10px 10px 11px 0px rgba(0,0,0,0.25);
+}
+main .influencias .influencia .textoInfluencia{
+    height: 100%;
+    margin-left: 2rem;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 3fr;
+    gap: 0.5rem 0;
+    /*border: 1px solid seagreen;*/
+}
+main .influencias .influencia .textoInfluencia h3{
+    margin: 0;
+    padding: 1.3rem 0 0 0;
+    font-size: 1.2rem;
+}
+main .influencias .influencia .textoInfluencia p{
+    margin: 0;
+    padding: 0;
+    line-height: 1.4rem;
+}
+main .influencias .infl1 {
+    grid-area: 1 / 1 / 2 / 2;
+    /*background-color: tan;*/
+}
+main .influencias .infl2 {
+    grid-area: 2 / 1 / 3 / 2;
+    /*background-color: thistle;*/
+}
+main .influencias .infl3 {
+    grid-area: 3 / 1 / 4 / 2;
+    /*background-color: teal;*/
+}
+main .influencias .infl4 {
+    grid-area: 1 / 2 / 2 / 3;
+    /*background-color: peru;*/
+}
+main .influencias .infl5 {
+    grid-area: 2 / 2 / 3 / 3;
+    /*background-color: palegreen;*/
+}
+main .influencias .infl6 {
+    grid-area: 3 / 2 / 4 / 3;
+    /*background-color: plum;*/
+}
+
+main .portfolio {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /*justify-content: space-between;*/
+}
+main .portfolio .otraCajaParaAlinearUnTexto {
+    height: 100%;
+    width: calc(100% - calc( calc( calc(100vh - 5rem) / 3) * 5.2));
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+main .portfolio .otraCajaParaAlinearUnTexto .tituloSeccion{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 9rem;
+    margin: 0;
+    position: absolute;
+    right: 3.2rem;
+    color: #4c65c1;
+}
+main .portfolio .imagenesTrabajo {
+    max-height: calc(100vh - 5rem);
+    width: calc( calc( calc(100vh - 5rem) / 3) * 5.2);
+    overflow-x: scroll;
+    position: relative;
+}
+main .portfolio .imagenesTrabajo .azucar {
+    height: calc(100vh - 5rem);
+    width: calc( calc( calc(100vh - 5rem) / 3 ) * 33);
+    display: grid;
+    grid-template-columns: repeat(33, 1fr); 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0.4rem 0.4rem;
+}
+main .portfolio .imagenesTrabajo .imgTrabajo{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    min-width: 0px;
+    min-height: 0px;
+    position: relative;
+    transition: all ease 200ms;
+    filter: grayscale(0);
+}
+main .portfolio .imagenesTrabajo .azucar .aa {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+main .portfolio .imagenesTrabajo .azucar .aa{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+main .portfolio .imagenesTrabajo .azucar .ab{
+    grid-area: 2 / 2 / 3 / 4;
+}
+main .portfolio .imagenesTrabajo .azucar .ac{
+    grid-area: 3 / 2 / 4 / 3;
+}
+main .portfolio .imagenesTrabajo .azucar .ad{
+    grid-area: 1 / 4 / 3 / 5;
+}
+main .portfolio .imagenesTrabajo .azucar .ae{
+    grid-area: 1 / 3 / 2 / 4;
+}
+main .portfolio .imagenesTrabajo .azucar .af{
+    grid-area: 2 / 6 / 4 / 7;
+}
+main .portfolio .imagenesTrabajo .azucar .ag{
+    grid-area: 3 / 3 / 4 / 4;
+}
+main .portfolio .imagenesTrabajo .azucar .ah{
+    grid-area: 1 / 7 / 2 / 8;
+}
+main .portfolio .imagenesTrabajo .azucar .ai{
+    grid-area: 2 / 5 / 3 / 6;
+}
+main .portfolio .imagenesTrabajo .azucar .aj{
+    grid-area: 1 / 5 / 2 / 6;
+}
+main .portfolio .imagenesTrabajo .azucar .ak{
+    grid-area: 1 / 9 / 2 / 10;
+}
+main .portfolio .imagenesTrabajo .azucar .al{
+    grid-area: 1 / 6 / 2 / 7;
+}
+main .portfolio .imagenesTrabajo .azucar .am{
+    grid-area: 2 / 7 / 3 / 9;
+}
+main .portfolio .imagenesTrabajo .azucar .an{
+    grid-area: 3 / 4 / 4 / 5;
+}
+main .portfolio .imagenesTrabajo .azucar .ao{
+    grid-area: 3 / 9 / 4 / 10;
+}
+main .portfolio .imagenesTrabajo .azucar .ap{
+    grid-area: 3 / 7 / 4 / 8;
+}
+main .portfolio .imagenesTrabajo .azucar .aq{
+    grid-area: 3 / 5 / 4 / 6;
+}
+main .portfolio .imagenesTrabajo .azucar .ar{
+    grid-area: 1 / 16 / 2 / 17 ;
+}
+main .portfolio .imagenesTrabajo .azucar .as{
+    grid-area: 3 / 15 / 4 / 16 ;
+}
+main .portfolio .imagenesTrabajo .azucar .at{
+    grid-area: 3 / 11 / 4 / 12 ;
+}
+main .portfolio .imagenesTrabajo .azucar .au{
+    grid-area: 1 / 12 / 3 / 13 ;
+}
+main .portfolio .imagenesTrabajo .azucar .av{
+    grid-area: 2 / 10 / 3 / 12 ;
+}
+main .portfolio .imagenesTrabajo .azucar .aw{
+    grid-area: 3 / 12 / 4 / 13 ;
+}
+main .portfolio .imagenesTrabajo .azucar .ax{
+    grid-area: 1 / 13 / 2 / 14 ;
+}
+main .portfolio .imagenesTrabajo .azucar .ay{
+    grid-area: 2 / 13 / 3 / 14 ;
+}
+main .portfolio .imagenesTrabajo .azucar .az{
+    grid-area: 3 / 13 / 4 / 14 ;
+}
+main .portfolio .imagenesTrabajo .azucar .ba{
+    grid-area: 1 / 11 / 2 / 12 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bb{
+    grid-area: 1 / 15 / 2 / 16 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bc{
+    grid-area: 2 / 14 / 4 / 15 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bd{
+    grid-area: 2 / 9 / 3 / 10 ;
+}
+main .portfolio .imagenesTrabajo .azucar .be{
+    grid-area: 3 / 16 / 4 / 17 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bf{
+    grid-area: 3 / 10 / 4 / 11 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bg{
+    grid-area: 1 / 21 / 2 / 22 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bh{
+    grid-area: 2 / 15 / 3 / 17 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bi{
+    grid-area: 1 / 14 / 2 / 15 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bj{
+    grid-area: 1 / 19 / 2 / 20 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bk{
+    grid-area: 1 / 10 / 2 / 11 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bl{
+    grid-area: 3 / 18 / 4 / 19 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bm{
+    grid-area: 2 / 22 / 4 / 23 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bn{
+    grid-area: 3 / 24 / 4 / 25 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bo{
+    grid-area: 3 / 21 / 4 / 22 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bp{
+    grid-area: 2 / 21 / 3 / 22 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bq{
+    grid-area: 2 / 18 / 3 / 20 ;
+}
+main .portfolio .imagenesTrabajo .azucar .br{
+    grid-area: 1 / 18 / 2 / 19 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bs{
+    grid-area: 2 / 23 / 3 / 25 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bt{
+    grid-area: 1 / 22 / 2 / 23 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bu{
+    grid-area: 1 / 23 / 2 / 24 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bv{
+    grid-area: 1 / 24 / 2 / 25 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bw{
+    grid-area: 3 / 19 / 4 / 20 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bx{
+    grid-area: 1 / 20 / 3 / 21 ;
+}
+main .portfolio .imagenesTrabajo .azucar .by{
+    grid-area: 3 / 23 / 4 / 24 ;
+}
+main .portfolio .imagenesTrabajo .azucar .bz{
+    grid-area: 3 / 20 / 4 / 21 ;
+}
+main .portfolio .imagenesTrabajo .azucar .ca{
+    grid-area: 3 / 8 / 4 / 9 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cb{
+    grid-area: 1 / 17 / 2 / 18 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cc{
+    grid-area: 3 / 17 / 4 / 18 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cd{
+    grid-area: 1 / 8 / 2 / 9 ;
+}
+main .portfolio .imagenesTrabajo .azucar .ce{
+    grid-area: 2 / 17 / 3 / 18 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cf{
+    grid-area: 1 / 25 / 2 / 26 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cg{
+    grid-area: 2 / 25 / 3 / 26 ;
+}
+main .portfolio .imagenesTrabajo .azucar .ch{
+    grid-area: 3 / 25 / 4 / 26 ;
+}
+main .portfolio .imagenesTrabajo .azucar .ci{
+    grid-area: 2 / 26 / 3 / 28 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cj{
+    grid-area: 3 / 26 / 4 / 27 ;
+}
+main .portfolio .imagenesTrabajo .azucar .ck{
+    grid-area: 1 / 27 / 2 / 28 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cl{
+    grid-area: 3 / 27 / 4 / 28 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cm{
+    grid-area: 1 / 26 / 2 / 27 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cn{
+    grid-area: 1 / 29 / 2 / 30 ;
+}
+main .portfolio .imagenesTrabajo .azucar .co{
+    grid-area: 1 / 1 / 2 / 2 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cp{
+    grid-area: 3 / 28 / 4 / 29 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cq{
+    grid-area: 1 / 28 / 3 / 29 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cr{
+    grid-area: 3 / 29 / 4 / 30 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cs{
+    grid-area: 1 / 30 / 2 / 31 ;
+}
+main .portfolio .imagenesTrabajo .azucar .ct{
+    grid-area: 2 / 29 / 3 / 30 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cu{
+    grid-area: 2 / 31 / 3 / 33 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cv{
+    grid-area: 1 / 31 / 2 / 32 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cw{
+    grid-area: 3 / 33 / 4 / 34 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cx{
+    grid-area: 3 / 32 / 4 / 33 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cy{
+    grid-area: 2 / 30 / 4 / 31 ;
+}
+main .portfolio .imagenesTrabajo .azucar .cz{
+    grid-area: 1 / 32 / 2 / 33 ;
+}
+main .portfolio .imagenesTrabajo .azucar .da{
+    grid-area: 1 / 33 / 2 / 34 ;
+}
+main .portfolio .imagenesTrabajo .azucar .db{
+    grid-area: 2 / 33 / 3 / 34 ;
+}
+main .portfolio .imagenesTrabajo .azucar .dc{
+    grid-area: 3 / 31 / 4 / 32 ;
+}
+main .portfolio .imagenesTrabajo .azucar .dd{
+    grid-area: 2 / 1 / 3 / 2 ;
+}
+main .portfolio .imagenesTrabajo .azucar .de{
+    grid-area: 3 / 1 / 4 / 2 ;
+}
+
+main .portfolio .imagenesTrabajo .azucar .nombreObra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 1;
+    background-color: #33333300;
+    transition: all ease 400ms;
+}
+main .portfolio .imagenesTrabajo .azucar .nombreObra:hover{
+    background-color: #000000bb;
+}
+main .portfolio .imagenesTrabajo .azucar .nombreObra .nombre{
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+    max-width: 80%;
+    opacity: 0;
+    transition: all ease 450ms;
+    transform: scale(80%);
+}
+main .portfolio .imagenesTrabajo .azucar .nombreObra:hover .nombre{
+    opacity: 1;
+    transform: scale(100%);
+}
+main .portfolio .imagenesTrabajo .azucar .nombreObra a{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

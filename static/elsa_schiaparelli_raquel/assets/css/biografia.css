@@ -1,0 +1,147 @@
+body {
+    font-size: 1rem;
+    font-family: "Source Sans Pro", "Helvetica", Arial, sans_serif;
+    line-height: 1.5rem;
+    color: #333;
+}
+
+.app{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 95px 1fr;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.app .mainHeader{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+    font-family: 'Corinthia', cursive;
+    font-size: 22px; 
+    background-color: white; 
+    
+}
+
+.app .mainHeader .mainNav{
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding: 2% 3% 2% 3%;
+    gap: 20px;
+    height: 100%;
+}
+
+.app .mainHeader .mainNav .headerRight .navList {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 0;
+}
+
+.mainHeader .mainNav .headerLeft .schiaparelliSign img{
+    width: 200px;
+    height: 90px;
+}
+
+.headerRight .navList{
+    list-style: none;
+    gap: 4rem;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+.headerRight .navList .navListElem a{
+    color: black;
+    font-size: 1.75rem;
+    transition-property: opacity;
+}
+
+.headerRight .navList .navListElem a:hover{
+    opacity: 50%;
+}
+/* //HEADER */
+
+
+/* MAIN */
+.mainContent{
+    grid-row-start: 2;
+    grid-row-end: 2; 
+    margin: 2rem 4rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.mainContent .bioTitle{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.mainContent .bioTitle .biografiaTitulo{
+    font-family: 'Corinthia', cursive;
+    font-size: 6rem;
+    font-weight: 100;
+    margin: 0;
+    padding: .5rem;   
+}
+
+
+.mainContent .bioText{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+} 
+
+.mainContent .bioText .bio1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.mainContent .bioText .bio1 img{
+    width: 400px;
+    height:fit-content;
+}
+
+.mainContent .bioText .bio1 p{
+    font-family: 'Athiti', sans-serif;
+    padding: 1rem 
+}
+
+.mainContent .bioText .bio2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    align-items: flex-start;
+    padding: 5rem 0 5rem 0;
+
+}
+
+.mainContent .bioText .bio2 img{
+    width: 400px;
+    height:fit-content;
+    
+}
+
+.mainContent .bioText .bio2 p{
+    font-family: 'Athiti', sans-serif;
+    padding: 1rem;
+    
+    
+
+}
+
+/* //MAIN */

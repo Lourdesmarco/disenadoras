@@ -1,0 +1,124 @@
+html,
+
+body {
+    font-size: 1rem;
+    font-family: "Source Sans Pro", "Helvetica", "Arial", sans_serif;
+    line-height: 1.5rem;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+}
+
+h1{
+    line-height: normal;
+}
+
+.nav {
+
+    user-select: none;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 1% 10% 1% 10%;
+    color: #333;
+    background-color: transparent;
+    position: fixed;
+    box-shadow: 10 10 gray;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+
+.NombreLogo {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    margin: 0;
+    color: black;
+}
+
+
+.Enlaces {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: space-between;
+    padding-left: 10%;
+}
+
+
+
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+a:hover {
+
+    font-weight: bold;
+    color: #333;
+    transition: .05s ease-in;
+}
+
+/* I N F O */
+
+.container {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: .2fr 1fr .1fr .1fr;
+    grid-auto-columns: 1fr;
+    gap: 40px 40px;
+    grid-auto-flow: column;
+    grid-template-areas:
+        ". . . . . ."
+        ". Foto1 Foto1 Texto Texto ."
+        ". Foto2 Foto2 Texto Texto ."
+        ". . . . . .";
+        background-color: #ebebeb;
+}
+
+.Texto {
+    grid-area: Texto;
+}
+ 
+.Texto h1{
+    font-size: 3.5rem;
+}
+
+.Foto1 {
+    grid-area: Foto1;
+    padding-bottom: 40px;
+
+}
+
+.Foto1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    background: #ebebeb;
+    box-shadow:  8px 8px 14px #b0b0b0,
+                 -8px -8px 14px #ffffff;
+}
+
+.Foto2 {
+    grid-area: Foto2;
+}
+
+.Foto2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    background: #ebebeb;
+    box-shadow:  8px 8px 14px #b0b0b0,
+                 -8px -8px 14px #ffffff;
+}

@@ -1,0 +1,620 @@
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    transition: all ease .50s;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.home {
+    color: #f96c0f;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 28px 4%;
+    list-style: none;
+    transition: all ease 0.40s;
+}
+
+.home:hover {
+    color: #222;
+    transform: scale(1.5);
+}
+
+.navlist {
+    padding: 28px 2%;
+    display: flex;
+    list-style: none;
+}
+
+.navlist a {
+    color: #f96c0f;
+    font-family: "Kanit", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 5px;
+    transition: all ease 0.40s;
+    border-right: 1.5px solid #f96c0f;
+    padding: 0 30px;
+}
+
+.navlist a:hover {
+    color: #222;
+}
+
+/* Header */
+
+.section {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+
+    scroll-snap-align: start;
+}
+
+#menu {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 200px);
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+        "biografia biografia proyectos proyectos"
+        "biografia biografia influencias contacto";
+}
+
+#menu .titulo {
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#menu .titulo .front {
+    color: white;
+    background-color: black;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-size: cover;
+    background-position: center center;
+
+    transition: all 0.5s ease;
+}
+
+#menu .titulo .back {
+    background-color: #f96c0f;
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#menu .titulo:hover .front {
+    margin-top: -100%;
+}
+
+#menu .proyectos:hover .front {
+    margin-top: -50%;
+}
+
+#menu .biografia .front {
+    background-image: url(../img/MenuBiografia_MarisaGallen3.jpg);
+}
+
+#menu .proyectos .front {
+    background-image: url(../img/MenuProyectos_MarisaGallen1.jpg);
+}
+
+#menu .influencias .front {
+    background-image: url(../img/MenuInfluencias_MarisaGallen3.jpg);
+}
+
+#menu .contacto .front {
+    background-image: url(../img/MenuContacto_MarisaGallen2.jpg);
+}
+
+.biografia {
+    grid-area: biografia;
+}
+
+.proyectos {
+    grid-area: proyectos;
+}
+
+.influencias {
+    grid-area: influencias;
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+/* HOME */
+
+.biografiaseccion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    gap: 4rem;
+    background-color: #222;
+    padding-right: 6rem;
+}
+
+.biografiaseccionimg img {
+    width: 110%;
+    height: auto;
+    transition: 0.3s ease-in-out;
+}
+
+.biografiaseccionimg:hover img {
+    transform: scale(1.07);
+}
+
+.biografiasecciontexto h2 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    color: #f96c0f;
+}
+
+.biografiasecciontexto h5 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 30px;
+    line-height: 1;
+    color: white;
+}
+
+.biografiasecciontexto p {
+    font-family: "Kanit", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/* BIOGRAFIA */
+
+#proyectos {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . . . . . ."
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-2 fotografia-2 fotografia-2 fotografia-3 fotografia-3 fotografia-4 fotografia-4"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-2 fotografia-2 fotografia-2 fotografia-3 fotografia-3 fotografia-4 fotografia-4"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-2 fotografia-2 fotografia-2 fotografia-5 fotografia-6 fotografia-4 fotografia-4"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-7 fotografia-7 fotografia-8 fotografia-8 fotografia-8 fotografia-9 fotografia-9"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-7 fotografia-7 fotografia-8 fotografia-8 fotografia-8 fotografia-9 fotografia-9"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-7 fotografia-7 fotografia-10 fotografia-10 fotografia-10 fotografia-10 fotografia-10"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-11 fotografia-11 fotografia-10 fotografia-10 fotografia-10 fotografia-10 fotografia-10"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-11 fotografia-11 fotografia-12 fotografia-12 fotografia-13 fotografia-13 fotografia-13"
+        "fotografia-principal fotografia-principal fotografia-principal fotografia-11 fotografia-11 fotografia-12 fotografia-12 fotografia-13 fotografia-13 fotografia-13";
+}
+
+#proyectos .titulo {
+    background-color: white;
+    border-radius: 0px;
+    color: #222;
+
+    background-size: cover;
+    background-position: center center;
+}
+
+#proyectos .titulo a {
+    display: grid;
+    height: 100%;
+}
+
+#proyectos .titulo:not(.fotografia-principal) {
+    opacity: 0.50;
+    transition: all ease-in 0.3s;
+}
+
+#proyectos .titulo:hover:not(.fotografia-principal) {
+    transform: scale(0.97);
+    transition: all ease 0.5s;
+    opacity: 1;
+}
+
+.fotografia-principal {
+    grid-area: fotografia-principal;
+    padding: 45px;
+    color: white;
+    background-image: url(../img/fotografia-principal.jpg);
+}
+
+.fotografia-principal h2,
+.fotografia-principal div {
+    border-radius: 0px;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.fotografia-principal h2 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: #f96c0f;
+    background-color: #222
+}
+
+.fotografia-principal div {
+    font-family: "Kanit", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #222;
+    background-color: white;
+}
+
+.fotografia-2 {
+    grid-area: fotografia-2;
+
+    background-image: url(../img/fotografia-2.jpg);
+}
+
+.fotografia-3 {
+    grid-area: fotografia-3;
+
+    background-image: url(../img/fotografia-3.jpg);
+}
+
+.fotografia-4 {
+    grid-area: fotografia-4;
+
+    background-image: url(../img/fotografia-4.jpg);
+}
+
+.fotografia-5 {
+    grid-area: fotografia-5;
+
+    background-image: url(../img/fotografia-5.jpg);
+}
+
+.fotografia-6 {
+    grid-area: fotografia-6;
+
+    background-image: url(../img/fotografia-6.jpg);
+}
+
+.fotografia-7 {
+    grid-area: fotografia-7;
+
+    background-image: url(../img/fotografia-7.jpg);
+}
+
+.fotografia-8 {
+    grid-area: fotografia-8;
+
+    background-image: url(../img/fotografia-8.jpg);
+}
+
+.fotografia-9 {
+    grid-area: fotografia-9;
+
+    background-image: url(../img/fotografia-9.jpg);
+}
+
+.fotografia-10 {
+    grid-area: fotografia-10;
+
+    background-image: url(../img/fotografia-10.jpg);
+}
+
+.fotografia-11 {
+    grid-area: fotografia-11;
+
+    background-image: url(../img/fotografia-11.jpg);
+}
+
+.fotografia-12 {
+    grid-area: fotografia-12;
+
+    background-image: url(../img/fotografia-12.jpeg);
+}
+
+.fotografia-13 {
+    grid-area: fotografia-13;
+
+    background-image: url(../img/fotografia-13.jpg);
+}
+
+/* PROYECTOS */
+
+#influencias {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    gap: 10px 10px;
+    grid-template-areas:
+        ". . . . . . . . . ."
+        ". influencias-1 influencias-1 influencias-1 influencias-1 influencias-2 influencias-2 influencias-2 influencias-2 ."
+        ". influencias-1 influencias-1 influencias-1 influencias-1 influencias-2 influencias-2 influencias-2 influencias-2 ."
+        ". influencias-3 influencias-3 influencias-3 influencias-3 influencias-4 influencias-4 influencias-4 influencias-4 ."
+        ". influencias-3 influencias-3 influencias-3 influencias-3 influencias-4 influencias-4 influencias-4 influencias-4 ."
+        ". influencias-5 influencias-5 influencias-5 influencias-5 influencias-6 influencias-6 influencias-6 influencias-6 ."
+        ". influencias-5 influencias-5 influencias-5 influencias-5 influencias-6 influencias-6 influencias-6 influencias-6 ."
+        ". . . . . . . . . .";
+}
+
+#influencias .influencias {
+    display: grid;
+    align-content: end;
+
+    background-color: #222;
+
+    background-size: cover;
+    background-position: center center;
+}
+
+#influencias .influencias h3 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+#influencias .influencias p {
+    font-family: "Kanit", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#influencias .influencias .titulo {
+    background-color: white;
+    opacity: 90%;
+    color: #222;
+    padding: 3px;
+}
+
+#influencias .influencias .titulo:hover {
+    background-color: #f96c0f;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+#influencias .influencias.influencias-1 {
+    grid-area: influencias-1;
+    background-image: url(../img/Noticias_1.jpg);
+}
+
+#influencias .influencias.influencias-2 {
+    grid-area: influencias-2;
+    background-image: url(../img/Noticias_2.jpg);
+}
+
+#influencias .influencias.influencias-3 {
+    grid-area: influencias-3;
+    background-image: url(../img/Noticias_3.jpg);
+}
+
+#influencias .influencias.influencias-4 {
+    grid-area: influencias-4;
+    background-image: url(../img/Noticias_4.jpg);
+}
+
+#influencias .influencias.influencias-5 {
+    grid-area: influencias-5;
+    background-image: url(../img/Noticias_5.jpg);
+}
+
+#influencias .influencias.influencias-6 {
+    grid-area: influencias-6;
+    background-image: url(../img/Noticias_6.jpg);
+}
+
+/* INFLUENCIAS */
+
+#contacto {
+    background-color: #222;
+    display: grid;
+    grid-template: auto 5px / 700px;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+#contacto form {
+    padding: 33px;
+    color: white;
+    display: grid;
+    gap: 10px;
+    grid-template: auto / auto;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#contacto form h2 {
+    font-size: 30px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+#contacto form input,
+#contacto form textarea {
+    padding: 15px 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 0px;
+    border: none;
+    width: 100%;
+}
+
+#contacto .social-networks {
+    justify-self: center;
+    padding: 50px;
+}
+
+#contacto form input[type="submit"] {
+    background-color: #f96c0f;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#contacto form input:hover[type="submit"] {
+    background-color: white;
+    color: #222;
+    transition: all ease .50s;
+}
+
+#contacto .social-networks a {
+    margin: 23px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+}
+
+#contacto .social-networks a:nth-of-type(1):hover {
+    color: #f96c0f;
+    transition: all ease .4s;
+}
+
+#contacto .social-networks a:nth-of-type(2):hover {
+    color: #f96c0f;
+    transition: all ease .4s;
+}
+
+#contacto .social-networks a:nth-of-type(3):hover {
+    color: #f96c0f;
+    transition: all ease .4s;
+}
+
+#contacto .social-networks a:nth-of-type(4):hover {
+    color: #f96c0f;
+    transition: all ease .4s;
+}
+
+#contacto .contacto123 {
+    justify-self: center;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* CONTACTO */
+
+@media screen and (max-width: 1200px) {
+    .navlist a {
+        margin: 0 -15px;
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .biografiaseccion {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .biografiaseccionimg {
+        text-align: center;
+        order: 2;
+    }
+
+    .biografiaseccionimg img {
+        max-width: 100%;
+        width: 600px;
+        height: auto;
+    }
+
+    .contacto {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "biografia proyectos"
+            "influencias contacto";
+    }
+
+    #menu .titulo:hover .front {
+        margin-top: -50vh;
+    }
+
+    #contacto {
+        grid-template: auto 0px / 100%;
+    }
+
+    #contacto .social-networks {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .home {
+        padding: 30px 40px;
+    }
+
+    .navlist {
+        position: absolute;
+        top: -700px;
+    }
+
+    #menu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "biografia"
+            "proyectos"
+            "influencias"
+            "contacto";
+    }
+
+    #menu .titulo:hover .front {
+        margin-top: -25vh;
+    }
+}
+/* RESPONSIVE */
+/* JAVASCRIPT ANIMACIONES */

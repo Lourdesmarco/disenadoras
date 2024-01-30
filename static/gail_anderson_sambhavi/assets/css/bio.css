@@ -1,0 +1,385 @@
+*{
+}
+
+html,
+body{
+    /*font-family: "BioRhyme", "Gabriela", serif; "Franklin", sans_serif;*/
+    font-family: 'BioRhyme', serif;
+    font-family: 'Gabriela', serif;
+    font-family: 'Libre Franklin', sans-serif;
+    
+}
+
+.app{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: 55px 30px auto 30px;
+    background-color: #1343bc;
+    padding: 0;
+    position: relative;
+
+}
+
+.app h1{
+    font-family: BioRhyme;
+    font-size: 4rem;
+    color: white;
+    padding: 0rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+.app h2{
+    font-family: BioRhyme;
+    font-size: 2rem;
+    color: white;
+    padding: 0rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.app h4{
+    font-family: Libre Franklin;
+    font-weight: 300;
+    color: white;
+    padding: 0rem;
+    margin-left: 2rem;
+    margin-top: 0;
+    
+}
+
+
+.app .mainHeader{
+    grid-row-start: 1; 
+	grid-column-start: 1; 
+	grid-row-end: 2;
+	grid-column-end: 5;
+    background-color: #93aef1;
+    justify-content: space-between;
+
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    padding: .2rem;
+    text-align: center;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 2;
+}
+
+/* HEADER LEFT */
+
+.app .mainHeader .headerLeft{
+    
+
+}
+
+.app .mainHeader .headerLeft img{
+}
+
+.app .mainHeader .headerLeft .nombre{
+    font-family: Gabriela;
+    font-size: 1.5rem;
+    padding: 0 0 0 .5rem;
+    align-items: baseline;
+    color: rgb(50, 50, 50);
+
+}
+
+/* HEADER CENTER */
+
+.app .mainHeader .headerCenter .mainNav{
+    grid-row-start: 1; 
+	grid-column-start: 2; 
+	grid-row-end: 2;
+	grid-column-end:4;
+}
+
+/* NAV */
+
+.app .mainHeader .headerCenter .mainNav{
+
+}
+
+.app .mainHeader .headerCenter .mainNav .navList{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.app .mainHeader .headerCenter .mainNav .navList .navListElem a{
+    font-family: BioRhyme;
+    color: rgb(50, 50, 50);
+}
+
+/* mouse over link */
+.app .mainNav .navListElem a:hover{
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    padding: .1rem;
+}
+
+.app .mainNav .navListElem .extraNavLinks a:hover{
+    background-color: #FDBD17;
+    border-radius: 10px;
+    padding: .1rem;
+}
+
+
+/* Extra NAV */
+
+.app .headerCenter .extraNavMenu{
+    height: 30px;
+    width: 100%;
+    position: sticky;
+    left: 0;
+    z-index: 3;
+    top: 55px;
+    background-color: #FFEED5;
+    position: absolute;
+
+}
+
+.app .extraNavMenu .extraNavLinks{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-left: 31.5rem;
+    font-family: BioRhyme;
+    margin-top: .2rem;
+    color: rgb(50, 50, 50);
+    visibility: hidden;
+}
+
+
+/* .mainNav>ul>li:hover .extraNavLinks a{
+    visibility: visible;}
+    
+
+.mainNav .navList .navListElem:hover section div{
+    visibility: visible;
+}*/
+
+.mainNav .navList>li:hover .extraNavLinks{
+    visibility: visible;
+}
+
+/* HEADER RIGHT */
+
+.app .mainHeader .headerRight{
+}
+
+.app .mainHeader .headerRight .home .homeElem{
+    list-style: none;
+    font-family: BioRhyme;
+    margin-right: 1rem;
+}
+
+.app .mainHeader .headerRight a{
+    color: rgb(50, 50, 50);
+}
+
+#teatro, #and, #editorial, #cartel, #otros, #libros, #proy{
+    scroll-margin-top: 100px;
+}
+
+/* MAIN CONTENT */
+
+.app .mainContent {
+    background-color: #1a3f9d;
+    grid-area: 3 / 1 / 5 / 5;
+}
+
+.mainContent .bio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 400px;
+    grid-template-rows: repeat(3, 600px) 94px;
+}
+
+#trayec, #public, #ideas{
+    scroll-margin-top: 100px;
+}
+
+.bio h1{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 4rem;
+    color: #FDBD17;
+}
+
+.bio h2{
+    font-size: 1.5rem;
+    width: 300px;
+    padding: .2rem;
+    margin-left: 4rem;
+}
+
+.bio h4{
+    margin-bottom: 2rem;
+}
+
+.bio .introBio{
+    grid-area: 1 / 1 / 2 / 2;
+
+}
+
+.bio .introBio img{
+    margin-bottom: 2rem;
+}
+
+.bio .introBio .poster img{
+    width: 350px;
+    height: 800px;
+    object-fit: cover;
+    object-position:top;
+    margin-left: 1.5rem;
+}
+    
+
+.bio .introText {
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+.bio .trayectoria{
+    grid-area: 1 / 2 / 3 / 4;
+    margin-top: 20rem;
+
+}
+
+.bio .trayectoria li{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 0rem;
+
+}
+
+.bio .publicaciones{
+    grid-area: 2 / 2 / 4 / 4;
+    margin-top: 19rem;
+}
+
+.bio .sidebar{
+    grid-area: 1 / 4 / 4 / 5;
+    
+}
+
+.bio .sidebar #ideas{
+    font-family: Libre Franklin;
+    font-weight: 900;
+    color: #FDBD17;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    margin-left: 6rem;
+    margin-bottom: 0rem;
+}
+.bio .sidebar .citasList{
+    text-decoration: none;
+    list-style-type: none;
+    padding: none;
+    margin-left: 1rem;
+}
+
+.bio #slideshow {
+    text-align: center;
+    overflow: hidden;
+    height: 690px;
+    width: 690px;
+    margin-right: 0rem;
+  }
+  
+  .slideWrapper {
+    width: 4830px;
+    -webkit-animation: slide 20s ease infinite;
+  }
+  
+  .slide {
+    float: left;
+    height: 910px;
+    width: 690px;
+  }
+
+  .slide img{
+margin-top: 4rem;  }
+  
+  .slide:nth-child(1) {
+    background: #93aef1;
+  }
+
+  
+  .slide:nth-child(2) {
+    background: #5770b1;
+  }
+  
+  .slide:nth-child(3) {
+    background: #93aef1;
+  }
+  
+  .slide:nth-child(4) {
+    background: #5770b1;
+  }
+
+  .slide:nth-child(5) {
+    background: #93aef1;
+  }
+
+  .slide:nth-child(6) {
+    background: #5770b1;
+  }
+
+  .slide:nth-child(7) {
+    background: #93aef1;
+  }
+  
+  .numberText {
+    color: #FDBD17;
+    text-align: center;
+    font-size: .8rem;
+  }
+
+  .slide .text{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 2rem;
+    padding: .5rem;
+  }
+  
+  .slide:hover {animation-play-state: paused;
+}
+  
+@-webkit-keyframes slide {
+    10% {margin-left: 0px;}
+    20% {margin-left: -690px;}
+    30% {margin-left: -690px;}
+    40% {margin-left: -1380px;}
+    45% {margin-left: -1380px;}
+    50% {margin-left: -2070px;}
+    55% {margin-left: -2070px;}
+    60% {margin-left: -2760px;}
+    65% {margin-left: -2760px;}
+    75% {margin-left: -3450px;}
+    80% {margin-left: -3450px;}
+    85% {margin-left: -4140px;}
+    90% {margin-left: -4140px;}
+
+
+  }
+  
+
+
+/* FOOTER */
+
+.mainFooter{
+    background-color: #FFEED5;
+    font-family: BioRhyme;
+    grid-area: 4 / 1 / 5/ 5;
+
+}
+
+.mainFooter .mainFooterText{
+    font-family: BioRhyme;
+    font-weight: 300;
+}

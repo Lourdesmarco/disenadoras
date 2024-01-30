@@ -1,0 +1,188 @@
+
+body {
+    font-size: 1rem;
+    font-family: 'Syne', sans-serif;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+    background-color: #3E3E3E;
+}
+
+body .container .mainHeader h1{
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.20px;
+    word-wrap: break-word
+    
+}
+
+h1{
+    margin-left: 45px;
+    margin-right: 640px;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 9.32% 33.86% 11.83% 34.45% 5.88% 4.62%;
+    grid-template-rows: 9.02% 14.02% 43.51% 33.33%;
+    min-height: 100vh;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+  }
+
+.menu{
+    grid-area: 1 / 1 / 2 / span 7;
+
+}
+
+.container .mainHeader .menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    margin-top: 15px;
+    
+    /* text-decoration: none;
+    display: flex;
+    align-items: center;
+    align-content: flex-start; */
+
+
+}
+
+
+.container .mainHeader .menu .listmenu{
+    text-decoration: none;
+    color: #FFFFFF;
+    flex-direction: row;
+    align-items: baseline;
+    
+}
+.container .mainHeader .menu .listmenu li{
+    position: relative;
+    float: left;
+    text-decoration: none;
+    color: #FFFFFF;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.20px;
+    margin-right: 60px;
+    
+}
+
+.container .mainHeader .menu .listmenu li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+    
+}
+
+.container .mainHeader .menu .listmenu li a:hover {
+    color: rgb(147, 147, 147);
+    text-decoration: none; 
+}
+
+
+.container .mainHeader .buttonMenu{
+    color: #FFFFFF;
+    background-color: none;
+    margin-right: 30px;
+    margin-top: -10px;
+}
+
+.container .mainHeader .buttonMenu:hover{
+    color: rgb(147, 147, 147);
+}
+
+/* MAIN HEADER } */
+
+.container .mainContent{
+    grid-area: 3 /2 / 4 / 3;
+}
+
+.container .mainContent h2{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.container .mainContent .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .mainContent .form h3{
+    color: white;
+    font-size: 24px;
+    font-family: Syne;
+    font-weight: 600;
+    word-wrap: break-word
+}
+
+.container .mainContent .form .etiqueta{
+    color: white;
+    font-size: 20px;
+    font-family: Syne;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.container .mainContent .form .inputText{
+    margin-bottom: 34px ;
+}
+
+ 
+.container .mainContent .form .botonEnviar{
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 37px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    width: 122px;
+    height: 53px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    
+}
+
+.container .mainContent .form .botonEnviar:hover{
+    background-color: #cecece;
+}
+
+
+
+
+
+
+/* 
+ 
+  .Nav { grid-area: Nav; }
+  
+  .Body { grid-area: Body; }
+   */
+
+/* .app .mainHeader .menu .h1{
+    color: white;
+    font-size: 24px;
+    font-family: "DM Sans";
+    font-weight: 700;
+    letter-spacing: 0.20px;
+    word-wrap: break-word
+}
+ */

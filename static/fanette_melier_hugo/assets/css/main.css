@@ -1,0 +1,193 @@
+html,
+
+body {
+    font-size: 1rem;
+    font-family: "Source Sans Pro", "Helvetica", Arial, sans_serif;
+    line-height: 1.5rem;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 10% 1% 10%;
+    color: #333;
+    background-color: #f7f7f7;
+    position: fixed;
+    box-shadow: 10 10 gray;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+}
+
+
+
+.links {
+    display: flex;
+    flex-basis: 80%;
+    justify-content: space-around;
+}
+
+
+.titleName {
+    font-family: monospace;
+    font-weight: 100;
+    margin: 0;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+a:hover.titleForm {
+    color: rgb(8, 221, 221);
+    transition: .2s ease-in;
+}
+
+a:hover.titleInflu {
+    color: rgb(255, 26, 140);
+    transition: .2s ease-in;
+}
+
+a:hover.titleObras {
+    color: rgb(244, 244, 21);
+    transition: .2s ease-in;
+}
+
+a:hover.titleDiseñ {
+    color: rgb(116, 116, 116);
+    transition: .2s ease-in;
+}
+
+.formacion {
+    display: flex;
+}
+
+.subInfl {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1.7fr 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1.1fr 1.6fr 0.3fr 1.2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . . . . . . . . . . . . . ."
+        "ByW ByW ByW . Text Text Text Text Text Text Text Text . Infl Infl Infl Infl ."
+        "ByW ByW ByW . Text Text Text Text Text Text Text Text . Infl Infl Infl Infl ."
+        "ByW ByW ByW . Text Text Text Text Text Text Text Text . Infl Infl Infl Infl ."
+        "ByW ByW ByW . Text Text Text Text Text Text Text Text . Infl Infl Infl Infl ."
+        ". . . . . . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . . . . . ."
+    ;
+}
+
+.ByW {
+    grid-area: ByW;
+    margin-left: 20px;
+}
+
+.Text {
+    grid-area: Text;
+    text-align: justify;
+}
+
+.Infl {
+    grid-area: Infl;
+    padding-top: 20px;
+    color: whitesmoke;
+    background-color: rgb(37, 37, 37);
+}
+
+
+.mainObras {
+    user-select: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . ."
+        ". . . LaLune LaLune LaLune LaLune Obra-2 Obra-2 Obra-2 Obra-2 . . ."
+        ". . . LaLune LaLune LaLune LaLune Obra-2 Obra-2 Obra-2 Obra-2 . . ."
+        ". . . LaLune LaLune LaLune LaLune Obra-2 Obra-2 Obra-2 Obra-2 . . ."
+        ". . . LaLune LaLune LaLune LaLune Obra-2 Obra-2 Obra-2 Obra-2 . . ."
+        ". . . LaLune LaLune LaLune LaLune Obra-2 Obra-2 Obra-2 Obra-2 . . ."
+        ". . . Obra-3 Obra-3 Obra-3 Obra-3 Obra-4 Obra-4 Obra-4 Obra-4 . . ."
+        ". . . Obra-3 Obra-3 Obra-3 Obra-3 Obra-4 Obra-4 Obra-4 Obra-4 . . ."
+        ". . . Obra-3 Obra-3 Obra-3 Obra-3 Obra-4 Obra-4 Obra-4 Obra-4 . . ."
+        ". . . Obra-3 Obra-3 Obra-3 Obra-3 Obra-4 Obra-4 Obra-4 Obra-4 . . ."
+        ". . . Obra-3 Obra-3 Obra-3 Obra-3 Obra-4 Obra-4 Obra-4 Obra-4 . . ."
+        ". . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . .";
+    background-color: rgb(37, 37, 37);
+}
+
+.LaLune {
+    grid-area: LaLune;
+}
+
+.Obra-2 {
+    grid-area: Obra-2;
+}
+
+.Obra-3 {
+    grid-area: Obra-3;
+}
+
+.Obra-4 {
+    grid-area: Obra-4;
+}
+
+.LaLune:hover{
+   display: grid;
+    opacity: 70%;
+}
+
+.Obra-2:hover{
+    opacity: 70%;
+}
+
+.Obra-3:hover{
+    opacity: 70%;
+}
+
+.Obra-4:hover{
+    opacity: 70%;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #CBCBCB;
+    outline: 2px solid #FFF;
+    outline-offset: -2px;
+    border: .1px solid #B7B7B7;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #909090;
+}
