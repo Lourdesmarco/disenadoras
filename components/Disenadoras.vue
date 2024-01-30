@@ -7,7 +7,7 @@
                   'border-x-4 border-green-500': disenadora.grupo === 'contemporaneas'}"
 
       >
-        <a class="disenadora" :href="disenadora.path">
+        <a class="disenadora" :href="disenadora.random ? disenadora.path[Math.floor(Math.random()*disenadora.path.length)] : disenadora.path">
           <div>
             <p class="autor">{{ disenadora.autor }}</p>
             <h2>{{ disenadora.nombre }}</h2>

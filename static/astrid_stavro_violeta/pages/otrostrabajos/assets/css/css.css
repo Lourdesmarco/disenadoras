@@ -1,0 +1,304 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Karla';
+
+}
+
+#header{
+    position: fixed;
+    transform: rotate(-90deg);
+    margin-top: 20px;
+    height: 150px;
+    
+ 
+ }
+
+ header{
+
+    
+    display: flex;
+    margin-top: 30px;
+    font-size: 20px;
+    }
+
+nav{
+    text-align: center;
+}
+
+nav a{
+        text-decoration:none;
+        color:inherit;
+        font-size:14px;
+        align-items: center;
+        } 
+nav li{
+        display:inline-flex;
+        justify-content: center;
+        width:12%;
+        padding:5px;
+        
+        color:#000000;
+        margin-top: 20px;
+        }
+        
+nav li:hover{
+       
+        color:#ff0000;
+        }
+
+
+
+
+        .fondoprincipal{
+
+  width:100%;
+  height:100%;
+  object-fit: cover;
+ 
+        }
+
+
+        footer{
+            font-family: 'Karla';
+            left:0;
+            bottom:0;
+            width:100%;  
+        }
+
+      
+#rojo{
+    color: #ff0000;
+}
+
+.contenedor{
+  display: flex;
+margin-left: 150px;
+margin-right: 150px;
+align-items: center;
+margin-top: 50px;
+justify-content: center;
+position: relative;
+
+}
+    
+
+
+.fotogaleria{
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    font-family: sans-serif;
+
+
+}
+
+.fotogaleria:hover{
+
+    opacity: 0.07;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+
+
+.fotogaleria + .text:hover{
+opacity: 1;
+visibility: visible;
+
+
+
+}
+
+.text{
+    opacity: 1;
+    visibility: hidden;
+    position: absolute;
+    display: none;
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 100%;
+    margin: 20px;
+    justify-content: center;
+    top: 50px;
+  
+}
+
+
+
+    .contenedor2{
+      display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: center;
+   
+    justify-content: center;
+    }
+
+    .contenedor3{
+      display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .layout {
+
+
+      width: 100%;
+      height: 100%;
+   justify-content: center;
+      display: grid;
+      grid-template-rows: repeat(3, 30%);
+      grid-template-columns: repeat(2, 30%);
+      gap: 15px 20px;
+    
+    }
+
+    .celda{
+      border: #000000 1px solid;
+
+    }
+
+    
+    footer{
+          
+      left:0;
+      bottom:0;
+      width:100%;  
+      font-family: 'Karla';
+      background-color: yellow;
+  }
+
+  .footer{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-flow: wrap;
+     
+    
+
+  }
+.contenidofooter{
+margin-left: 150px;
+margin-right: 150px;
+margin-top: 40px;
+margin-bottom: 40px;
+width: 20%;
+text-align: justify;
+font-size: 13px;
+
+}
+
+h4{
+border-bottom: #000000 solid 1px;
+padding-bottom: 15px;
+}
+
+svg{
+padding-right: 10px;
+opacity: calc(60%);
+}
+
+svg:hover{
+opacity: calc(100%);
+}
+
+a{
+text-decoration: none
+
+
+;
+}
+
+.contenidofooter2{
+display: flex;
+justify-content: center;
+color: #000000;
+font-size: 12px;
+}
+
+
+
+
+/* css del grid */
+img {
+  width: 100%; 
+  height: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 2.5em;
+  margin: 70px;
+}
+
+
+
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  color: rgb(0, 0, 0);
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+
+  opacity: 0.07;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+
+
+@media (hover: none) { 
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(8px);
+
+  }
+}

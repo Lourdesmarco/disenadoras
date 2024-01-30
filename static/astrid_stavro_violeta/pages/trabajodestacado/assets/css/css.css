@@ -1,0 +1,272 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Karla';
+
+}
+
+#header{
+    position: fixed;
+    transform: rotate(-90deg);
+    margin-top: 20px;
+    height: 150px;
+    
+ 
+ }
+
+ header{
+
+    
+    display: flex;
+    margin-top: 30px;
+    font-size: 20px;
+    }
+
+nav{
+    text-align: center;
+}
+
+nav a{
+        text-decoration:none;
+        color:inherit;
+        font-size:14px;
+        align-items: center;
+        } 
+nav li{
+        display:inline-flex;
+        justify-content: center;
+        width:12%;
+        padding:5px;
+        
+        color:#000000;
+        margin-top: 20px;
+        }
+        
+nav li:hover{
+       
+        color:#ff0000;
+        }
+
+
+          
+          
+                  footer{
+                    font-family: 'Karla';
+                      left:0;
+                      bottom:0;
+                      width:100%;  
+                  }
+.rojo{
+    color:#ff0000;
+}
+
+
+
+img{
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s;
+}
+
+img:hover{
+    --escala: 1.2;
+    cursor:pointer;
+}
+
+
+
+
+
+      
+.textovida{
+    text-align: justify;
+    margin-left: 20px;
+    font-size: 13px;
+
+    
+    
+}
+
+.textocorrido{
+    font-weight: lighter;
+    width: 60%;
+    padding-left: 230px;
+  
+}
+
+
+.vidaseccion1{
+    align-items: start;
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 120px;
+    margin-bottom: 125px;
+    
+    
+   
+}
+
+
+.vidaseccion2{
+    align-items: center;
+    display: flex;
+    width: 100%;
+   flex-wrap: wrap;
+   justify-content: center;
+
+  
+  
+}
+
+
+.vidatabla{
+    width: 100%;
+    flex-wrap: wrap;
+ 
+    margin-left: 150px;
+    margin-right: 150px;
+    border-bottom: 1px solid #000;
+}
+
+.videotabla2{
+    width: 100%;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: flex-end;
+    
+}
+
+h3{
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin: 0;
+    border-bottom: #000 solid 1px;
+}
+
+
+
+
+
+
+
+
+.quote{
+    align-items: center;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 0;
+
+
+
+
+
+}
+
+q{
+    display: flex;
+justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 40px;
+    width: 100%;
+    align-self: center;
+
+	float: left;
+	background: rgb(255, 255, 255);
+	color: #000000;
+	
+}
+
+.citanombre{
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 0;
+   
+}
+
+q span {
+    position:absolute;
+    right:0;
+    width:0;
+   background-color: white;
+    border-left: 1px solid #000;
+    animation: escribir 5s steps(30) infinite ;
+    animation-delay: 1s;
+}
+
+@keyframes escribir {
+    from { width: 80% }
+    to { width:20% }
+    
+}
+
+.conocemas{
+    padding-top: 10px;
+    text-decoration: none;
+ color: #000;
+}
+
+.conocemas:hover{
+color: #ff0000;
+font-style: italic;
+}
+
+
+footer{
+          
+    left:0;
+    bottom:0;
+    width:100%;  
+    font-family: sans-serif;
+    background-color: yellow;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: wrap;
+   
+  
+
+}
+.contenidofooter{
+margin-left: 150px;
+margin-right: 150px;
+margin-top: 40px;
+margin-bottom: 40px;
+width: 20%;
+text-align: justify;
+font-size: 13px;
+
+}
+
+h4{
+border-bottom: #000000 solid 1px;
+padding-bottom: 15px;
+}
+
+svg{
+padding-right: 10px;
+opacity: calc(60%);
+}
+
+svg:hover{
+opacity: calc(100%);
+}
+
+a{
+text-decoration: none
+
+
+;
+}
+
+.contenidofooter2{
+display: flex;
+justify-content: center;
+color: #000000;
+font-size: 12px;
+}

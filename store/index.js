@@ -3,7 +3,7 @@ export const state = () => ({
     {
       id: 1,
       nombre: "Anne Sophie Oberkrome",
-      path: "annesophie_oberkrome_??/index.html",
+      path: ["annesophie_oberkrome_??/index.html"],
       autor: "??",
       especialidad: "producto",
       grupo: "pioneras",
@@ -12,7 +12,7 @@ export const state = () => ({
     {
       id: 2,
       nombre: "Emilia Wickstead",
-      path: "emilia_wickstead_??/index.html",
+      path: ["emilia_wickstead_??/index.html"],
       autor: "??",
       especialidad: "moda",
       grupo: "pioneras",
@@ -21,7 +21,7 @@ export const state = () => ({
     {
       id: 3,
       nombre: "Gae Aulenti",
-      path: "gae_aulenti_??/index.html",
+      path: ["gae_aulenti_??/index.html"],
       autor: "??",
       especialidad: "producto",
       especialidad2: "interiores",
@@ -31,7 +31,7 @@ export const state = () => ({
     {
       id: 4,
       nombre: "Ilse Crawford",
-      path: "ilse_crawford_diego/index.html",
+      path: ["ilse_crawford_diego/index.html"],
       autor: "Diego de Paz",
       especialidad: "interiores",
       grupo: "contemporaneas",
@@ -40,7 +40,7 @@ export const state = () => ({
     {
       id: 5,
       nombre: "India Maldhavi",
-      path: "india_maldhavi_??/index.html",
+      path: ["india_maldhavi_??/index.html"],
       autor: "??",
       especialidad: "interiores",
       grupo: "pioneras",
@@ -49,7 +49,7 @@ export const state = () => ({
     {
       id: 6,
       nombre: "Iris Apfel",
-      path: "iris_apfel_??/index.html",
+      path: ["iris_apfel_??/index.html"],
       autor: "??",
       especialidad: "moda",
       grupo: "pioneras",
@@ -58,7 +58,7 @@ export const state = () => ({
     {
       id: 7,
       nombre: "Kelly Wearstler",
-      path: "kelly_wearstler_??/index.html",
+      path: ["kelly_wearstler_??/index.html"],
       autor: "??",
       especialidad: "interiores",
       grupo: "pioneras",
@@ -67,7 +67,7 @@ export const state = () => ({
     {
       id: 8,
       nombre: "Lina Bo Bardi",
-      path: "lina_bobardi_irene/index.html",
+      path: ["lina_bobardi_irene/index.html"],
       autor: "Irene Ruiz",
       especialidad: "producto",
       especialidad: "interiores",
@@ -77,7 +77,7 @@ export const state = () => ({
     {
       id: 9,
       nombre: "Lotta Agaton",
-      path: "lotta_agaton_??/index.html",
+      path: ["lotta_agaton_??/index.html"],
       autor: "??",
       especialidad: "interiores",
       grupo: "contemporaneas",
@@ -86,7 +86,7 @@ export const state = () => ({
     {
       id: 10,
       nombre: "Matali Crasset",
-      path: "matali_crasset_??/index.html",
+      path: ["matali_crasset_??/index.html"],
       autor: "??",
       especialidad: "producto",
       especialidad2: "interiores",
@@ -96,7 +96,7 @@ export const state = () => ({
     {
       id: 11,
       nombre: "Nani Marquina",
-      path: "nani_marquina_??/index.html",
+      path: ["nani_marquina_??/index.html"],
       autor: "??",
       especialidad: "producto",
       grupo: "pioneras",
@@ -105,7 +105,7 @@ export const state = () => ({
     {
       id: 12,
       nombre: "Nanna Ditzel",
-      path: "nanna_ditzel_??/index.html",
+      path: ["nanna_ditzel_??/index.html"],
       autor: "??",
       especialidad: "producto",
       grupo: "pioneras",
@@ -114,7 +114,7 @@ export const state = () => ({
     {
       id: 13,
       nombre: "Patricia Urquiola",
-      path: "patricia_urquiola_angel/index.html",
+      path: ["patricia_urquiola_angel/index.html"],
       autor: "Ángel Martínez",
       especialidad: "interiores",
       grupo: "contemporaneas",
@@ -123,7 +123,7 @@ export const state = () => ({
     {
       id: 14,
       nombre: "Reiko Tanabe",
-      path: "reiko_tanabe_??/index.html",
+      path: ["reiko_tanabe_??/index.html"],
       autor: "??",
       especialidad: "producto",
       grupo: "pioneras",
@@ -132,7 +132,7 @@ export const state = () => ({
     {
       id: 15,
       nombre: "Vivienne Westwood",
-      path: "vivienne_westwood_??/index.html",
+      path: ["vivienne_westwood_??/index.html"],
       autor: "??",
       especialidad: "moda",
       grupo: "pioneras",
@@ -141,7 +141,7 @@ export const state = () => ({
     {
       id: 16,
       nombre: "Aino Aalto",
-      path: "aino_aalto_qiuping/index.html",
+      path: ["aino_aalto_qiuping/index.html"],
       autor: "Qiuping Zhang",
       especialidad: "producto",
       especialidad2: "interiores",
@@ -151,7 +151,7 @@ export const state = () => ({
     {
       id: 17,
       nombre: "Annie Atkins",
-      path: "annie_atkins_ruben/index.html",
+      path: ["annie_atkins_ruben/index.html"],
       autor: "Rubén Rodríguez",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -160,7 +160,7 @@ export const state = () => ({
     {
       id: 18,
       nombre: "Carolyn Davidson",
-      path: "carolyn_davidson_walter/index.html",
+      path: ["carolyn_davidson_walter/index.html"],
       autor: "Walter López",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -169,7 +169,7 @@ export const state = () => ({
     {
       id: 19,
       nombre: "Clara Montagut",
-      path: "clara_montagut_cecilia/index.html",
+      path: ["clara_montagut_cecilia/index.html"],
       autor: "Cecilia Bao Damián",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -178,7 +178,7 @@ export const state = () => ({
     {
       id: 20,
       nombre: "Donatella Versace",
-      path: "donatella_versace_fernando/index.html",
+      path: ["donatella_versace_fernando/index.html"],
       autor: "Fernando Ortega",
       especialidad: "moda",
       grupo: "contemporaneas",
@@ -187,16 +187,17 @@ export const state = () => ({
     {
       id: 21,
       nombre: "Ethel Reed",
-      path: "ethel_reed_antonio/index.html",
+      path: ["ethel_reed_antonio/index.html", "ethel_reed_daniel/index.html"],
       autor: "Antonio Clemente / Daniel Aznar",
       especialidad: "grafico",
       grupo: "pioneras",
-      activa: true
+      activa: true,
+      random: true
     },
     {
       id: 22,
       nombre: "Florence Knoll",
-      path: "florence_knoll_javier/index.html",
+      path: ["florence_knoll_javier/index.html"],
       autor: "Javier Labaig",
       especialidad: "producto",
       grupo: "pioneras",
@@ -205,7 +206,7 @@ export const state = () => ({
     {
       id: 23,
       nombre: "Jacqueline Casey",
-      path: "jacqueline_casey_selena/index.html",
+      path: ["jacqueline_casey_selena/index.html"],
       autor: "Selena Prada",
       especialidad: "grafico",
       grupo: "pioneras",
@@ -214,7 +215,7 @@ export const state = () => ({
     {
       id: 24,
       nombre: "Marta Cerdá",
-      path: "marta_cerda_aitana/index.html",
+      path: ["marta_cerda_aitana/index.html"],
       autor: "Aitana Carballo",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -223,7 +224,7 @@ export const state = () => ({
     {
       id: 25,
       nombre: "Nina Vatolina",
-      path: "nina_vatolina_luis/index.html",
+      path: ["nina_vatolina_luis/index.html"],
       autor: "Luis Roldán",
       especialidad: "grafico",
       grupo: "pioneras",
@@ -232,7 +233,7 @@ export const state = () => ({
     {
       id: 26,
       nombre: "April Greiman",
-      path: "april_greiman_paula/index.html",
+      path: ["april_greiman_paula/index.html"],
       autor: "Paula Pavia",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -241,7 +242,7 @@ export const state = () => ({
     {
       id: 27,
       nombre: "Elaine Lustig Cohen",
-      path: "elaine_lustig_cristobal/index.html",
+      path: ["elaine_lustig_cristobal/index.html"],
       autor: "Cristobal Paniagua",
       especialidad: "grafico",
       grupo: "pioneras",
@@ -250,7 +251,7 @@ export const state = () => ({
     {
       id: 28,
       nombre: "Elsa Schiaparelli",
-      path: "elsa_schiaparelli_raquel/index.html",
+      path: ["elsa_schiaparelli_raquel/index.html"],
       autor: "Raquel Martín",
       especialidad: "moda",
       grupo: "pioneras",
@@ -259,7 +260,7 @@ export const state = () => ({
     {
       id: 29,
       nombre: "Ena Cardenal de la Nuez",
-      path: "ena_cardenal_sonia/index.html",
+      path: ["ena_cardenal_sonia/index.html"],
       autor: "Sonia Prada",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -268,7 +269,7 @@ export const state = () => ({
     {
       id: 30,
       nombre: "Fanette Mellier",
-      path: "fanette_melier_hugo/index.html",
+      path: ["fanette_melier_hugo/index.html"],
       autor: "Hugo Manzano",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -277,7 +278,7 @@ export const state = () => ({
     {
       id: 31,
       nombre: "Gail Anderson",
-      path: "gail_anderson_sambhavi/index.html",
+      path: ["gail_anderson_sambhavi/index.html"],
       autor: "Sambhavi Bhagi",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -286,7 +287,7 @@ export const state = () => ({
     {
       id: 32,
       nombre: "Jessica Walsh",
-      path: "jessica_walsh_leo/index.html",
+      path: ["jessica_walsh_leo/index.html"],
       autor: "Leo Velasco",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -295,7 +296,7 @@ export const state = () => ({
     {
       id: 33,
       nombre: "Laura Meseguer",
-      path: "laura_messeguer_ana/index.html",
+      path: ["laura_messeguer_ana/index.html"],
       autor: "Ana Maldonado",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -304,7 +305,7 @@ export const state = () => ({
     {
       id: 34,
       nombre: "Marisa Gallen",
-      path: "marisa_gallen_jorge/index.html",
+      path: ["marisa_gallen_jorge/index.html"],
       autor: "Jorge Blas",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -313,7 +314,7 @@ export const state = () => ({
     {
       id: 35,
       nombre: "Marta Granados",
-      path: "marta_granados_carlos/index.html",
+      path: ["marta_granados_carlos/index.html"],
       autor: "Carlos Peña",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -322,7 +323,7 @@ export const state = () => ({
     {
       id: 36,
       nombre: "Miryam Anllo",
-      path: "miryam_anllo_alejandra/index.html",
+      path: ["miryam_anllo_alejandra/index.html"],
       autor: "Alejandra Veloso",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -331,7 +332,7 @@ export const state = () => ({
     {
       id: 37,
       nombre: "Pati Núñez",
-      path: "pati_nunez_sandra/index.html",
+      path: ["pati_nunez_sandra/index.html"],
       autor: "Sandra Barrios",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -340,7 +341,7 @@ export const state = () => ({
     {
       id: 38,
       nombre: "Silvia Ferpal",
-      path: "silvia_ferpal_hugo/index.html",
+      path: ["silvia_ferpal_hugo/index.html"],
       autor: "Hugo García",
       especialidad: "grafico",
       grupo: "contemporaneas",
@@ -349,11 +350,21 @@ export const state = () => ({
     {
       id: 39,
       nombre: "Susan Kare",
-      path: "susan_kare_samuel/index.html",
+      path: ["susan_kare_samuel/index.html"],
       autor: "Samuel Quiros",
       especialidad: "grafico",
       grupo: "contemporaneas",
       activa: true
+    },
+    {
+      id: 40,
+      nombre: "Astrid Stavro",
+      path: ["astrid_stavro_violeta/index.html", "astrid_stavro_ana/index.html"],
+      autor: "Ana Díaz / Violeta Fernández",
+      especialidad: "grafico",
+      grupo: "contemporaneas",
+      activa: true,
+      random: true
     }
 
 
