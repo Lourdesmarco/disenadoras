@@ -188,7 +188,7 @@ export const state = () => ({
       id: 21,
       nombre: "Ethel Reed",
       path: "ethel_reed_antonio/index.html",
-      autor: "Antonio Clemente",
+      autor: "Antonio Clemente / Daniel Aznar",
       especialidad: "grafico",
       grupo: "pioneras",
       activa: true
@@ -299,7 +299,7 @@ export const state = () => ({
       autor: "Ana Maldonado",
       especialidad: "grafico",
       grupo: "contemporaneas",
-      activa: false
+      activa: true
     },
     {
       id: 34,
