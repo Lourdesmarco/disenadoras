@@ -1,0 +1,568 @@
+/* hoja de estilos */
+@font-face {
+    font-family: 'Monea Alegante';
+    src: url('../fonts/MoneaAlegante-Regular.woff2') format('woff2'),
+        url('../fonts/MoneaAlegante-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Italiana';
+    src: url('../fonts/Italiana-Regular.woff2') format('woff2'),
+        url('../fonts/Italiana-Regular.woff') format('woff');
+    font-weight: normal;
+    font-size: 64px;
+    font-style: normal;
+    line-height: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat Regular';
+    font-size: 13px;
+}
+
+body{
+    background: rgb(239,161,195);
+    background: radial-gradient(circle, rgba(239,161,195,1) 0%, rgba(155,196,114,1) 100%);
+
+}
+header{
+    width: 100%;
+    padding: 0.7em;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(212, 194, 200, 0.3);
+    backdrop-filter: blur(0.4rem);
+
+}
+
+
+.titulo{
+color: white;
+font-family: 'Monea Alegante';
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    margin-right: 1em;
+
+}
+.home{
+    text-decoration: none;
+    color: white;
+    margin-right: 2.5em;
+    font-family: 'Montserrat';
+
+}
+
+.home:hover, .socialicon:hover{
+    scale: 0.9;
+    
+}
+
+.derecha{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 3em;
+
+
+}
+.socialicon{
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+
+}
+
+.izquierda{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 3em;
+}
+
+/* MENU */
+
+.main_menu{
+    height: 100%;
+    width: 100%;
+    background-color: #b8b88e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav_menu{
+    list-style: none;
+    color: white;
+    width: 400px;
+
+}
+
+.nav_item{
+    color: white;
+    font-size: 50px;
+    font-family: 'Monea Alegante';
+}
+
+.nav_item:hover{
+    color: #708456;
+    opacity: 50%;
+
+}
+
+.diseñadoras{
+    color: #708456;
+}
+
+.diseñadoras:hover{
+    color: white;
+    opacity: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu_section{
+
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav_menu li{
+
+    padding: .5em;
+
+}
+
+.newsletter{
+    width: 480px;
+    height: 400px;
+    margin-left: 13em;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(239,236,161);
+    background: radial-gradient(circle, rgba(239,236,161,.6) 0%, rgba(184,184,142,1) 70%);
+    justify-content: center;
+
+}
+
+.newsletter_title{
+    justify-content: center;
+    margin: 0;
+    padding-bottom: .3em;
+    color: white;
+    font-family: 'Monea Alegante';
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.newsletter_text{
+    font-size: 13px;
+    text-align: center;
+    color: white;
+}
+
+.suscribe{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-top: 1em;
+    font-family: 'Monea Alegante';
+    font-weight: lighter;
+    padding: .3em;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* INDEX */
+
+.caja_cita{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5em;
+}
+
+
+.cita{
+    width: 800px;
+    margin: 2.5em;
+    opacity: 0;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    overflow: hidden;
+    font-family: 'Italiana';
+    font-weight: lighter;
+    animation-name: opacidad;
+    animation-duration: 2.5s;
+    animation-delay: .6s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes opacidad {
+    0%{
+        opacity: 0;
+        transform: scale(1.3);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+}
+
+/* FORMULARIO */
+
+.cajaformulario{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 8em;
+
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: rgba(212, 194, 200, .3);
+    backdrop-filter: blur(7px);
+    padding: 2.5em;
+    box-shadow: rgba(32, 62, 18, 0.4) 0px 22px 70px 4px;    transition-property: all;
+    transition-duration: 1S;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+    color: white;
+
+}
+
+.form_titulo{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: 'Monea Alegante';
+
+
+}
+
+.nombre{
+    width: 150px;
+}
+
+input[type="text"], input[type="date"]{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: .3em;
+    outline: none;
+    color: white;
+}
+input[class="nombre"]{
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+
+input[type="checkbox"]{
+    accent-color: #708456;
+}
+
+input[type="date"]{
+    width: 120px;
+}
+
+button[type="submit"]{
+    background-color: white;
+    border: 1px solid white;
+    color: #708456;
+    width: 130px;
+    border-radius: 15px;
+    padding: .3em;
+
+}
+
+button[type="submit"]:hover{
+    background: #708456;
+    color: white;
+}
+
+input[type="text"], input[type="checkbox"], input[type="date"], button[type="submit"]{
+    margin-bottom: .9em;
+    margin-top: .5em;
+    padding-top: .3em;
+
+}
+
+.checkbox{
+    margin-top: .3em;
+    margin-bottom: 1.2em;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+}
+
+/* BIOGRAFÍA */
+
+
+.presentacion{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+
+}
+
+.foto_bio{
+    margin: 4em;
+    margin-top: 10em;
+    margin-left: 9em;
+
+}
+
+.foto_clara{
+    width: 400px;
+    height: 400px;
+    box-shadow: -47px -48px 4px 0px rgba(0,0,0,0.1);
+}
+
+.texto_bio{
+    margin-top: 7em;
+    margin-left: 2em;
+    width: 620px;
+}
+
+.nombre_bio{
+    color: white;
+    font-family: 'Monea Alegante';
+    font-size: 50px;
+    margin-bottom: 0;
+
+}
+
+
+.datos_bio{
+    font-family: 'Italiana';
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2em;
+    font-size: 16pt;
+
+}
+
+
+.parrafo_bio{
+    color: white;
+    width: 600px;
+    font-size: 9.8pt;
+
+
+}
+
+.imagenbio{
+    width: 100%;
+    height: 150px;
+    background: black;
+}
+
+.premios{
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+.cita2{
+    width: 900px;
+    padding-right: 2em;
+    margin: 0;
+    color: white;
+    font-size: 50px;
+    font-family: 'Italiana';
+    font-weight: lighter;
+
+
+}
+
+.lineavertical{
+    width: 5px;
+    height: 100%;
+    background-color: white;
+    margin-right: 3em;
+
+}
+
+.premio{
+    padding-left: 1.5em;
+    padding-bottom: 1.5em;
+    color: white;
+    
+}
+
+.lineahorizontal{
+    height: 1px;
+    width: 100%;
+    background-color: white;
+}
+
+/* INFLUENCIAS */
+
+.influencias{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid: auto / 33% 34% 33%;
+}
+
+.main_influ{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.parrafo_influencias{
+    position: absolute;
+    bottom: 5em;
+    right: 30em;
+    text-align: right;
+    color: white;
+    width: 160px;
+    background-color: rgba(112, 132, 86, .7);
+    padding: 1em;
+}
+
+.imagenencaja{
+    inline-size: 100%;
+}
+
+.influ_item{
+    overflow: hidden;
+    background-color:rgba(239,161,195,1);
+
+
+}
+
+.diseñadores:hover{
+    opacity: 70%;
+}
+
+/* OBRAS ICONICAS */
+
+.obrasiconicas{
+    display: flex;
+    padding: 5em;
+}
+
+.obra_engrande{
+    width: 50%;
+    padding: 5em;
+}
+
+.caja_iconica{
+    width: 390px;
+
+}
+
+.nombre_obra{
+    color: white;
+    font-family: 'Italiana';
+    font-size: 50px;
+}
+
+.iconicas_cuadricula{
+    width: 50%;
+
+}
+
+.caja_obras_iconicas{
+    padding-right: 10em;
+    display: grid;
+    grid: auto auto / auto auto auto;
+    grid-gap: 3em 3em;
+}
+
+
+.iconicas_pequeñas:hover{
+    filter: blur(2px);
+}
+
+/* OTRAS OBRAS */
+
+.otras_obras{
+    margin: 10em;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid: auto auto / auto auto auto;
+    grid-gap: 5em 5em;
+}
+
+.otraobra{
+    transition: all .5s ease;
+
+}
+.otraobra:hover{
+    transform: scale(1.2);
+}

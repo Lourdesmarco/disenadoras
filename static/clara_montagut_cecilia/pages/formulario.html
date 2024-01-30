@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clara Montagut - Newsletter</title>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="derecha">
+            <a class="home" href="../index.html">HOME</a>
+            <div class="socials">
+                <a class="socialicon" href="https://www.instagram.com/claramontagut/"><img src="../assets/images/icons/instagram_icon.svg" alt="ig"></a>
+                <a class="socialicon" href="https://www.pinterest.es/claramontagut/"><img src="../assets/images/icons/pinterest_icon.svg" alt="pinterest"></a>
+                <a class="socialicon" href="https://es.linkedin.com/in/clara-montagut-95429917a"><img src="../assets/images/icons/linkedin_icon.svg" alt="linkedin"></a>
+            </div>
+
+        </div>
+        <div class="cajatitulo">
+            <p class="titulo">Clara Montagut</p>
+        </div>
+        <div class="izquierda">
+            <a href="../pages/menu.html"><img src="../assets/images/icons/menu2_icono.svg" alt="menu"></a>
+
+        </div>
+
+</header>
+<main>
+        <div class="cajaformulario">
+            <form class="formulario">
+                <h1 class="form_titulo">Newsletter</h1>
+                <div class="nombreyapellido">
+                <label for="usuario">Nombre
+                </label>
+               <input class="nombre" type="text" id="usuario" name="usuario">   
+                <label for="apellido">Apellido
+                </label>
+                 <input class="nombre" type="text" id="apellido" name="apellido">
+                 </div>
+
+                <!-- siempre hay que poner el label del for al id -->
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="nacimiento" name="nacimiento" value="2023-12-01" min="1920-12-31" max="2023-12-01" />
+                <label for="apellido">Dirección de correo electrónico
+                </label>
+                 <input type="text" id="correo" name="correo">
+                 <div class="checkbox">
+                <label for="okpolitic">    
+                    <input type="checkbox" name="okpolitic" id="okpolitic">
+                    He leído las políticas de privacidad
+                </label>
+                    <label for="deseo">    
+                        <input type="checkbox" name="deseo" id="deseo">
+                        Acepto recibir comunicaciones comerciales a través del email
+                    </label>
+                    </div>
+                <button type="submit">¡Sí, registrarme!</button>
+            </form>
+            </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 141 142">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: red;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="-3" dy="3"/>
+      <feGaussianBlur result="blur" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".75"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M101.91,35.94h39.09v71.74h-39.09c-16.13,0-29.23-13.1-29.23-29.23v-13.28c0-16.13,13.1-29.23,29.23-29.23Z"/>
+  <path class="cls-2" d="M125.71,88.57h-26.86c-6.37,0-11.55-5.18-11.55-11.55v-10.01c0-6.37,5.18-11.55,11.55-11.55h26.86c6.37,0,11.55,5.18,11.55,11.55v10.01c0,6.37-5.18,11.55-11.55,11.55ZM98.85,59.47c-4.16,0-7.55,3.39-7.55,7.55v10.01c0,4.16,3.39,7.55,7.55,7.55h26.86c4.16,0,7.55-3.39,7.55-7.55v-10.01c0-4.16-3.39-7.55-7.55-7.55h-26.86Z"/>
+  <polygon class="cls-2" points="112.34 72.2 91.97 61.33 93.85 57.8 112.21 67.59 129.45 57.07 131.53 60.48 112.34 72.2"/>
+</svg>

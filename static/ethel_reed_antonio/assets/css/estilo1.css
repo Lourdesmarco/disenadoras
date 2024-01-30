@@ -1,0 +1,447 @@
+body {
+    margin: 0;
+    background-color: #000;
+  }
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-left:100px;
+    order:4;
+    margin-top: 100px;
+  }
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+  
+  .titulo{
+    margin: 0;
+    padding: 20px 0;
+    font: 44px "Lucida Bright";
+    text-align: left;
+    color:white;
+    width:100vh;
+    margin-left:100px;
+    margin-top:100px;
+  }
+  
+  .grid {
+    height:100vh;
+ 
+  }
+  
+  .left {
+    background: tomato;
+    display:block;
+    padding:10px;
+      --mask:
+        radial-gradient(28.53px at calc(100% - 38.75px) 50%,#000 99%,#0000 101%) 0 calc(50% - 50px)/100% 100px,
+        radial-gradient(28.53px at calc(100% + 13.75px) 50%,#0000 99%,#000 101%) calc(100% - 25px) 50%/100% 100px repeat-y;
+      -webkit-mask: var(--mask);
+              mask: var(--mask);
+    }
+  .links{
+    margin-top:110px;
+    list-style: none;
+  }
+  .link-actual{
+    margin-top:20px;
+    padding:20px;
+    display:block;
+    text-decoration:none;
+    color:black;
+    font: bolder 16px "Lucida Bright";
+    text-decoration:Underline;
+  }
+  .link{
+    padding:20px;
+    display:block;
+    text-decoration: none;
+    color:black;
+    font: 16px "Lucida Bright";
+    margin-top:20px;
+    margin-right: 20px;;
+    }
+  .texto{
+    width:600px;
+    margin-left:100px;
+    color:white;
+    font:16px "Calibri";
+  }
+    
+  .right{
+    display:flex;
+    flex-direction: column;
+    
+  }
+    
+ 
+  .grid {
+    transition: 300ms;
+    display: grid;
+    grid-template-columns: 48px auto;
+  }
+  .grid:has(.left:hover) {
+    grid-template-columns: 15% auto;
+  }
+  .grid {
+    transition: 300ms;
+    transition-delay: .2s;
+    transition-duration:0.2s;
+    display: grid;
+    grid-template-columns: var(--left, 48px) auto;
+  }
+    .grid:has(.left:hover) {
+    --left: 15%;
+  } 
+  .img-home:hover{
+    scale:1.1;
+  }
+.Desplegar{
+  height: 20px;
+  width:20px;
+  border-radius:10px;
+  vertical-align:top;
+  margin-top:175px;
+
+}
+.flip-card1{
+  background-color: transparent;
+  perspective: 1000px;
+  height: 500px;
+  width: 350px;
+  margin-left:100px;
+  margin-top:100px;
+  display:inline-block;
+  
+  
+}
+.flip-card-inner1{
+  position: relative;
+  width: 390px;
+  height: 540px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transition-delay: 0.1s;
+  
+}
+.flip-card1:hover .flip-card-inner1 {
+  transform: rotateY(180deg);
+}
+.flip-card-front1, .flip-card-back1 {
+  position: absolute;
+  height:500px;
+  width: 350px;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+.flip-card-front1{
+  color: black;
+}
+.flip-card-back1{
+  height:500px;
+  width:350px;
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+  --r: 10px; 
+  padding: calc(2*var(--r));
+  background: 
+  radial-gradient(var(--r),#0000 98%,#fff) round
+  calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+  linear-gradient(#fff 0 0)  no-repeat
+  50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+}
+.flip-img1{
+  height: 500px;
+  width: 350px;
+  --r: 10px; 
+  padding: calc(2*var(--r));
+  background: 
+  radial-gradient(var(--r),#0000 98%,#fff) round
+  calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+  linear-gradient(#fff 0 0)  no-repeat
+  50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+}
+
+    
+.flip-card2{
+  background-color: transparent;
+  perspective: 1000px;
+  height: 500px;
+  width: 350px;
+  margin-left:100px;
+  margin-top:100px;
+  display:inline-block;
+  
+}
+.flip-card-inner2{
+  position: relative;
+  width: 390px;
+  height: 540px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transition-delay: 0.1s;
+}
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+}
+.flip-card-front2, .flip-card-back2 {
+  position: absolute;
+  height: 500px;
+  width: 350px;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+.flip-card-front2{
+  color: black;
+}
+.flip-card-back2{
+  height:500px;
+  width:350px;
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+  --r: 10px; 
+  padding: calc(2*var(--r));
+  background: 
+  radial-gradient(var(--r),#0000 98%,#fff) round
+  calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+  linear-gradient(#fff 0 0)  no-repeat
+  50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+  
+}
+.flip-img2{
+  height: 500px;
+  width: 350px;
+  --r: 10px; 
+  padding: calc(2*var(--r));
+  background: 
+  radial-gradient(var(--r),#0000 98%,#fff) round
+  calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+  linear-gradient(#fff 0 0)  no-repeat
+  50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+}
+.flip-card-back-h1{
+  color:black;
+
+}
+.flip-card-back-text{
+  color:black;
+  
+}
+.nav-obras{
+  background: beige;
+    display:block;
+    padding:10px;
+      --mask:
+        radial-gradient(28.53px at calc(100% - 38.75px) 50%,#000 99%,#0000 101%) 0 calc(50% - 50px)/100% 100px,
+        radial-gradient(28.53px at calc(100% + 13.75px) 50%,#0000 99%,#000 101%) calc(100% - 25px) 50%/100% 100px repeat-y;
+      -webkit-mask: var(--mask);
+              mask: var(--mask);
+}
+.grid:has(.nav-obras:hover) {
+  grid-template-columns: 15% auto;
+}
+.grid:has(.nav-obras:hover) {
+  --left: 15%;
+}
+.grid-obras{
+  display:grid;
+  grid-template-rows:  repeat(3, 550px);
+  grid-template-columns: repeat(4, 350px);
+  grid-gap: 20px;
+  margin:20px;
+  padding:50px;
+}
+.grid-obras2{
+  display:grid;
+  grid-template-rows:  repeat(3, 550px);
+  grid-template-columns: repeat(4, 350px);
+  grid-gap: 20px;
+  margin:20px;
+  padding:50px;
+
+}
+.right-obras{
+  background-color: rgb(14, 14, 20);
+}
+.body-obras{
+  background-color:rgb(14, 14, 20);
+}
+.h1-obras{
+  font: 44px "Lucida Bright";
+  color:white;
+  margin-top:100px;
+  margin-left:80px;
+}
+.h2-obras{
+  font: 30px "Lucida Bright";
+  color:white;
+  margin-left:80px;
+}
+.obras{
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  transition-duration: 1s;
+  
+}
+.obras:hover{
+  transform: scale(120%);
+  
+}
+.A{
+  grid-column:1;
+  grid-row:1;
+  
+}
+.B{
+  grid-column:3;
+  grid-row:2;
+  
+  
+}
+.D{
+  grid-column:2;
+  grid-row:1;
+}
+.F{
+  grid-column:4;
+  grid-row:1;
+  
+}
+.G{
+  grid-column:1;
+  grid-row:2;
+  
+}
+.H{
+  grid-column:3;
+  grid-row:1;
+  
+}
+.C{
+grid-column:2;
+grid-row:2;
+}
+.E{
+  grid-column:4;
+  grid-row:2;
+}
+.I{
+  grid-column:1;
+  grid-row:3
+}
+.J{
+  grid-column:2;
+  grid-row:3
+}
+.body-biografía{
+  background-color: lightgrey;
+}
+.nav-biografía{
+  background:sienna;
+    display:block;
+    padding:10px;
+      --mask:
+        radial-gradient(28.53px at calc(100% - 38.75px) 50%,#000 99%,#0000 101%) 0 calc(50% - 50px)/100% 100px,
+        radial-gradient(28.53px at calc(100% + 13.75px) 50%,#0000 99%,#000 101%) calc(100% - 25px) 50%/100% 100px repeat-y;
+      -webkit-mask: var(--mask);
+              mask: var(--mask);
+}
+.grid:has(.nav-biografía:hover) {
+  grid-template-columns: 15% auto;
+}
+.grid:has(.nav-biografía:hover) {
+  --left: 15%;
+}
+.body-biografía {
+  font-family: "times";
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.header-biografía {
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.section-biografía {
+  max-width: 1600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left:200px;
+  
+}
+
+.img-biografía{
+  height: 500px;
+  width: 350px;
+}
+.texto-biografía{
+  width:600px;
+}
+.h1-biografía{
+    font: 44px "Lucida Bright";
+    color:black;
+    margin-top:100px;
+}
+.texto-biografía{
+  width:1000px;
+    color:black;
+    font:16px "Calibri";
+}
+h2{
+  font: 35px "Lucida Bright";
+    color:black;
+}
+
+.flecha{
+  font-size: 15px; 
+  margin-right: 10px;
+  margin-top:22px;
+  color: white;
+}
+.flecha-biografía{
+  font-size: 15px; 
+  margin-right: 10px;
+  margin-top:22px;
+  color: black
+}

@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c6c6c6;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+    transition-duration: 0.2s;
+}
+
+
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaaaaa;
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url('assets/images/');
+    font-family: inter;
+    color: #2F2729;
+
+}
+
+
+/* INDEX */
+
+.intro {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-image: url('../images/portraitflorence.webp-_1_.webp');
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 0.2s;
+}
+
+.textintro:hover .intro {
+    filter: blur(5px);
+}
+
+.introitem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    top: 23rem;
+    left: 35rem;
+}
+
+
+
+
+.textintro {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+    position: relative;
+    color: #101010;
+    transition: all 500ms ease;
+}
+
+
+.florencename {
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #f10024;
+    transition: all 500ms ease;
+}
+
+.backindex {
+    position: absolute;
+    top: -3px;
+    left: 14px;
+}
+
+
+
+
+/* MENU */
+.bodymenu {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f10024;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.homemenu,
+.biomenu,
+.infmenu,
+.workmenu {
+    border-bottom: 2px solid #101010;
+    font-size: 8rem;
+    font-weight: 400;
+    display: flex;
+    text-decoration: none;
+    color: #101010;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    transition: all 0.3s ease;
+}
+
+.homemenu:hover,
+.biomenu:hover,
+.infmenu:hover,
+.workmenu:hover {
+    color: #f6f6f6;
+    padding: 1rem 2rem 1rem 5rem;
+}
+
+.arrowmenu {
+    transition: all 0.3s ease;
+}
+
+.homemenu:hover .arrowmenu,
+.biomenu:hover .arrowmenu,
+.infmenu:hover .arrowmenu,
+.workmenu:hover .arrowmenu {
+    fill: #f6f6f6;
+}
+
+.homemenu {
+    border-top: 2px solid #101010;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* NAVEGATOR */
+.navheader {
+    box-sizing: border-box;
+    position: absolute;
+    position: fixed;
+    width: 100vw;
+    height: 7vh;
+    background-color: #f6f6f6;
+    z-index: 1;
+    align-items: center;
+    border-bottom: 1px solid #c6c6c6;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+}
+
+
+.navheader:hover {
+    border-bottom: 1px solid #101010;
+}
+
+.worknav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back {
+    height: 7vh;
+    height: 7vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backitem {
+    height: 7vh;
+    height: 7vh;
+    padding: 16px;
+}
+
+.navegation {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navegation a {
+    padding: 0px 15px;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #101010;
+    transition: all 180ms ease-in-out;
+}
+
+.navegation:last-child {
+    margin-right: 50px;
+}
+
+
+.bionavtext:hover,
+.infnavtext:hover,
+.menunavtext:hover {
+    text-decoration: underline #101010;
+}
+
+
+
+.indexnavtext {
+    color: #f10024;
+    transition: all 300ms ease-in-out;
+}
+
+.indexnavtext:hover {
+    text-decoration: underline #ff0026;
+}
+
+/*FOOTER */
+.footerwork {
+    width: 100vw;
+    height: 25rem;
+    position: relative;
+    background-color: #101010;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    color: #f6f6f6;
+}
+
+.footerwork h3 {
+    display: flex;
+    align-items: center;
+    width: 35rem;
+    padding: 3rem 4rem;
+    padding-bottom: 0;
+    font-size: 2rem;
+}
+
+.footerwork form {
+    display: block;
+    padding: 0rem 4rem;
+}
+
+.footerwork form div {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+    border: none;
+}
+
+.footerwork form:nth-child(2) {
+    padding: none;
+}
+
+.footerwork form input {
+    margin-top: 1rem;
+    border: 2px solid #f6f6f6;
+    font-size: 0.8rem;
+    padding: 3px 5px;
+    background-color: #101010;
+    color: #f6f6f6;
+    box-shadow: 2px 2px 0px 0px #101010, 4px 4px 0px 0px #f6f6f6;
+    transition: all 0.1s ease;
+}
+
+
+.footerwork form div label {
+    font-size: 0.8rem;
+
+}
+
+.footerwork form div input {
+    width: 5rem;
+    background-color: transparent;
+    color: #f6f6f6;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #c6c6c6;
+    transition: all 0.3s ease;
+}
+
+.footerwork form input:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+
+
+.socialmedia {
+    position: absolute;
+    right: 1rem;
+    bottom: 0.8rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.footerwork a {
+    text-decoration: none;
+    padding: 1rem;
+    transition: all 0.2s ease;
+}
+
+.footerwork a:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+/* BIO */
+.mainbio {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #f6f6f6;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.titlebio {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.titlebiotext {
+    width: 5em;
+    animation: typing 1s steps(9), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 23em;
+    color: #101010;
+    display: flex;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+.imgcontainerbio {
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+
+.mainbio section {
+    width: 100vw;
+    height: fit-content;
+    justify-content: center;
+    padding: 10rem;
+    border-bottom: 1px solid #101010;
+    border-top: 1px solid #101010;
+    display: flex;
+    align-items: center;
+
+}
+
+.knollmarriage {
+    height: 30rem;
+    margin-left: 5rem;
+}
+
+.knollstudio {
+    height: 30rem;
+    margin-right: 5rem;
+}
+
+.imgknollinc {
+    height: 40rem;
+    margin-left: 5rem;
+}
+
+
+/* INF */
+.maininf {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+}
+
+.headinginf {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(225, 225, 225, .01);
+    background-image: url("../images/ludwig-mies-van-der-rohe-cemal-emden-barcelona-pavilion.jpg");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        background-position: left top;
+    }
+
+    25% {
+        background-position: right bottom;
+    }
+
+    50% {
+        background-position: left bottom;
+    }
+
+    75% {
+        background-position: right top;
+    }
+}
+
+.headinginf h1 {
+    font-size: 15rem;
+    font-weight: 700;
+
+}
+
+.sectioninf1 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+}
+
+.sectioninf1 div {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    justify-content: right;
+}
+
+.sectioninf1 div h2 {
+    padding: 1rem 0rem 3rem 3rem;
+    font-size: 4.3rem;
+}
+
+.sectioninf1 div div p {
+    width: 25rem;
+    font-size: 0.9rem;
+    padding: 2rem;
+}
+
+.lastinfp {
+    width: 25rem;
+    font-size: 0.9rem;
+    padding: 2rem;
+}
+
+
+
+
+
+
+/* WORK */
+.workmain {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100%;
+    display: block;
+    overflow-x: hidden;
+    background-color: rgb(242, 255, 0);
+    ;
+}
+
+.worktitle {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #f6f6f6;
+}
+
+.worktitletext {
+    margin: 0;
+    padding: 0;
+    font-size: 28vw;
+    color: #ff0026;
+    white-space: nowrap;
+    background-image: url('../images/redtexture.jpg');
+    background-clip: text;
+}
+
+.work1 {
+    animation: desplazar 5s linear infinite;
+    display: block;
+    position: absolute;
+    top: 17.5%;
+    left: 0;
+}
+
+
+.work2 {
+    animation: desplazar 5s linear infinite;
+    display: block;
+    animation-delay: 2.5s;
+    position: absolute;
+    top: 17.5%;
+    left: 0;
+    transform: translateX(-95rem);
+
+}
+
+
+@keyframes desplazar {
+    0% {
+        transform: translateX(-95rem);
+    }
+
+    100% {
+        transform: translateX(95rem);
+    }
+}
+
+
+
+
+.workh2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.workh2text {
+    font-size: 4rem;
+    width: 50%;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.workp {
+    height: auto;
+    width: 50%;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.mural {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    border: 1px solid #101010;
+
+}
+
+.mural article {
+    max-width: 100vw;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #101010;
+    border-right: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s;
+}
+
+.mural article img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 6rem;
+    transition: all 0.4s ease-out;
+}
+
+.mural article:hover img {
+    transform: scale(1.2);
+}
+
+
+.extra p {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #101010;
+}
+
+.descriptionpieza {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    font-size: 12px;
+    font-weight: 600;
+    color: #101010;
+}
+
+.contenedormuralextra {
+    background-color: rgb(0, 34, 255);
+    color: #f6f6f6;
+}
+
+.contenedormuralextra .workp {
+    padding: 20rem;
+    font-size: 4rem;
+}
+
+
+.contenedormuralextra .mural {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.contenedormuralextra .mural article p {
+    color: #f6f6f6;
+}
+
+
+/*PIEZAS*/
+
+.mainpieza {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    justify-content: center;
+}
+
+.piezatext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imgpieza {
+    width: auto;
+    height: 50vh;
+    object-fit: cover;
+    margin: 5rem;
+}
+
+.piezatext div {
+    width: 75vh;
+    display: block;
+    margin-top: 20px;
+}
+
+.piezatext div h1 {
+    display: inline-block;
+}
+
+.piezatext div p {
+    padding: 10px 0px;
+    display: block;
+}
+
+.piezatext:nth-child(2) {
+    margin-top: 0;
+}
+
+.imgpieza2 {
+    width: auto;
+    height: 50vh;
+    object-fit: cover;
+    margin: 5rem;
+}
+
+.gobackwork {
+    width: min-content;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0rem;
+    color: #101010;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 46vw;
+}
+
+.gobackwork p {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.gobackwork:hover {
+    text-decoration: underline;
+}
+
+
+.imgassociates {
+    width: auto;
+    height: 30rem;
+    object-fit: cover;
+    margin: 10rem 5rem;
+}
