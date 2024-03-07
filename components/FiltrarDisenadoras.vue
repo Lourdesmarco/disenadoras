@@ -14,7 +14,7 @@
       <div class="flex flex-wrap items-center w-full text-gray-800">
         <button
           class="bg-gray-400 rounded-full px-3 py-2 font-medium text-center text-sm m-1 hover:bg-gray-500 hover:text-white"
-          :class="{ 'bg-indigo-700 text-white hover:bg-indigo-800' : status === 'all' }"
+          :class="{ 'bg-custom text-white hover:bg-indigo-800' : status === 'all' }"
           @click="handleStatusFilter('all')"
         >
           Todas
@@ -74,3 +74,10 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss" scoped>
+.bg-custom{
+  background-color: #9516ff;
+}
+
+</style>
