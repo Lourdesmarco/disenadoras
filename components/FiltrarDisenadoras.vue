@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-80 mb-2">
+    <div class="w-96 mb-2">
       <input
         :value="search"
         type="search"
